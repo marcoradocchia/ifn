@@ -1,0 +1,299 @@
+%LTeX: language=it
+\chapter{2022-05-26}
+\section{Instabilità dei nuclei (reprise)}
+\subsection{Decadimenti $\alpha$ (reprise)}
+\subsubsection{Descrizione fenomenologica del decadimento $\alpha$ (reprise)}
+\paragraph{Effetto tunnel (reprise)}
+La \textit{\textbf{probabilità di tunneling}} sarà data da:
+\[
+  P = \abs{t}^{2} = \frac{16 \delta^2}{\mrb{1 + \delta^2}^{2}} e^{-2 K L}
+  = \frac{16 \mrb{\frac{k}{K}}^{2}}{\msb{1 + \mrb{\frac{k}{K}}^{2}}^{2}} e^{-2
+  K L} \simeq e^{-2 K L}
+\]
+se $\nicefrac{k}{K} \simeq 1$.
+
+\paragraph{Barriera di potenziale arbitraria}
+% TODO: riascolta
+% TODO: figura
+\[
+  P_{T} = P_1 P_2 \dots P_N = e^{-2 K_1 \Delta x} e^{-2 K_2 \Delta x} \dots
+  e^{-2 K_N \Delta x} = e^{-\msum{i}{} K_i \Delta x}
+\]
+nel limite in cui mandiamo $\Delta x \to 0$, la somma diventa un integrale ed
+otteniamo così la probabilità di attraversare interamente la barriera di
+potenziale arbitraria:
+\[
+  P_T = e^{- 2 \mint{A}{B}{x}{K \mrb{x}}}
+\]
+\begin{note}[]
+  Questo è un ragionamento approssimato. Stiamo componendo le probabilità
+  (mentre dovremmo comporre le ampiezze di probabilità, causa interferenza),
+  quindi stiamo implicitamente assumento che il potenziale non vari molto
+  rapidamente rispetto alla funzione d'onda.
+\end{note}
+Consideriamo che, come avevamo detto:
+\[
+  \hbar K = \sqrt{2m V \mrb{x} - E}
+\]
+e otteniamo che la \textit{probabilità di tunneling attraverso una barriera di
+potenziale arbitraria}:
+\[
+  P_T = \exp{-\frac{2}{\hbar} \mint{A}{B}{x}{\sqrt{2m V \mrb{x} - E}}} = e^{-G}
+\]
+dove $G$ è il \textbf{fattore di penetrazione di Gammon}.
+
+\paragraph{Tunneling attraverso barriera coulombiana}
+Indichiamo con $R$ una \textit{\textbf{lunghezza di taglio}} sotto la quale le
+\textit{interazioni forti} sono dominanti ed al di sopra della quale sono
+invece \textit{trascurabili}.
+% TODO: figura
+La \textit{probabilità di tunneling della particella $\alpha$} può essere
+calcolata, dato il \textit{fattore di penetrazione di Gammon}:
+\[
+  G = \frac{2}{\hbar} \mint{R}{b}{r}{\sqrt{2 m \mrb{\frac{zZ e^2}{4 \pi \eps_0}
+  \frac{1}{r} - E}}}
+\]
+dove $m$ è la \textit{massa della particella $\alpha$}, $z = 2$ il
+\textit{numero atomico della particella $\alpha$}, $Z$ il \textit{numero
+atomico della particella figlio} ed $E = T _{\alpha} \simeq Q _{\alpha}$.
+Otteniamo:
+\[
+  G = \frac{2}{\hbar} \sqrt{2 m} \sqrt{\frac{z Z e^2}{4 \pi \eps_0}}
+  \mint{R}{b}{r}{\mrb{\frac{1}{r} - \frac{1}{b}}^{\nicefrac{1}{2}}}
+\]
+dove il seguente passaggio intermedio:
+\[
+  G = \frac{2}{\hbar} \sqrt{2 m} \sqrt{\frac{z Z e^2}{4 \pi \eps_0}}
+  b^2 \frac{b}{???} \mint{R}{b}{r}{\frac{1}{b} \mrb{\frac{1}{r} -
+  \frac{1}{b}}^{\nicefrac{1}{2}}} % TODO: ???
+\]
+quindi:
+\[
+  G = \frac{2}{\hbar} \sqrt{\frac{m zZ e^2 b}{2 \pi \eps_0}} \mcb{\arccos
+  \mrb{\sqrt{\frac{R}{b}}} - \sqrt{\frac{R}{b} \mrb{1 - \frac{R}{b}}}}
+\]
+In \textit{approssimazione di \textbf{barriera spessa}}, i.e. $\frac{R}{b} \ll
+1$, si ottiene:
+\[
+  G = \frac{2}{\hbar} \sqrt{\frac{m zZ e^2}{2 \pi \eps_0}} \mcb{\frac{\pi}{2} -
+  2 x ^{\nicefrac{1}{2}}}
+\]
+dove $x = \nicefrac{R}{b}$, tenendo conto anche dell'espressione di
+$\arccos{\sqrt{x}}$.
+
+Sappiamo che $R ~ \si{\femto\m}$, mentre $b$ dipende dall'energia cinetica
+della particella, ovvero:
+\[
+  E = \frac{1}{2} m v^2 = \frac{zZ e^2}{4 \pi \eps_0} \frac{1}{b}
+\]
+con:
+\[
+  b =\frac{zZ e^2}{4 \pi \eps_0}  \frac{\hbar c}{\hbar c} \frac{1}{\frac{1}{2}
+  m v^2} = \frac{zZ \alpha \hbar c}{\frac{1}{2} m v^2} \simeq
+  \frac{\SI{1.4}{\MeV}}{\frac{1}{2} m v^2} zZ\, \si{\femto\m}
+\]
+
+In conclusione otteniamo:
+\[
+  G = \frac{2}{\hbar} \sqrt{\frac{mzZ e^2 b}{2 \pi \eps_0}} \mcb{\frac{\pi}{2}
+  - 2 x ^{\nicefrac{1}{2}}} = \frac{4 \mrb{zZ \alpha}}{\frac{v}{c}}
+  \mcb{\frac{\pi}{2} - 2 x ^{\nicefrac{1}{2}}}
+\]
+dove nel primo termine del prodotto, $\nicefrac{v}{c} \propto T
+_{\alpha}^{\nicefrac{1}{2}}$.
+Il valore del \textit{fattore di penetrazione di Gammon}:
+\[
+  G = \frac{2 \pi zZ \alpha}{\frac{v}{c}} -4 \sqrt{\frac{2 \mrb{mc}^{2} zZ
+  \alpha R}{\hbar c}}
+\]
+Osserviamo che:
+\begin{itemize}
+  \item $\frac{2 \pi zZ \alpha}{\frac{v}{c}}$ \textit{non dipende da $R$}!
+    Quindi i dettagli della buca di potenziale non sono importanti per
+    calcolare la probabilità di tunneling, nel limite di barriera spessa;
+  \item $4 \sqrt{\frac{2 \mrb{mc^2} zZ \alpha R}{\hbar c}}$ \textit{dipende
+    da $R$}.
+\end{itemize}
+
+\begin{note}[]
+  È molto più facile far interagire, con \textit{interazioni forti}, nuclei
+  leggeri, rispetto a nuclei pesanti, a causa dell'altezza della barriera
+  coulombiana.
+\end{note}
+
+Quindi, ricapitolando, per \textit{barriera coulombiana} in limite di
+\textit{barriera spessa}, l'effetto tunneling di particelle $\alpha$ è
+descritto, approssimativamente, da:
+\begin{align*}
+  \boxed{
+    \begin{dcases}
+      P_T = e^{-G} &\textit{Probabilità di tunneling}
+      \\
+      G = \frac{2 \pi zZ \alpha}{\frac{v}{c}} - 4 \sqrt{\frac{2 \mrb{mc^2} zZ
+      \alpha R}{\hbar c}} &\textit{Fattore di penetrazione di Gammon}
+    \end{dcases}
+  }
+\end{align*}
+
+\paragraph{Rate di decadimento}
+% TODO: riascolta la descrizione che è utile a capire
+Per determinare il \textit{rate di decadimento}:
+\[
+  \omega = F P_T
+\]
+dove $\msb{\omega} = t^-1$ e $\msb{F} = t^-1$, con:
+\[
+  F \sim \frac{v_0}{2R}
+\]
+dove $v_0$ è la \textit{velocità della particella nella buca di potenziale}.
+Notiamo che:
+\[
+  \ln \mrb{\nicefrac{\omega}{\si{s^{-1}}}} = \ln
+  \mrb{\nicefrac{F}{\si{s^{-1}}}} + \ln \mrb{P_T}
+  = \ln \mrb{\nicefrac{F}{\si{s^{-1}}}} - G 
+  = \ln \mrb{\nicefrac{F}{\si{s^{-1}}}} + 4 \sqrt{\frac{2 \mrb{mc^2} zZ \alpha
+  R}{\mrb{\hbar c}}} - \frac{2 \pi zZ \alpha}{\frac{v}{c}}
+\]
+indicando con:
+\[
+  f = \ln \mrb{\nicefrac{F}{\si{s^{-1}}}} + 4 \sqrt{\frac{2 \mrb{mc^2} zZ \alpha
+  R}{\mrb{\hbar c}}} 
+\]
+allora:
+\[
+  \ln \mrb{\nicefrac{\omega}{\si{s^{-1}}}} = f - g \frac{Z}{\sqrt{T _{\alpha}}}
+\]
+con $T _{\alpha} = \frac{1}{2} m v^2 \simeq Q _{\alpha}$.
+La costante $g$ è data da:
+\[
+  g = 4 \pi \alpha \sqrt{\frac{mc^2}{2}} \simeq \SI{3.97}{\MeV
+  ^{\nicefrac{1}{2}}}
+\]
+Quindi:
+\[
+  \ln \mrb{\nicefrac{\omega}{\si{s^{-1}}}} = f - \SI{3.97}{\MeV
+  ^{\nicefrac{1}{2}}} \frac{Z}{\sqrt{T _{\alpha}}}
+\]
+
+Quindi vediamo che $\omega$ è una \textit{funzione fortemente crescente di $T
+_{\alpha}$}:
+\[
+  \boxed{
+    \omega \propto \exp \mcb{-3.97 Z \mrb{\frac{T
+    _{\alpha}}{\SI{1}{\MeV}}}^{-\frac{1}{2}}}
+  }
+\]
+Quindi aumentando l'energia cinetica avremo che la probabilità di tunneling
+decresce esponenzialmente. Questo spiega un po' il significato della
+\textit{legge di Geiger-Nuttal}.
+\begin{note}[]
+  Per fare queste considerazioni abbiamo considerato il \textit{\textbf{nucleo
+  filglio non rinculante}} (i.e. $M_D \gg m$).
+\end{note}
+
+\paragraph{Tunneling attraverso barriera coulombiana con rinculo del nucleo}
+Vediamo ora il caso più generale di \textit{nucleo rinculante}. Introducendo la
+\textit{massa ridotta}:
+\[
+  \mu = \frac{m_D m _{\alpha}}{m_D + m _{\alpha}}
+\]
+e trasformando $v$ nella \textit{velocità relativa}.
+Il \textit{fattore di penetrazione di Gammon} diventa:
+\[
+  G = \frac{2 \pi \alpha zZ}{\frac{v}{c}} -4 \sqrt{\frac{2 \mrb{\mu c^2} zZ
+  \alpha R}{\hbar c}}
+\]
+In questo caso avremo che $T _{\alpha} \neq Q _{\alpha}$. Quindi:
+\[
+  Q _{\alpha} = \frac{1}{2} \mu v^2
+  \mthen
+  2 Q _{\alpha} = \mu v^2
+  \mthen
+  \frac{v}{c} = \frac{1}{c} \sqrt{\frac{2 Q _{\alpha}}{\mu}}
+  = \frac{1}{c} \sqrt{\frac{2 Q _{\alpha}}{m} \frac{m}{\mu}}
+\]
+Utilizzando queste relazioni otteniamo:
+% TODO: copia
+\[
+  \ln \mrb{\nicefrac{\omega}{\si{s^{-1}}}} = \ln
+  \mrb{\nicefrac{F}{\si{s^{-1}}}} - G = \ln
+  \mrb{\nicefrac{F}{\si{s^{-1}}}} + 4\sqrt{\frac{2 \mrb{mc^2} zZ \alpha
+  R}{\hbar c}} - \frac{2 \pi zZ \alpha}{\frac{v}{c}}
+\]
+dove, inndicando con $f'$:
+\[
+  f' = \ln \mrb{\nicefrac{F}{\si{s^{-1}}}} + 4\sqrt{\frac{2 \mrb{mc^2} zZ
+  \alpha R}{\hbar c}}
+\]
+
+\begin{note}[]
+  Noi abbiamo considerato il problema come unidimensionale, ma il processo
+  reale è in realtà tridimensionale.
+  % TODO: riascolta riguardo conservazione del momento angolare
+\end{note}
+
+\paragraph{Ruolo del momento angolare}
+Dato il processo di \textit{decadimento $\alpha$}:
+\[
+  \mrb{Z, A} \rightarrow \mrb{Z - 2, A - 4} + \ch{^{4}He}
+\]
+abbiamo che necessariamente deve valere il \textit{principio di conservazione
+del momento angolare}, quindi consideriamo:
+\begin{itemize}
+  \item $\vec{J}_{P}$ lo \textit{psin del nucleo padre};
+  \item $\vec{J}_{D}$ lo \textit{spin del nucldeo filgio} (\textit{daughter});
+  \item $\vec{J}_{\alpha} = 0$ lo \textit{spin della particella $\alpha$};
+  \item $\vec{L}$ il \textit{momento angolare orbitale dello stato finale};
+\end{itemize}
+quindi dovrà essere:
+\[
+  \vec{J}_{P} = \vec{J}_{D} + \cancel{\vec{J}_{\alpha}} + \vec{L} = \vec{J}_{D}
+  + \vec{L}
+\]
+con:
+\[
+  \abs{J_D - l} \leq J _\text{TOT} \leq J_D + l
+\]
+La relazione precedente implica che se $J_P \neq J_D$, allora $l \neq 0$:
+\[
+  \abs{J_P - J_D} \leq l \leq \abs{J_P + J_D}
+\]
+con $l = 0, 1, 2, \dots$
+Se $l = 0$ dobbiamo modificare la trattazione fatta fino ad ora.
+La \textit{funzione d'onda che descrive il moto relativo} soddisfa l'equazione
+di Schrodinger:
+\[
+  - \frac{\hbar^2}{2 \mu} \nabla \psi \mrb{\vec{r}\,} + V \mrb{\vec{r}\,} \psi
+  \mrb{\vec{r}\,} = Q _{\alpha} \psi \mrb{\vec{r}\,}
+\]
+dove $V \mrb{\vec{r}\,}$ è un \textit{potenziale che tiene conto della
+repulsione coulombiana e delle interazioni forti}. L'ipotesi è che questo sia
+un \textit{potenziale centrale}:
+\[
+  V \mrb{\vec{r}\,} = V \mrb{\abs{\vec{r}\,}}
+\]
+La funzione d'onda può essere scomposta in \textit{armoniche sferiche}:
+\[
+  \psi \mrb{\vec{r}\,} = R \mrb{r} Y _{lm} \mrb{\theta, \varphi}
+\]
+con $l = 0, 1, 2, \dots$ e $-l \leq m \leq l$.
+Definendo $\rho \mrb{r} = r R \mrb{r}$, si ottiene la seguente equazione per
+$\rho \mrb{r}$:
+\[
+  - \frac{\hbar^2}{2 \mu} \mdv[2]{}{r} \rho \mrb{r} + \mcb{V \mrb{r} + \frac{l
+  \mrb{l + 1} \hbar^2}{2 \mu r^2}} \rho \mrb{r} = Q _{\alpha} \rho \mrb{r}
+\]
+dove $V \mrb{r}$ è il \textit{potenziale effettivo centrifugo}.
+\[
+  \frac{l \mrb{l + 1} \hbar^2 c^2}{2 \mu r^2 c^2} = \frac{l \mrb{l + 1}
+  \mrb{\SI{200}{\MeV \femto\m}^{2}}}{\SI{8e3}{\MeV} r^2} \sim \frac{l \mrb{l +
+  1} \SI{5}{\MeV}}{\mrb{\nicefrac{r}{\SI{1}{\femto\m}}}^{2}}
+\]
+Per $l \neq 0$ otteniamo un \textit{innalzamento della barriera di potenziale},
+quindi un effetto tunneling meno probabile. In più:
+\begin{itemize}
+  \item anche se sotto-dominante, il termine aggiuntivo può modificare
+    sostanzialmente il valore di $P_T$;
+  \item \quot{\textit{effetto centrifugo}} presente anche in assenza di
+    repulsione coulombiana (importante per reazioni nucleari).
+\end{itemize}

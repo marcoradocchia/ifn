@@ -1,0 +1,418 @@
+%LTeX: language=it
+\chapter{2020-02-27} % 2020-02-27
+\section{Grandezze atomiche caratteristiche}
+\begin{table}[h!]
+  \centering
+  \caption{Caratteristiche degli elettroni}
+  \begin{tabular}{r|c}
+    \textbf{Raggio atomo} & $R_A = 1\si{\angstrom} =
+    \SI{e-10}{\m} = \SI{e-8}{\cm}$
+    \\
+    \textbf{Energie} & $E \sim \SI{1}{\eV}$
+    \\
+    \textbf{Massa elettrone} & $m_e \simeq \SI{9e-31}{\kg}$
+    \\
+    \textbf{Energia riposo elettrone} & $m_ec^2 \simeq \SI{0.511}{\MeV}$
+  \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+  \centering
+  \caption{Caratteristiche dei nuclei}
+  \begin{tabular}{r|c}
+    \textbf{Raggio nucleo} & $R_N = \SI{e-15}{\m} =
+    \SI{e-13}{\cm} = \SI{1}{\femto\m}$
+    \\
+    \textbf{Massa protone} & $m_p \simeq 1836 m_e$
+    \\
+    \textbf{Energia riposo protone} & $m_pc^2 \simeq \SI{1}{\GeV}$
+    \\
+    \textbf{Energia riposo neutrone} & $m_nc^2 \simeq m_pc^2$
+    \\
+    \textbf{Energie} & $E \sim \SI{1}{\keV} \div \SI{1}{\MeV}$
+  \end{tabular}
+\end{table}
+Poiché le masse di protone e neutrone risultano molto simili (la differenza fra
+le energie a riposo\\ $m_nc^2 - m_pc^2 \simeq 1.29\si{\MeV}$), capiterà di
+lavorare con la \textbf{massa del nucleone} (che indicheremo con la N
+maiuscola) e la rispettiva energia a riposo: $m_Nc^2 \simeq 1\si{\GeV}$.\par
+La fisica nucleare si può studiare trascurando l'influenza degli elettroni.
+
+\section{Grandezze Caratteristiche - Indeterminazione di Heisenberg}
+A causa del \textit{Principio di Indeterminazione di Heisenberg} lo studio di
+fenomeni che avvengono a distanze molto piccole è possibile solo se abbiamo a
+che fare con energie molto grandi.
+\begin{equation}
+  \Delta x \Delta p_x \gtrsim \hbar
+\end{equation}
+Immaginiamo il nucleo come un come un contenitore (consideriamo per ora la
+direzione $\hat{x}$, ma varranno le stesse considerazioni anche per le
+direzioni $\hat{y}$ e $\hat{z}$) di dimensione caratteristica $R_N$. Se
+assumiamo una particella localizzata all'interno di tale contenitore, per il
+principio di Heisenberg si avrà $\Delta x = R_N$. Inoltre, poiché non c'è
+motivo di pensare che ci sia un verso privilegiato, possiamo dire per l'impulso
+$p_x$ che $\braket{p_x} = \overline{p_x} = 0$.\par
+Allora:
+\begin{equation}
+  \left(\Delta p_x\right)^2 = \braket{\left(p_x - \overline{p_x}\right)^2} =
+  \braket{p_x^2 - 2p_x\overline{p_x} + \overline{p_x}^2} = \braket{p_x^2}
+  \label{eq:deltap_x}
+\end{equation}
+Inoltre, $\Delta p_x$ ammetterà un limite inferiore avendo definito $\Delta x$,
+ovvero:
+\begin{equation}
+  \Delta p_x \gtrsim \frac{\hbar}{\Delta x} = \frac{\hbar}{R_N}
+\end{equation}
+per cui, utilizzando l'equazione \ref{eq:deltap_x}:
+\begin{equation}
+  \left(\Delta p_x\right)^2 = \braket{p_x^2} \gtrsim
+  \left(\frac{\hbar}{R_N}\right)^2
+\end{equation}
+Analogamente si può ripetere il ragionamento anche per le altre direzioni:
+\begin{equation}
+  \braket{p_x^2} \gtrsim \left(\frac{\hbar}{R_N}\right)^2
+  \qquad
+  \braket{p_y^2} \gtrsim \left(\frac{\hbar}{R_N}\right)^2
+  \qquad
+  \braket{p_z^2} \gtrsim \left(\frac{\hbar}{R_N}\right)^2
+  \label{eq:impulso_quadro_medio}
+\end{equation}
+Considerando energie \textit{NON-relativistiche}, definiamo l'energia cinetica
+come energia cinetica classica:
+\begin{equation}
+  K = \frac{\abs{\vec{p}\,}^2}{2m} = \frac{p_x^2 + p_y^2 + p_z^2}{2m}
+\end{equation}
+e sfruttando il set di equazioni \ref{eq:impulso_quadro_medio} possiamo
+stabilire un \textbf{limite inferiore
+per l'energia cinetica media} (sempre conseguenza del principio di
+Indeterminazione):
+\begin{equation}
+  \braket{K} = \frac{\braket{p_x^2} + \braket{p_y^2} + \braket{p_z^2}}{2m}
+  \gtrsim \frac{3}{2m_N} \left(\frac{\hbar}{R_N}\right)^2
+\end{equation}
+
+\paragraph{Stime}
+Per avere un'idea degli ordini di grandezza delle quantità con cui avremo a che
+fare possiamo moltiplicare e
+dividere per $c^2$, per cui\footnote{
+  Una quantità molto utile per i conti sarà $\hbar c \simeq \SI{197}{\MeV
+  \femto\m}$
+}, per un \textit{nucleo}:
+\begin{equation}
+  \braket{K} \gtrsim \frac{3}{2}\frac{(\hbar c)^2}{(m_N c)^2}\frac{1}{R_N^2} =
+  \frac{3}{2}\frac{(200)^2}{1000}
+  \frac{\si{\MeV}}{\left(\nicefrac{R_N}{1\si{\femto\m}}\right)^2} =
+  \frac{60\si{\MeV}} {\left(\nicefrac{R_N}{1\si{\femto\m}}\right)^2}
+\end{equation}
+
+Lo stesso conto, per un \textit{atomo}:
+\begin{equation}
+  \braket{K} = \frac{3}{2} \frac{1}{m_e c^2} \frac{\mrb{\SI{200}{\MeV
+  \femto\m}}^{2}}{R_\text{atomo}^{2}} \simeq \SI{e-5}{\MeV} = \SI{10}{\eV}
+\end{equation}
+
+\begin{note}[]
+  Al bilancio energetico bisognerà aggiungere un \textbf{termine di repulsione
+  coulombiana} ed uno di attrazione dell'\textbf{interazione forte fra
+  nucleoni}.
+\end{note}
+
+\begin{note}[Potenziale Coulombiano]
+  Vediamo qualche dettaglio sulle dimensioni del potenziale di interazione
+  coulombiana in modulo (quindi che sia attrattivo o repulsivo):
+  \begin{equation}
+    \abs{V_\text{coulomb}} = \frac{e^2}{4 \pi \eps_0} \frac{1}{R} =
+    \frac{e^2}{4 \pi \eps_0} \frac{\hbar c}{\hbar c} \frac{1}{R} = \alpha
+    \frac{\hbar c}{R} \simeq \frac{200}{137} \frac{1}{\si{R \per \femto\m}}
+    \si{\MeV}
+  \end{equation}
+  dato che $\frac{e^2}{4 \pi \eps_0 \mrb{\hbar c}} = \alpha \simeq
+  \frac{1}{137}$.
+\end{note}
+
+\section{Esperimenti di Rutherford}
+\label{sec:rutherford}
+Gli esperimenti di Rutherford che illustriamo erano volti a scoprire alcune
+proprietà dei nuclei fra cui le dimensioni e consistevano in quelli che
+definiamo \textbf{scattering nucleari di particelle} $\boldsymbol{\alpha}$.\par
+Particelle $\alpha$ (nuclei di elio \ch{He^4}) venivano collimate su una lamina
+molto sottile \footnote{
+  Si trattava di circa $\SI{4}{\mu\m}$ perché si sperava di osservare
+  l'effetto di \textbf{singola interazione}
+} di oro (per evitare scattering multipli) e venivano poi osservate
+da dei rilevatori che ne misuravano l'angolo di deflessione.
+
+\subsection{Descrizione Classica}
+Consideriamo un'interazione \textit{particella $\alpha$/nucleo}\footnote{
+  Stiamo parlando quindi della propagazione di una particella carica in un
+  campo elettrostatico fisso nello spazio e nel tempo: in questa configurazione
+  la quantità di moto della particella non è una quantità conservata, poiché il
+  campo elettrostatico fisso rompe l'invarianza per traslazione
+} di tipo
+\text{coulombiano} e \textbf{trascuriamo il rinculo del nucleo}, ovvero
+fissiamo le ipotesi:
+\begin{equation}
+  m_N \gg m_\alpha \qquad m_Nc^2 \gg K
+\end{equation}
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}
+    \draw[dashed] (-4,0) -- (6,0);
+    \draw[dashed] (-4,2) -- (6,2);
+    \draw[semithick, color=purple] (0,0) arc [radius=1.5, start angle=180, end angle=158.5] (0,0) node[below]{$\beta$};
+    \draw[semithick, color=purple] (-2,2) arc [radius=1.5, start angle=0, end angle=-22.8] (-2,2) node[above]{$\beta$};
+    \draw[-latex] (1.5,0) -- (-3.45,1.95) node[below]{$\vec{r}$};
+    \draw[latex-latex, thick] (5,0) -- (5,2);
+    \draw (5,1) node[right]{$b$};
+
+    \draw[dashed] (1.5,0) -- (6,4.5);
+    \draw[dashed] (0.672,2) -- (4.086,5.414);
+    \draw[-latex, dashed] (1.5,0) -- (0.672,2);
+    % \draw[dashed] (1.5,0) -- (1.5,5);
+
+    \draw[latex-latex, thick] (5.5,4) -- (4.086,5.414);
+    \draw (4.793,4.707) node[right, yshift=0.1cm]{$b$};
+
+    \draw[semithick] (2.5,0) arc [radius=1, start angle=0, end angle=45] (2.5,0) node[below]{$\theta$};
+    \draw[semithick] (1.672,2) arc [radius=1, start angle=0, end angle=45] (1.672,2) node[below]{$\theta$};
+
+    \filldraw[color=blue] (-3.5,2) circle (2pt) node[above]{$\alpha, ze$};
+    \draw[-latex, thick, color=blue] (-3.5,2) -- (-2.5,2) node[above]{$\vec{v}_i$};
+    \filldraw[color=red] (1.5,0) circle (3pt) node[below]{$N, Ze$};
+    \filldraw[color=blue] (1.5,2.832) circle (2pt);
+    \draw[-latex, thick, color=blue] (1.5,2.832) -- (1.5+0.707,2.832+0.707) node[right, yshift=-0.1cm]{$\vec{v}_f$};
+  \end{tikzpicture}
+  \caption{$b$: \textit{\textbf{parametro d'impatto}}; $\vec{v}_i$:
+  \textit{velocità iniziale}; $\vec{v}_f$: \textit{velocità finale}}
+  \label{fig:rutherford_scattering}
+\end{figure}
+
+Nell'ipotesi in cui il \textit{nucleo non rinculi} avremo per i principi di
+conservazione che $\abs{\vec{v}_f} = \abs{\vec{v}_i}$, ossia che l'energia
+cinetica della particella incidente sia invariata dopo lo scattering.
+indicheremo con $\theta$ il cosiddetto \textbf{angolo di scattering}, ovvero
+l'angolo fra le direzioni associate a $\vec{v}_{i}$ e $\vec{v}_{f}$.
+Analizziamo ora i due casi di scattering per parametro d'urto $b=0$ e $b\neq0$.
+\begin{itemize}
+  \item Caso $\boxed{\boldsymbol{b = 0} \Rightarrow \theta =
+    180\si{\degree}}$\\
+    Possiamo calcolare la \textbf{distanza di massimo avvicinamento} come:
+    poiché siamo in descrizione classica scriviamo l'energia totale del sistema
+    come l'energia cinetica classica della particella $\alpha$, più il
+    potenziale coulombiano di interazione fra particella e nucleo:
+    \begin{equation}
+      E_T = \frac{1}{2}m_\alpha \abs{\vec{v}\,}^2 + \frac{zZe^2}{4\pi\epsilon_0
+      \abs{\vec{r}\,}} = \text{const}
+    \end{equation}
+    Tramite una semplice considerazione sulla \textbf{conservazione
+    dell'energia totale} del sistema (ricorda che siamo in fisica classica)
+    possiamo scrivere uguagliando l'energia totale iniziale (che supponendo la
+    particella $\alpha$ a distanza infinita dal nucleo sarà composta del solo
+    termine cinetico) e l'energia totale al punto di inversione del moto (che
+    sarà composta del solo termine potenziale poiché al punto di inversione
+    $\abs{\vec{v}\,} = 0$),
+    quindi:
+    \begin{equation}
+      \frac{1}{2}m_\alpha \abs{\vec{v}_i}^2 =
+      \frac{zZe^2}{4\pi\epsilon_0}\frac{1}{\rho}
+      \label{eq:cons_en_rutherford}
+    \end{equation}
+    Dove abbiamo chiamato $\rho$ la \textbf{distanza di massimo
+    avvicinamento per urto frontale}.
+
+    Invertendo l'equazione \ref{eq:cons_en_rutherford} otteniamo:
+    \begin{equation}
+      \rho = \frac{zZe^2}{4\pi\epsilon_0}\frac{2}{m\abs{\vec{v}_i}^2} =
+      \frac{zZe^2}{4\pi\epsilon_0}\frac{\hbar c}{\hbar
+      c}\frac{2}{m\abs{\vec{v}_i}^2}
+    \end{equation}
+    Dove l'ultimo passaggio ci permette di esprimere $\rho$ in termini di
+    costante di struttura fine:
+    \begin{equation}
+      \textbf{Costante di struttura fine}
+      \qquad
+      \boxed{
+        \alpha = \frac{e^2}{4\pi\epsilon_0}\frac{1}{\hbar c} \simeq
+        \frac{1}{137}
+      }
+    \end{equation}
+    Quindi infine la \textbf{distanza di massimo avvicinamento per urto
+    frontale} diventa:
+    \begin{equation}
+      \boxed{
+        \rho = zZ\alpha\frac{\hbar c}{\frac{m\abs{\vec{v_i}}^2}{2}} =
+        zZ\alpha\frac{\hbar c}{K}
+      }
+      \label{eq:dist_max_avvicinamento}
+    \end{equation}
+
+    \paragraph{Stime} Ricordando che il raggio atomico è dell'ordine del
+    \text{fermi}, possiamo osservare da una stima grossolana che (secondo la
+    descrizione classica) per particelle $\alpha$ di energia cinetica
+    $K<200\si{\MeV}$ non saremo in grado di sondare i nuclei, poiché:
+    \begin{equation}
+      \rho \simeq \frac{2\cdot 79}{137}\frac{\SI{200}{\MeV \femto\m}}{K}
+      \simeq
+      \frac{\SI{200}{\femto\m}}{K \si{\per \MeV}} \sim \SI{2e3}{\femto\m}
+    \end{equation}
+    L'ordine delle centinaia di \textit{fermi} (che rappresenta una dimensione
+    molto maggiore delle dimensioni dei nuclei, sebbene molto minore del raggio
+    dell'atomo) ci permette di considerare i nuclei puntiformi. Quindi
+    Rutherford non misura la dimensione del nucleo (tanto è che lo approssima
+    come puntiforme), ma riesce a determinare un upper bound per le dimensioni
+    del nucleo.
+
+  \item Caso $\boxed{\boldsymbol{b \neq 0}}$\\
+    Sfruttiamo il principio di \textbf{conservazione del momento angolare}:
+    \begin{equation}
+      \vec{L} = \vec{r} \wedge \vec{p}
+    \end{equation}
+    Calcoliamo il modulo del momento angolare iniziale:
+    \begin{equation}
+      \abs{\vec{L}_i} = \abs{\vec{r}\,} \abs{\vec{p}\,} \sin{\beta} =
+      \abs{\vec{p}} \abs{\vec{r}\,} \sin{\beta} = \abs{\vec{p}\,} b =
+      m\abs{\vec{v}_i}b
+      \label{eq:mod_mom_ang_iniziale}
+    \end{equation}
+    Dove $\abs{\vec{L}_i}$ è il modulo del momento angolare all'istante
+    iniziale e $b = \abs{\vec{r}}\sin{\beta}$ il parametro d'impatto.\par
+    Il modulo del momento angolare al generico istante $t$ è invece dato da:
+    \begin{equation}
+      \abs{\vec{L}\mrb{t}} =
+      \abs{\vec{r}\mrb{t}\wedge\msb{m\vec{v}\mrb{t}}}
+      \label{eq:ang_mom_time}
+    \end{equation}
+    Possiamo scrivere $\vec{v}\mrb{t}$ come:
+    \begin{equation}
+      \vec{v} = \vec{v}_\tau + \vec{v}_\perp = \tderiv{\vec{r}} =
+      \tderiv{}\mrb{r\hat{r}} = \tderiv{r}\hat{r} + r\tderiv{\hat{r}}
+    \end{equation}
+    dove tutte le quantità sono chiaramente funzione del tempo anche se non
+    esplicitamente dichiarato.
+    Per cui avremo le seguenti uguaglianze vettoriali:
+    \begin{equation}
+      \begin{dcases}
+        \vec{v}_\tau = \tderiv{r}\hat{r} \\
+        \vec{v}_\perp = r\tderiv{\hat{r}}
+      \end{dcases}
+      \label{eq:vel_equations}
+    \end{equation}
+    Sostituendo questa espressione della velocità nell'equazione
+    \ref{eq:ang_mom_time} otteniamo:
+    \begin{equation}
+      \abs{\vec{L}\mrb{t}} = m
+      \abs{\vec{r}\mrb{t}\wedge\vec{v}\mrb{t}} =
+      m \abs{\vec{r}\mrb{t}\wedge\msb{\vec{v}_\tau \mrb{t} +
+      \vec{v}_\perp \mrb{t}}}
+      \label{eq:ang_mom_time*}
+    \end{equation}
+    Poiché:
+    \begin{equation}
+      \vec{r}\mrb{t} \parallelsum \vec{v}_\tau\mrb{t} \quad \forall t
+    \end{equation}
+    allora l'equazione \ref{eq:ang_mom_time*}, sostituendo l'espressione di
+    $\vec{v}_\perp$ dall'equazione
+    \ref{eq:vel_equations} si riduce a:
+    \begin{equation}
+      \abs{\vec{L}\mrb{t}} = m
+      \abs{\vec{r}\mrb{t}\wedge\vec{v}_\perp\mrb{t}} =
+      mr\abs{\vec{r}\mrb{t}\wedge\tderiv{\hat{r}}}
+    \end{equation}
+    che utilizzando l'equazione \ref{eq:mod_mom_ang_iniziale}, poiché il modulo
+    del momento angolare è conservato, potremmo dire che per ogni istante di
+    tempo $t$ si avrà:
+    \begin{equation}
+      \begin{gathered}
+        mv_ib = mr^2\tderiv{\beta}\\
+        \Rightarrow\boxed{v_ib = r^2\tderiv{\beta}}
+      \end{gathered}
+      \label{eq:deriv_beta}
+    \end{equation}
+
+    Nello spazio a due dimensioni che stiamo considerando, riferendoci alla
+    figura \ref{fig:rutherford_scattering}, i vettori velocità saranno:
+    \begin{equation}
+      \vec{v}_i = \mrb{v,\ 0} \qquad \vec{v}_f = \mrb{v\cos{\theta},\
+      v\sin{\theta}}
+    \end{equation}
+    L'impulso degli istanti iniziale e finale saranno:
+    \begin{equation}
+      \vec{p}_i = m\vec{v}_i \qquad \vec{p}_f = m\vec{v}_f
+    \end{equation}
+    e scomponendo lungo le due direzioni $\hat{x}$ e $\hat{y}$:
+    \begin{equation}
+      \tderiv{\vec{p}} = \vec{F} \mthen
+      \begin{dcases}
+        \tderiv{p_x} = F_x \\
+        \tderiv{p_y} = F_y
+      \end{dcases}
+    \end{equation}
+    e poiché l'unica forza in gioco è quella di interazione coulombiana
+    potremmo scrivere che lungo la direzione $\hat{y}$:
+    \begin{equation}
+      m\tderiv{v_y} = \frac{zZe^2}{4\pi\epsilon_0}\frac{1}{r^2}\sin{\beta}
+    \end{equation}
+    Moltiplicando e dividendo il secondo membro per $bv_i$ ed utilizzando la
+    relazione \ref{eq:deriv_beta}:
+    \begin{subequations}
+      \begin{equation}
+        \tderiv{v_y} =
+        \frac{zZe^2}{4\pi\epsilon_0}\mrb{\frac{1}{bv_i}}
+        \frac{\sin{\beta}}{m}\frac{bv_i}{r^2}
+      \end{equation}
+      \begin{equation}
+        \Rightarrow \tderiv{v_y} =
+        \frac{zZe^2}{4\pi\epsilon_0}\mrb{\frac{1}{bv_i}}
+        \frac{\sin{\beta}}{m}\tderiv{\beta}
+      \end{equation}
+      \begin{equation}
+        \Rightarrow \md{v}_y =
+        \frac{zZe^2}{4\pi\epsilon_0}\mrb{\frac{1}{bv_i}}
+        \frac{1}{m}\sin{\beta} \md{\beta}
+      \end{equation}
+    \end{subequations}
+    integrando per separazione di variabili:
+    \begin{equation}
+      \mrb{v_y}_f =
+      \frac{zZe^2}{4\pi\epsilon_0}\mrb{\frac{1}{bv}}
+      \frac{1}{m} \mint{0}{\pi-\theta}{\beta}{\sin{\beta}}
+    \end{equation}
+    L'integrale si risolve come:
+    \begin{equation}
+      \mint{0}{\pi-\theta}{\beta}{\sin{\beta}} =
+      \msb{-\cos{\theta}}_0^{\pi-\theta} = 1-\cos{\mrb{\pi-\theta}} = 1
+      + \cos{\theta}
+    \end{equation}
+    quindi sostituendo:
+    \begin{subequations}
+      \begin{equation}
+        v\sin{\theta} =
+        \frac{zZe^2}{4\pi\epsilon_0}\mrb{\frac{1}{bv}}\frac{1}{m} \msb{1
+        + \cos{\theta}}
+      \end{equation}
+      \begin{equation}
+        \Rightarrow \frac{\sin{\theta}}{1+\cos{\theta}} =
+        \frac{zZe^2}{4\pi\epsilon_0}\mrb{\frac{1}{bv^2}}\frac{1}{m}
+      \end{equation}
+      \begin{equation}
+        \Rightarrow \frac{\sin{\theta}}{1+\cos{\theta}} =
+        \frac{zZe^2}{4\pi\epsilon_0}\frac{1}{b\frac{mv^2}{2}2} =
+        \frac{zZe^2}{4\pi\epsilon_0}\frac{1}{2bK} = \frac{\rho}{2b}
+      \end{equation}
+    \end{subequations}
+    Quindi riarrangiando con le identità goniometriche il primo membro possiamo
+    arrivare a scrivere le seguenti \textbf{relazioni fra parametro d'impatto e
+    angolo di deflessione}:
+    \begin{align}
+      \boxed{\tan{\frac{\theta}{2}} = \frac{\rho}{2b}} &  & \boxed{\theta =
+      2\arctan{\frac{\rho}{2b}}}
+      \label{eq:impact_parameter_angle}
+    \end{align}
+
+    \begin{note}[]
+      Questo ci dice che l'interazione dovrebbe essere presente anche a
+      distanze molto grandi e questo effetto è definito \textbf{effetto a lungo
+      raggio}, dovuto a \textbf{mediatori a massa nulla} (\textit{fotoni}).
+    \end{note}
+\end{itemize}

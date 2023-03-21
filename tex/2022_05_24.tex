@@ -1,0 +1,327 @@
+%LTeX: language=it
+\chapter{2022-05-24}
+\section{Instabilità dei nuclei}
+\subsection{Decadimenti $\beta$}
+Decadimenti $\beta^+$:
+\[
+  \mrb{A, Z} \rightarrow \mrb{A, Z - 1} + e^+ + \nu_e
+\]
+Il decadimento è possibile se:
+\[
+  m \mrb{A, Z} c^2 \geq m \mrb{A, Z - 1} c^2 + m_e c^2
+\]
+e moltiplicando entrambi i membri per $Z m_e c^2$: % TODO: riascolta
+\[
+  \mu \mrb{A, Z} c^2 \geq \mu \mrb{A, Z - 1} c^2 + 2 m_e c^2
+\]
+Oppure, sempre per decadimenti $\beta^+$:
+\[
+  e^+ + \mrb{A, Z} \rightarrow \mrb{A, Z - 1} + \nu_e
+\]
+che è possibile se:
+\[
+  m_e c^2 + m \mrb{A, Z} c^2 \geq m \mrb{A, Z - 1} c^2
+\]
+e moltiplicando entrambi i membri per $\mrb{Z - 1} m_e c^2$: % TODO: riascolta
+\[
+  \mu \mrb{A, Z} c^2 \geq \mu \mrb{A, Z - 1} c^2
+\]
+
+Decadimenti $\beta^-$:
+\[
+  \mrb{A, Z} \rightarrow \mrb{A, Z + 1} + e^- + \cc{\nu}_e
+\]
+che è possibile se:
+\[
+  m \mrb{A, Z} c^2 \geq m \mrb{A, Z + 1} c^2
+\]
+e moltiplicando entrambi i membri per $Z m_e c^2$: % TODO: riascolta
+\[
+  \mu \mrb{A, Z} c^2 \geq \mu \mrb{A, Z + 1} c^2
+\]
+
+\begin{note}[]
+  Ci si aspetta un andamento \textit{smooth} con un \textit{unico isobaro
+  stabile}.
+\end{note}
+
+\subsection{Decadimenti $\alpha$}
+Un decadimento $\alpha$ è un decadimento del tipo:
+\[
+  \mrb{Z, A} \rightarrow \mrb{Z - 2, A - 4} + \mrb{2, 4}
+\]
+dove $\mrb{2, 4}$ rappresenta la \textit{particella $\alpha$}.
+Il processo è possibile se:
+\[
+  m \mrb{Z, A} c^2 - \msb{m \mrb{Z - 2, A - 4} c^2 + m \mrb{2, 4} c^2} \geq 0
+\]
+Il processo si può riscrivere in termini di \textit{energie di legame}. Il
+processo di \textit{decadimento $\alpha$} è possibile se vale la seguente
+relazione fra le energie di legame:
+\[
+  B \mrb{Z - 2, A - 4} + B \mrb{2, 4} - B \mrb{Z, A} \geq 0
+\]
+Quindi, muovendoci lungo la \textit{\textbf{valle di stabilità}}:
+\[
+  B \mrb{2, 4} \geq B \mrb{Z, A} - B \mrb{Z - 2, A - 4} \simeq \mdv{B}{A} 4
+\]
+$\eps$ è l'\textit{energia di legame per nucleone}:
+\[
+  \eps = \frac{B}{A}
+\]
+allora:
+\[
+  \mdv{\eps}{A} = \mdv{\mrb{\nicefrac{B}{A}}}{A} = \frac{1}{A} \mdv{B}{A} -
+  \frac{1}{A^2} B
+\]
+quindi:
+\[
+  \mdv{B}{A} = A \mdv{\eps}{A} + \eps
+\]
+Quindi sostituendo vediamo che il decadimento $\alpha$ diventa
+\textit{energeticamente possibile quando}:
+\[
+  B \mrb{2, 4} \geq 4 \mcb{A \mdv{\eps}{A} + \eps}
+\]
+dove $B \mrb{2, 4} \simeq \SI{28.3}{\MeV}$ è l'\textit{energia di legame
+di} $\ch{^4He}$, dove $A \gtrsim 100$, $\mdv{\eps}{A} \simeq -
+\SI{7.7e-3}{\MeV}$ e $\nicefrac{B \mrb{2, 4}}{4} = \SI{7.075}{\MeV}$. Quindi
+possiamo dire che:
+\[
+  \SI{7.075}{\MeV} \geq - \SI{7.7e-3}{\MeV} \cdot A + \eps
+\]
+allora:
+\[
+  \boxed{
+    \eps \leq \SI{7.075}{\MeV} + \SI{7.7e-3}{\MeV} \cdot A
+  }
+\]
+
+% TODO: qui ha fatto vedere quello che si trova a pagina 21 (ultima pagina) del
+% file di appunti 06_decadiemnti_dei_nuclei.pdf
+% TODO: vedi anche registrazione
+
+\begin{note}[]
+  Al crescere del numero atomico l'interazione coulombiana rendono i nuclei
+  instabili (vedi plot energia media di legame in funzione del numero atomico).
+\end{note}
+
+\subsubsection{Vita media rispetto al decadimento $\alpha$}
+La \textit{vita media rispetto al decadimento $\alpha$ è estremamente
+variabile}, sebbene le interazioni alla base dei decadimenti sono le stesse
+(interazioni forti e interazioni elettromagnetiche).
+Quindi: \textit{stessa fisica, ma risultati molto diversi fra loro}.
+\begin{example}[]
+  Due esempi di decadimenti $\alpha$ con tempi di vita media di molti ordini di
+  grandezza differenti fra loro:
+  \begin{align*}
+    \ch{^{232}_{90}Th} \longrightarrow \ch{^{228}_{88} Ra} + \alpha
+    \qquad
+    \tau \simeq \SI{2.0e10}{y}
+    \\
+    \ch{^{212}_{84} Po} \longrightarrow \ch{^{208}_{82} Pb} + \alpha
+    \qquad
+    \tau \simeq \SI{4.3e-7}{s}
+  \end{align*}
+
+\end{example}
+
+\paragraph{Legge di Geiger-Nuttal}
+\[
+  \textbf{Legge di Geiger-Nuttal}\qquad
+  \boxed{
+    \log_{10} \mrb{\omega} = B \log _{10} \mrb{Ra} + C
+  }
+\]
+dove:
+\begin{itemize}
+  \item $\omega = \nicefrac{1}{\tau} = \msb{\si{s^{-1}}}$ è il \textit{rate di
+    transizione}
+  \item $R _{\alpha} = \msb{\si{\cm}}$ è il \textit{\quot{range}}\footnote{
+      La distanza percorsa nel materiale in cui viene prodotta, prima che
+      questa si fermi
+    } della particella $\alpha$
+\end{itemize}
+Quindi abbiamo che $\omega \propto R _{\alpha}^{B}$. % TODO: ??? è proporzionale??? (riascolta la lezione)
+Il range della particella $\alpha$ dipende dalla sua energia cinetica:
+\[
+  R _{\alpha} \propto T _{\alpha}^{\nicefrac{3}{2}} = \mcb{\frac{M _{d}}{M _{d}
+  + M \alpha} Q _{\alpha}}^{\nicefrac{3}{2}}
+\]
+
+\subsubsection{Descrizione fenomenologica del decadimento $\alpha$}
+Dato il decadimento $\alpha$:
+\[
+  \mrb{Z, A} \rightarrow \mrb{Z - 2, A - 4} + \alpha
+\]
+abbiamo che $T _{\alpha} \simeq Q _{\alpha}$ (dove $Q _{\alpha}$ è la
+differenza di energia di legame del nucleo padre rispetto al nucleo figlio).
+Assumiamo:
+\begin{itemize}
+  \item particella $\alpha$ è \textit{\quot{pre-formata}} all'interno del
+    nucleo padre;
+  \item transizione da uno stato legato ad uno stato libero ad energia $Q
+    _{\alpha}$ (trascuriamo il \textit{rinculo del nucleo figlio}, i.e. $T _{d}
+    \ll T _{\alpha} \simeq Q _{\alpha}$).
+\end{itemize}
+
+% TODO: figura a pagina 3 del file Decadimento alpha.pdf
+
+\[
+  V \mrb{r} = \frac{Z_0 Z _{\alpha} e^2}{4 \pi \eps_0} \frac{1}{r} \simeq
+  \frac{Z_0 Z _{\alpha} e^2 \hbar c}{4 \pi \eps_0 \hbar c} \frac{1}{r} \simeq
+  \frac{Z_0 Z _{\alpha} \alpha \mrb{\hbar c}}{r}
+\]
+dove $\alpha \simeq \nicefrac{1}{137}$ è la \textit{costante di struttura
+fine}.
+
+% TODO: riascolta tutto il discorso
+Quindi la spiegazione dell'estrema variabilità della vita media rispetto al
+decadimento $\alpha$ è associabile all'\textit{effetto tunnel quantistico}.
+
+\paragraph{Effetto tunnel}
+% TODO: figure
+Abbiamo una particella ad energia $E$ fissata con $E < U$. L'equazione di
+Schrodinger per questa particella:
+\[
+  i \hbar \mpdv{}{t} \ket{p} = \ham \ket{\psi}
+\]
+dove l'Hamiltoniana:
+\[
+  \ham = \frac{p^2}{2m} + V
+\]
+Gli autostati dell'Hamiltoniana sono gli stati che soddisfano l'equazione:
+\[
+  \ham \ket{\psi} = E \ket{p}
+\]
+Nel caso monodimensionale diventa:
+\[
+  - \frac{\hbar^2}{2m} \mdv[2]{}{x} \psi \mrb{x} + V \mrb{x} \psi \mrb{x} = E
+  \psi \mrb{x}
+\]
+Risolviamo l'equazione di Schrodinger separatamente nelle tre regioni spaziali
+I, II, III e successivamente imponiamo delle condizioni di raccordo (ossia
+imponendo che la funzione d'onda e la sua derivata siano continue):
+\begin{itemize}
+  \item zona I ($x \leq 0$):
+    \[
+      \psi \mrb{x} = A_R e^{ikx} + A_L e^{-ikx}
+    \]
+    con:
+    \[
+      \hbar k = \sqrt{2m E}
+    \]
+  \item zona II ($0 < x < L$):
+    \[
+      \psi \mrb{x} = B_R e^{Kx} + B_L e^{-Kx}
+    \]
+    con:
+    \[
+      \hbar K = \sqrt{2m \mrb{U - E}}
+    \]
+  \item zona III:
+    \[
+      \psi \mrb{x} = C_R e^{ik \mrb{x - L}} + C_L e^{-ik \mrb{x - L}}
+    \]
+    con:
+    \[
+      \hbar k = \sqrt{2m E}
+    \]
+\end{itemize}
+
+Imponiamo \textit{continuità in $x = 0$}:
+\[
+  A_R + A_L = B_R + B_L
+\]
+Imponiamo la \textit{derivata prima continua in $x = 0$}:
+\[
+  \mrb{A_R - A_L} ik = \mrb{B_R - B_L} K
+\]
+Imponiamo la \textit{continuità in $x = L$}:
+\[
+  B_R e^{KL} + B_L e^{-KL} = C_R + C_L
+\]
+Imponiamo la \textit{derivata prima continua in $x = L$}:
+\[
+  \mrb{B_R e^{KL} - B_L e^{-KL}}K = \mrb{C_R - C_L} ik
+\]
+
+Cerchiamo soluzioni che abbiamo le seguenti proprietà:
+\[
+  \begin{dcases}
+    A_R = 1
+    \\
+    A_L = ? = r \quad (\textit{riflessione})
+    \\
+    B_R = ?
+    \\
+    B_L = ?
+    \\
+    C_R = ? = t \quad (\textit{trasmissione})
+    \\
+    C_L = 0
+  \end{dcases}
+\]
+quindi abbiamo $4$ coefficienti ignoti.
+Otteniamo:
+\begin{align*}
+  \begin{rcases}
+    1 + r = B_R + B_L
+    \\
+    \mrb{1 - r} \frac{ik}{K} = B_R - B_L
+  \end{rcases}
+  \mthen
+  \begin{dcases}
+    B_R = \frac{1}{2} \msb{\mrb{1 + r} + \frac{ik}{K} \mrb{1 - r}}
+    \\
+    B_L = \frac{1}{2} \msb{\mrb{1 + r} + \frac{ik}{K} \mrb{1 - r}}
+  \end{dcases}
+\end{align*}
+e:
+\begin{align*}
+  \begin{rcases}
+    t = B_R' + B_L'
+    \\
+    t \frac{ik}{K} = B_R' + B_L'
+  \end{rcases}
+  \mthen
+  \begin{dcases}
+    B_R' = \frac{1}{2} \msb{t + \frac{ik}{K} t}
+    \\
+    B_L' = \frac{1}{2} \msb{t - \frac{ik}{K} t}
+  \end{dcases}
+\end{align*}
+dove $B_R' \equiv B_R e^{KL}$ e $B_L' \equiv B_L e^{-KL}$.
+Dalle relazioni precedenti:
+\begin{align*}
+  \begin{dcases}
+    \msb{\mrb{1 + i\delta} + r \mrb{1 - i \delta}} = e^{-KL} t \mrb{1 + i \delta}
+    \\
+    \msb{\mrb{1 - i\delta} + r \mrb{1 + i \delta}} = e^{-KL} t \mrb{1 - i \delta}
+  \end{dcases}
+\end{align*}
+dove $\delta \equiv \nicefrac{k}{K}$. Da cui otteniamo:
+\[
+  \begin{dcases}
+    r = \frac{e^{-KL} t \mrb{1 + i \delta} - \mrb{1 + i \delta}}{\mrb{1 - i
+    \delta}}
+    \\
+    r = \frac{e^{-KL} t \mrb{1 - i \delta} - \mrb{1 - i \delta}}{\mrb{1 + i
+    \delta}}
+  \end{dcases}
+\]
+uguagliando le due espressioni di $r$, otteniamo un'espressione per $t$:
+\[
+  t = \frac{\mrb{1 + i \delta}^{2} - \mrb{1 - i \delta}^{2}}{\bcancel{e^{-KL}
+  \mrb{1 + i \delta}^{2}} - e^{KL} \mrb{1 - i \delta}^{2}} \simeq \frac{4 i
+  \delta}{\mrb{1 - i \delta}^{2}} e^{-KL}
+\]
+quindi:
+\[
+  t \simeq - \frac{4 i \delta}{\mrb{1 - i \delta}^{2}} e^{-KL}
+\]
+% TODO: riascolta, perché semplifichiamo?
+dove $k$ è il vettore d'onda della funzione d'onda nella zona dove \textit{non}
+è presente il potenziale, mentre $K$ è relativo alla zona \textit{classicamente
+proibita}. Il \textit{dump esponenziale} è tanto più influente quanto più ampia
+è la zona proibita ed intenso il potenziale.

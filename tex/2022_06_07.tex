@@ -1,0 +1,305 @@
+%LTeX: language=it
+\chapter{2022-06-07}
+\section{Approssimazione di campo medio}
+In generale un nucleo è composto da $A$ (\textit{numero di massa atomica})
+nucleoni. La funzione d'onda totale che diagonalizza l'Hamiltoniana:
+\[
+  \psi _\text{tot} = \psi \mrb{\vec{r}_{1}, \vec{r}_{2}, \dots, \vec{r}_{A}}
+\]
+quindi:
+\[
+  \ham _\text{tot} \psi _\text{tot} = E _\text{tot} \psi _\text{tot}
+\]
+L'Hamiltoniana sarà:
+\[
+  \ham _\text{tot} = \msum{i=1}{A} \frac{\hbar^2 \nabla^2_i}{2m_N} + \msum{j}{}
+  \msum{i > j}{} V _{ij} \mrb{\vec{r}_{i} - \vec{r}_{j}}
+\]
+possiamo scrivere, in termini di un \textit{potenziale medio} $\cc{V}$, che
+descriva l'effetto medio delle interazioni:
+\[
+  \ham _\text{tot} \simeq \msum{i=1}{A} \frac{\hbar^2 \nabla^2_i}{2m_N} +
+  \msum{i}{} \cc{V}\mrb{\vec{r}_{i} - \vec{r}_\text{CM}} =  % TODO: 
+\]
+La funzione d'onda totale sarà la \textit{funzione d'onda prodotto}:
+\[
+  \psi _\text{tot} = \mprod{i=1}{A} \psi _{i} \mrb{\vec{r}_{i}}
+\]
+con le corrette \textit{proprietà di simmetria}. In tal caso:
+\[
+  \ham_i \psi_i = E_i \psi_i
+\]
+dunque:
+\[
+  E _\text{tot} = \msum{i}{} e_i
+\]
+
+\paragraph{Momento angolare}
+Il momento angolare è \textit{quantizzato}:
+\[
+  \vec{L} = \mrb{L_x, L_y, L_z}
+\]
+con Hamiltoniana \textit{diagonalizzabile simultaneamente} a:
+\[
+  \begin{dcases}
+    L^2 \rightarrow l \mrb{l + 1} \hbar^2
+    \\
+    L_z \rightarrow n \hbar
+  \end{dcases}
+\]
+con $l = 0, 1, \dots$ e $-l \leq m \leq l$.
+La funzione d'onda è separabile in parte radiale e parte angolare:
+\[
+  \psi \mrb{\vec{r}\,} = R \mrb{r} Y _{lm} \mrb{\theta, \varphi}
+\]
+Affinché una funzione d'onda di questo tipo sia autofunzione dell'Hamiltoniana
+con potenziale di campo centrale, come abbiamo visto, sarà necessario che:
+\[
+  r R \mrb{\vec{r}\,} = \rho \mrb{r}
+\]
+con la funzione $\rho \mrb{r}$ autofunzione di uno specifico operatore:
+\[
+  - \frac{\hbar^2}{2m_N} + \mdv[2]{\rho \mrb{r}}{r} + \mcb{\cc{V} \mrb{r} +
+  \frac{l \mrb{l + 1} \hbar^2}{2m_N r^2}} \rho \mrb{r} = E _{nl} \rho \mrb{r}
+\]
+da risolvere per $r \geq 0$. Vediamo che abbiamo la forma di un'equazione di
+Schrodinger monodimensionale (dobbiamo avere che $\rho \mrb{r}
+\xrightarrow{r\to 0} 0$).
+Vediamo che non abbiamo dipendenza dal numero quantico $m$: questo è spiegabile
+riflettendo sul fatto che abbiamo un sistema invariante per rotazione.
+
+Dovremmo considerare anche lo \textit{spin} di ogni particella:
+\[
+  \begin{dcases}
+    S^2 \rightarrow s \mrb{s + 1} \hbar^2 \qquad \text{i.e. } s = \frac{1}{2}
+    \\
+    S_z \rightarrow \text{i.e. } s_z = -\frac{1}{2}, \frac{1}{2}
+  \end{dcases}
+\]
+
+\begin{note}[]
+  Stiamo considerando la stesso tipo di interazione per tutti i nucleoni, senza
+  distinguere quindi \textit{neutroni} e \textit{protoni}. Questo, in altre
+  parole, vuol dire che stiamo trascurando i fenomeni di interazione
+  elettromagnetica.
+\end{note}
+
+\begin{note}[Potenziali di Saxon-Woods]
+  La forma del potenziale di campo medio per nucleoni è il cosiddetto
+  \textit{\textbf{potenziale di Saxon-Woods}}. Noi, tuttavia, faremo i conti
+  con un potenziale armonico.
+\end{note}
+D'ora in poi indicheremo la massa del nucleone con $m$. Effettuiamo
+un'approssimazione e consideriamo un potenziale che è quello
+dell'\textit{\textbf{oscillatore armonico tridimensionale}}:
+\[
+  V \mrb{r} = \frac{1}{2} m \omega^2 r^2
+\]
+Lo spettro dei \textit{livelli energetici} dell'\textit{oscillatore armonico
+unidimensionale}:
+\[
+  E _{n} = \hbar \omega \mrb{n + \frac{1}{2}}
+\]
+la cui Hamiltoniana:
+\[
+  H = \frac{p_x^2}{2m} + \frac{1}{2} m \omega^2 x^2
+\]
+Pe l'\textit{oscillatore armonico tridimensionale} avremo un'Hamiltoniana che
+è:
+\begin{align*}
+  \ham &= \frac{\abs{\vec{p}}^{2}}{2m} + \frac{1}{2} m \omega^2
+  \abs{\vec{r}\,}^{2}
+  = \frac{p^2}{2m} + \frac{1}{2} m \omega^2 r^2
+  \\
+  & = \frac{p_x^2}{2m} + \frac{1}{2} m \omega^2 x^2
+  + \frac{p_y^2}{2m} + \frac{1}{2} m \omega^2 y^2
+  + \frac{p_z^2}{2m} + \frac{1}{2} m \omega^2 z^2
+  \\
+  &= H_x + H_y + H_z
+\end{align*}
+quindi è la somma di $3$ oscillatori armonici unidimensionali. Quindi la
+\textit{funzione d'onda sarà la funzione d'onda prodotto dei $3$ oscillatori
+armonici unidimensionali} e lo \textit{spetto energetico sarà la somma delle
+singole energie}:
+\[
+  E _\text{tot} = \hbar \omega \mcb{\frac{3}{2} + \mrb{n_x + n_y + n_z}}
+\]
+Scriviamo quindi ora:
+\[
+  \rho \mrb{x} = v \mrb{x} \exp{-\frac{1}{2} x^2}
+\]
+\[
+  x = \mrb{\frac{m \omega}{\hbar}}^{\frac{1}{2}} r \equiv A^2 r
+\]
+Quindi:
+\[
+  \mdv{\rho}{x} = \mdv{\rho}{x} \mdv{x}{r} = \mdv{\rho}{x} A ^{\nicefrac{1}{2}}
+  = A ^{\nicefrac{1}{2}} \msb{v' \mrb{x} - x v \mrb{x}} \exp\mcb{- \frac{1}{2}
+  x^2}
+\]
+\[
+  \mdv[2]{\rho}{x} = A \msb{v'' \mrb{x} - 2 x v' \mrb{x} - v \mrb{x} + x^2 v
+  \mrb{x}} \exp\mcb{- \frac{1}{2} x^2}
+\]
+Quindi l'equazione:
+\begin{align*}
+  & - \frac{h^{\cancel{2}}}{2\cancel{m}} \frac{\cancel{m} \omega}{\cancel{h}}
+  \mcb{v'' \mrb{x} - 2 x v' \mrb{x} - v \mrb{x} + x^2 v \mrb{x}}
+  \cancel{\exp\mcb{- \frac{1}{2} x^2}}
+  \\
+  & + \mcb{\frac{l \mrb{l + 1} \hbar^2}{2 m
+  r^2} + \frac{1}{2} m \omega^2 r^2 - E} v \mrb{x}
+  \cancel{\exp\mcb{-\frac{1}{2} x^2}} = 0
+\end{align*}
+% TODO: copia
+Quindi l'equazione che andremo a studiare è:
+\[
+  v'' \mrb{x}  - 2 v' \mrb{x} x + v \mrb{x} \msb{\frac{2E}{\hbar \omega} -
+  \frac{l \mrb{l + 1}}{x^2} - 1} = 0
+\]
+Le soluzioni saranno della forma:
+\begin{align*}
+  v \mrb{x} &= \msum{j=M}{N} c_j x^j
+  \qquad
+  M \geq 1
+  \quad
+  \rho \mrb{x} \xrightarrow{x \to 0} 0
+  \\
+  v' \mrb{x} &= \msum{j=M}{N} c_j j x ^{j-1}
+  \\
+  v'' \mrb{x} &= \msum{j=M}{N} c_j j \mrb{j - 1} x ^{j - 2}
+  \qquad
+  \text{valida per } j \geq 2
+\end{align*}
+
+Qundi:
+\[
+  \msum{j=M}{N} c_j j \mrb{j - 1} x ^{j-2} - 2 \msum{j=M}{N} c_j j x ^{j} +
+  \msum{j=M}{N} c_j x^j \msb{\frac{2E}{\hbar \omega} - 1} - l \mrb{l + 1}
+  \msum{j=M}{N} c_j x ^{j-2} = 0
+\]
+Facciamo ora l'ipotesi $\textbf{Hp: } l = 0$:
+\begin{align*}
+  &\textit{Ordine $0$} \qquad\longrightarrow\qquad c_2 2 \mrb{2 - 1} = 0 \mthen
+  c_2 = 0
+  \\
+  &\textit{Ordine $1$} \qquad\longrightarrow\qquad c_3 3 \mrb{3 - 1} - 2 c_1 +
+  c_1 \msb{\frac{2E}{\hbar \omega} - 1} = 0
+  \\
+  &\textit{Ordine $2$} \qquad\longrightarrow\qquad c_4 4 \mrb{4 - 1} -
+  \cancel{4 c_2} + \cancel{c_2 \msb{\frac{2E}{\hbar \omega} - 1}} = 0
+  \mthen c_4 = 0
+\end{align*}
+Il nostro unico problema è capire cosa succede quando consideriamo i
+\textit{coefficienti dispari}; infatti tutti i coefficienti $c_k$ con $k = 2n$,
+$n = 1, 2, 3, \dots$ sono \textit{nulli}.
+\begin{align*}
+  \textit{Ordine $k$ ($k = 2n - 1$; $n = 1, 2, \dots$)}
+  \qquad\longrightarrow\qquad
+  c _{k+2} \mrb{k+2}\mrb{k+1} - c_k \msb{2k + 1 - \frac{2E}{\hbar \omega}} = 0
+\end{align*}
+La serie si interrompe solo se:
+\[
+  2k + 1 = \frac{2E}{\hbar \omega}
+\]
+quindi:
+\[
+  E = \hbar \omega \mrb{k + \frac{1}{2}} = \hbar \omega \mrb{2n - \frac{1}{2}}
+  \qquad n = 1, 2, 3, \dots
+\]
+In definitiva:
+\[
+  \boxed{
+    E _{n \phi} = \hbar \omega \mcb{2n - \frac{1}{2}}
+    \qquad
+    n = 1, 2, \dots
+  }
+\]
+
+Nel caso in cui $l \neq 0$ il ragionamento precedente deve essere modificato e
+dobbiamo necessariamente assumere $M \geq 2$. Quindi:
+\begin{align*}
+  \textit{Ordine più basso ($M \geq 2$)}
+  \qquad\longrightarrow\qquad
+  c_M M \mrb{M - 1} - l \mrb{l + 1} c_M = 0
+\end{align*}
+che implica $c_M \neq 0$ solo se $M = l + 1$ (il valore di $l$ determina il
+valore di $M$).
+\begin{align*}
+  \textit{Ordine successivo ($M - 1$)}
+  \qquad\longrightarrow\qquad
+  c _{M + 1} \mrb{M + 1} M - l \mrb{l + 1} c _{M + 1} = 0
+\end{align*}
+che essendo $M \neq l$, allora $c _{M + 1} = 0$.
+\begin{align*}
+  \textit{Ordine $k$}
+  \qquad\longrightarrow\qquad
+  c _{k + 2} \msb{\mrb{k + 2} \mrb{k + 1} - l \mrb{l + 1}} - c_k \mcb{2 k + 1 -
+  \frac{2E}{\hbar \omega}} = 0
+\end{align*}
+Quindi:
+\[
+  c _{M + 1} = 0
+  \qquad\longrightarrow\qquad
+  \begin{dcases}
+    c _{M + 3} = 0
+    \\
+    c _{M + 5} = 0
+    \\
+    \vdots
+  \end{dcases}
+\]
+e:
+\[
+  c _{M} \neq 0
+  \qquad\longrightarrow\qquad
+  \textit{Coefficienti $c_k$ con } k = \mrb{l + 1} + 2 \mrb{n - 1} \textit{
+    sono non nulli}
+\]
+sempre con $n = 1, 2, 3, \dots$
+La serie si interrompe se:
+\[
+  2 k + 1 - \frac{2E}{\hbar \omega} = 0
+\]
+Da ciò segue:
+\[
+  \boxed{
+    E _{nl} = \hbar \omega \mcb{2n + l - \frac{1}{2}}
+    \qquad
+    n = 1, 2, 3, \dots
+    \quad
+    l = 0, 1, 2, \dots
+  }
+\]
+Il \textit{livello di minima energia}:
+\[
+  \begin{dcases}
+    n = 1
+    \\
+    l = 0
+  \end{dcases}
+  \mthen
+  \begin{dcases}
+    E _{1,0} = \frac{3}{2} \hbar \omega
+    \\
+    m _{l} = 0
+    \\
+    m _{z} = 2
+  \end{dcases}
+\]
+Il \textit{primo stato eccitato}:
+\[
+  \begin{dcases}
+    n = 1
+    \\
+    l = 1
+  \end{dcases}
+  \mthen
+  \begin{dcases}
+    E = \frac{5}{2}
+    \\
+    m_l = -1, 0, 1
+    \\
+    m_z = \pm\frac{1}{2} % TODO: ??
+  \end{dcases}
+\]

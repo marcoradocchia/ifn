@@ -1,0 +1,120 @@
+%LTeX: language=it
+\chapter{2020-03-17}
+\section{Quadrivettori e Invarianti Relativistici}
+Oggetto quadrimensionale che trasforma secondo le trasformazioni di
+Lorentz\footnote{
+  Vedi definizione corretta di quadrivettore - Corso di Introduzione alla
+  fisica moderna
+}. Abbiamo già definito il quadrivettore posizione dello spazio-tempo:
+\begin{equation}
+  \qvec{X} = \mcb{ct,\vec{x}} = \mcb{ct,x,y,z}
+\end{equation}
+
+\paragraph{Proprietà dei quadrivettori}
+Elenchiamo alcune delle proprietà dei quadrivettori:
+\begin{itemize}
+  \item \textbf{Prodotto per uno scalare}: sia $\qvec{P}$ un quadrivettore e
+    $a$ uno scalare, allora $a \qvec{P}$ è ancora quadrivettore;
+  \item \textbf{Somma di quadrivettori}: siano $\qvec{P}, \qvec{Q}$ due
+    quadrivettori, allora $\qvec{P} + \qvec{Q}$ è ancora quadrivettore;
+  \item le trasformazioni di Lorentz lasciano invariata la norma dei
+    quadrivettori.
+\end{itemize}
+
+\paragraph{Norma di un quadrivettore} Definiamo:
+\begin{itemize}
+  \item \textbf{quadrivettore controvariante}
+    \begin{equation}
+      \qvec{V}^{\mu} = \mcb{V_0, V_x, V_y, V_z}
+    \end{equation}
+  \item \textbf{quadrivettore covariante}
+    \begin{equation}
+      \qvec{V}_{\mu} = \mcb{V_0, -V_x, -V_y, -V_z}
+    \end{equation}
+  \item \textbf{tensore metrico} (\textit{metrica di Minkowski})
+    \begin{equation}
+      g_{\mu\nu} =
+      \begin{pmatrix}
+        1 & 0  & 0  & 0 \\
+        0 & -1 & 0  & 0 \\
+        0 & 0  & -1 & 0 \\
+        0 & 0  & 0  & -1
+      \end{pmatrix}
+    \end{equation}
+\end{itemize}
+Quindi definiamo la norma di un quadrivettore come segue\footnote{
+  Stiamo facendo un prodotto scalare nella metrica di Minkowski, quindi nel
+  penultimo passaggio c'è un abbassamento dell'indice tramite la metrica
+}:
+\begin{equation}
+  \qvec{V}^2 
+  = g \mrb{\qvec{V}, \qvec{V}}
+  = \sum_{\mu=0}^3\sum_{\nu=0}^3 g_{\mu\nu} \qvec{V}^\mu \qvec{V}^\nu
+  = \sum_{\mu=0}^3\sum_{\nu=0}^3 \qvec{V}^\mu g_{\mu\nu} \qvec{V}^\nu
+  = \sum_{\mu=0}^3 \qvec{V}_\mu \qvec{V}^\nu
+  = V_0^2 - V_x^2 - V_y^2 - V_z^2
+\end{equation}
+Utilizzando la convenzione di Einstein della somma sugli indici ripetuti:
+\begin{align}
+  \textbf{Norma di un quadrivettore}
+  \qquad
+  \boxed{
+    \qvec{V}^2
+    = g \mrb{\qvec{V}, \qvec{V}}
+    = g_{\mu\nu}\qvec{V}^\mu \qvec{V}^\nu
+    = \qvec{V}^\mu g_{\mu\nu} \qvec{V}^\nu
+    = \qvec{V}_\mu \qvec{V}^\mu 
+  }
+\end{align}
+Una trasformazione di Lorentz lascia invariata la norma di un quadrivettore.
+
+\paragraph{Invarianza della norma di un quadrivettore sotto trasformazioni di
+Lorentz}
+Vogliamo dimostrare ora che le trasformazioni di Lorentz lasciano invariata
+la norma di un quadrivettore e che quindi che valga l'uguaglianza:
+\begin{equation}
+  \qvec{X}^{\prime\, 2} = \qvec{X}^2
+\end{equation}
+Dunque definendo $\qvec{X^\prime} = \mcb{ct^\prime, x^\prime, y^\prime,
+z^\prime}$ e applicando\footnote{
+  Consideriamo un caso specifico per semplicità, ma il ragionamento ha valenza
+  generale, potendo sempre scegliere l'asse $x$ del SR parallelo alla direzione
+  del boost di Lorentz
+} un \textit{boost di Lorentz lungo la direzione $x$} all'espressione
+esplicita della sua norma, poiché $\mrb{\gamma^2}^{-1} = \mrb{1-\beta^2}$,
+abbiamo:
+\begin{align}
+    \qvec{X}^{\prime\, 2} 
+    &= ct^{\prime 2} - x^{\prime 2} - y^2 - z^2
+    \\\notag
+    &= \mrb{-\beta\gamma x + \gamma ct}^2 - \mrb{\gamma x - \beta\gamma ct}^2 -
+    y^2 - z^2
+    \\\notag
+    &= \beta^2\gamma^2x^2 + \gamma^2c^2t^2 - \cancel{2\beta\gamma^2xct} 
+    - \gamma^2x^2 - \beta^2\gamma^2c^2t^2 + \cancel{2\beta\gamma^2xct} - y^2
+    - z^2
+    \\\notag
+    &= c^2t^2\gamma^2\mrb{1-\beta^2} - x^2\gamma^2\mrb{1-\beta^2} - y^2 - z^2 
+    \\\notag
+    &= c^2t^2 - x^2 - y^2 - z^2 
+    \\\notag
+    &= \qvec{X}^2
+\end{align}
+e questo dimostra l'invarianza della norma di un quadrivettore sotto
+trasformazioni di Lorentz.
+
+\begin{note}[]
+  Abbiamo sfruttato:
+  \begin{equation}
+    \gamma^2 \mrb{1 - \beta^2} 
+    = \mrb{\frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}}^{2} \msb{{1 -
+    \mrb{\frac{v}{c}}^2}}
+    = \frac{1 - \frac{v^2}{c^2}}{1 - \frac{v^2}{c^2}}
+    = 1
+  \end{equation}
+\end{note}
+
+\begin{exercise}[Da svolgere]
+  Dimostrare che il prodotto scalare tra 2 quadrivettori non dipende dal sistema
+  di riferimento.
+\end{exercise}

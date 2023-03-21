@@ -1,0 +1,318 @@
+%LTeX: language=it
+\chapter{2022-05-31}
+\section{Reazioni nucleari}
+\begin{definition}[Processo di scattering]
+  Parliamo di un \textit{\textbf{processo di scattering}} se la particella
+  incidente è presente nei prodotti di reazione:
+  \[
+    a + A \longrightarrow b + B
+    \qquad
+    \textit{se } a = b \Rightarrow \textit{scattering}
+  \]
+  Parliamo di \textit{scattering \textbf{elastico}} se $a = b$ e $A = B$,
+  mentre parliamo di \textit{scattering \textbf{inelastico}} se $A \neq B$.
+\end{definition}
+
+\begin{note}[]
+  Ricordiamo che deve valere la \textit{conservazione del \textbf{numero
+  barionico}} (per quanto visto i nucleoni sono barioni).
+\end{note}
+
+\begin{note}[]
+  Noi qui faremo l'ipotesi che l'interazione avvenga fra nuclei
+  \textit{non-realtivistiche}.
+\end{note}
+
+\subsection{Cineamtica di un processo di collisione (non-relavitisca)}
+\[
+  a + A \longrightarrow b + B
+\]
+
+\paragraph{Sistema del laboratorio}
+Nel \textit{sistema del laboratorio} $\vec{v}_{A} = 0$.
+\begin{align*}
+  T_A = \frac{1}{2} m_a v_{a}^{2} = 0
+  \\
+  \vec{p}_{A} = m_a \vec{v}_{a} = 0
+\end{align*}
+Energia cinetica ed impulso totali:
+\begin{align*}
+  T_\text{TOT} = T_a + T_A = \frac{1}{2} m_a \vec{v}_{a}^2
+  \\
+  p_\text{TOT} = \vec{p}_{a} + \vec{p}_{A} = m \vec{v}_{a}
+\end{align*}
+\begin{note}[]
+  Il sistema del centro di massa è definito come il sitema di riferimento in
+  cui l'impulso totale delle particelle risultanti è nullo.
+\end{note}
+La velocità del \textit{CdM} nel sistema del laboratorio sarà:
+\[
+  \vec{r}_\text{CM} = \frac{m_a \vec{r}_{a} + m_A \vec{r}_{A}}{m_a + m_A}
+  \mthen
+  v _\text{CM} = \frac{m_a \vec{v}_{a} + m_A \vec{v}_{A}}{m_a + m_A} =
+  \frac{m_a}{m_a + m_A} \vec{v}_{a}
+\]
+
+\paragraph{Sistema del centro di massa}
+Nel sistema del centro di massa:
+\[
+  \begin{dcases}
+    \vec{\tilde p}_\text{TOT} = \vec{\tilde p}_{a} + \vec{\tilde p}_{A} =
+    \vec{0}
+    \\
+    \vec{\tilde v}_\text{CM} = \vec{0}
+  \end{dcases}
+\]
+e abbiamo che:
+\[
+  \vec{\tilde p}_{a} = -\vec{\tilde p}_{A}
+  \mthen
+  \abs{\vec{\tilde p}_{a}} = \abs{\vec{\tilde p}_{A}} = \tilde p
+\]
+Per le velocità:
+\[
+  m_a \vec{\tilde v}_{a} = - m_A \vec{\tilde v}_{A}
+  \mthen
+  \vec{\tilde v}_{A} = - \frac{m_a}{m_A} \vec{\tilde v}_{a}
+\]
+Per l'energia cinetica:
+\begin{align*}
+  \tilde T_a = \frac{1}{2} m_a \tilde v_a^2 = \frac{\tilde p^2}{2 m_a}
+  \\
+  \tilde T_A = \frac{1}{2} m_A \tilde v_A^2 = \frac{\tilde p^2}{2 m_A}
+\end{align*}
+
+Consideriamo che:
+\[
+  \vec{\tilde v}_{a} = \vec{v}_{a} - \vec{v}_\text{CM} = \mrb{1 -
+  \frac{m_a}{m_a + m_A}} \vec{v}_{a} = \frac{m_A}{m_a + m_A} \vec{v}_{a}
+\]
+ciò implica che:
+\[
+  \vec{\tilde p}_{A} = - \vec{\tilde p}_{a} = - \frac{m_a}{m_a + m_A}
+  \vec{p}_{A}
+\]
+quindi:
+\[
+  \vec{\tilde p}_{A} = - \vec{\tilde p}_{a} = - \frac{m_a}{m_a + m_A}
+  \vec{P}_{A}
+\]
+L'\textit{energia cinetica del moto relativo}:
+\[
+  \tilde T = \tilde T_a + \tilde T_A = \frac{\tilde p^2}{2 m_a} + \frac{\tilde
+  p^2}{2 m_A} = \frac{\tilde p^2}{2} \mcb{\frac{1}{m_a} + \frac{1}{m_A}} =
+  \frac{\tilde p^2}{2} \frac{1}{\mu}
+\]
+dove $\mu$ è la \textit{massa ridotta}:
+\[
+  \mu = \frac{m_a m_A}{m_a + m_A}
+\]
+Quindi:
+\[
+  \tilde T = \frac{1}{2 \mu} \tilde p^2 = \frac{1}{2 \mu} \mrb{\frac{m_a}{m_a +
+  m_A}}^{2} \mrb{\frac{p_a^2}{2 m_a}} 2 m_a = \frac{m_A}{m_a + m_A} T
+\]
+
+In tutti i processi fisici dovranno essere conservati \textit{energia} e
+\textit{impulso}:
+\begin{align*}
+  \textit{Conservazione dell'energia} \qquad \mrb{E _\text{tot}}_\text{ini} = E
+  \mrb{ _\text{tot}}_\text{fin}
+  \\
+  \textit{Conservazione impulso} \qquad \mrb{\vec{p}_\text{tot}}_\text{ini} =
+  \mrb{\vec{p}_\text{tot}}_\text{fin}
+\end{align*}
+Ricordando che stiamo considerando una reazione del tipo:
+\[
+  a + A \longrightarrow b + B
+\]
+Nel sitema del centro di massa:
+\[
+  \mrb{\vec{p}_\text{tot}}_\text{ini} = \mrb{\vec{p}_\text{tot}}_\text{fin} =
+  \vec{0}
+\]
+quindi:
+\[
+  \begin{rcases}
+    \abs{\vec{\tilde p}_{a}} = \abs{\vec{\tilde p}_{A}} = \tilde p_\text{ini}
+    \\
+    \abs{\vec{\tilde p}_{b}} = \abs{\vec{\tilde p}_{B}} = \tilde p_\text{fin}
+  \end{rcases}
+  \mthen
+  \begin{dcases}
+    \vec{p}_{a} = - \vec{p}_{A}
+    \\
+    \vec{p}_{b} = - \vec{p}_{B}
+  \end{dcases}
+\]
+implementa la \textit{conservazione dell'impulso}.
+
+La \textit{conservazione dell'energia implica che}:
+\[
+  m_a c^2 + \tilde T_a + m_A c^2 + \tilde T_A = m_b c^2 + \tilde T_b + m_B c^2
+  + \tilde T_B
+\]
+quindi definiamo il \textit{$Q$-value} della reazione:
+\[
+  Q = \mrb{m_a c^2 + m_A c^2} - \mrb{m_b c^2 + m_B c^2} = \mrb{\tilde T_b +
+  \tilde T_B} - \mrb{\tilde T_a + \tilde T_A} \equiv \Delta \tilde T
+\]
+dove:
+\begin{align*}
+  \begin{dcases}
+    m_a c^2 + m_A c^2 \Rightarrow \textit{Somma delle masse dello stato ini.}
+    \\
+    m_b c^2 + m_B c^2 \Rightarrow \textit{Somma delle masse dello stato fin.}
+    \\
+    \tilde T_b + \tilde T_B \Rightarrow \textit{Ener. cin. totale dello stato
+    fin.}
+    \\
+    \tilde T_a + \tilde T_A \Rightarrow \textit{Ener. cin. totale dello stato
+    ini.}
+  \end{dcases}
+\end{align*}
+Il \textit{$Q$-value} della reazione:
+\[
+  Q = \msum{\textit{ini}}{} m_i c^2 - \msum{\textit{fin}}{} m_f c^2 = \Delta
+  \tilde T = \mrb{\tilde T_\text{tot}}_\text{fin} -
+  \mrb{\tilde T_\text{tot}}_\text{ini}
+\]
+quindi:
+\begin{align*}
+  Q < 0 \Rightarrow \mrb{\tilde T_\text{tot}}_\text{fin} > \mrb{\tilde
+  T_\text{tot}}_\text{ini} \qquad \textit{Reazione esotermica}
+\end{align*}
+con $\mrb{\tilde T_\text{tot}}_\text{fin} = \mrb{\tilde
+T_\text{tot}}_\text{ini} + Q$.
+% TODO: scrivi reazione endotermica
+
+\subsection{Fusione nucleare}
+Il processo di \textit{\textbf{fusione nucleare}} è un processo in cui abbiamo
+la fusione di nuclei:
+\[
+  \mrb{Z_1, A_1} + \mrb{Z_2, A_2} \rightarrow \mrb{Z_1 + Z_2, A_1 + A_2} +
+  \gamma
+\]
+Il \textit{$Q$-value} di tale reazione:
+\begin{align*}
+  Q &= m \mrb{Z_1, A_1} c^2 + m \mrb{Z_2, A_2} c^2 - m \mrb{Z_1 + Z_2, A_1 +
+  A_2} c^2
+  \\
+  &= Z_1 m_p c^2 + \mrb{A_1 - Z_1} m_n c^2 - B \mrb{Z_1, A_1}
+  \\
+  & + Z_2 m_p c^2 +
+  \mrb{A_2 - Z_2} m_n c^2 - B \mrb{Z_2, A_2}
+  \\
+  & - \mrb{Z_1 + Z_2} m_p c^2 + \mrb{A_1 + A_2 - Z_1 - Z_2} m_n c^2 - B
+  \mrb{Z_1 + Z_2, A_1 + A_2}
+  \\
+  &= B \mrb{Z_1 + Z_2, A_1 + A_2} - B \mrb{Z_1, A_1} - B \mrb{Z_2, A_2}
+  \\
+  &= \eps \mrb{A_1 + A_2} \mrb{A_1 + A_2} - \eps \mrb{A_1} A_1 - \eps \mrb{A_2}
+  A_2
+  \\
+  &\geq \eps \mrb{A_1 + A_2} \mrb{A_1 + A_2} - \max \mrb{\eps \mrb{A_1}, \eps
+  \mrb{A_2}} \mrb{A_1 + A_2}
+\end{align*}
+quindi:
+\[
+  Q \geq \msb{\eps \mrb{A_1 + A_2} - \max \mrb{\eps \mrb{A_1}, \eps \mrb{A_2}}}
+  \mrb{A_1 + A_2} \geq 0
+\]
+dove il termine in parentesi quadra è un termine positivo, poiché $\eps
+\mrb{A}$ è una funzione crescente di $A$ per $A \leq 56$.
+Quindi: \textit{la \textbf{fusione nucleare di nuclei leggeri} è un
+\textbf{processo esotermico}}.
+% TODO: Riascolta tante cose imporanti sulla fusione nucleare!
+\begin{note}[]
+  Generalmente, in condizioni \quot{\textit{normali}} non avvengono fusioni
+  spontanee fra nuclei (se non ad esempio nelle stelle), o meglio sono
+  altamente improbabili, causa effetto tunnel nella barriera coulombiana. Per
+  questo motivo, per farle avvenire abbiamo bisogno di collisioni ad alta
+  energia.
+\end{note}
+
+\subsection{Fissione nucleare}
+% TODO: 
+
+\subsection{Considerazioni sulle reazioni nucleari}
+Affinché una reazione nucleare:
+\[
+  \mrb{Z_1, A_1} + \mrb{Z_2, A_2} \rightarrow \mrb{Z', A'} + \dots
+\]
+possa avvenire è necessario portare i due nuclei a distanze \textit{piccole}
+($\sim \si{\femto\m}$). Se i nuclei sono carichi, ciò è ostacolato dalla
+repulsione coulombiana.
+% TODO: figura
+La \textit{sezione d'urto} di un processo di fusione fra due nuclei sarà:
+\[
+  \sigma = \tilde \sigma P_T
+\]
+con $\tilde \sigma \sim \si{\femto\m^2}$ (\textit{stima geometrica}), dove
+$P_T$ è la \textit{probabilità di tunneling attraverso la barriera
+coulombiana}:
+\[
+  P_T = e^{-G}
+\]
+dove $G$ è il \textit{fattore di penetrazione di Gammon}, che in questo caso:
+\[
+  G = \frac{2 \pi \mrb{Z_1 Z_2 \alpha}}{\frac{v}{c}} - 4 \sqrt{\frac{2
+  \mrb{\mu c^2} Z_1 Z_2 \alpha R}{\hbar c}}
+\]
+quindi $P_T$ è il fattore che ci dice che un processo spontaneo di fusione
+nucleare è altamente improbabile.
+\begin{note}[]
+  La barriera coulombiana, chiaramente, è assente per reazioni indotte da
+  neutroni\footnote{
+    Neutroni liberi pronti a reagire sono poco probabili, perché i
+    \textit{neutroni liberi sono instabili}
+  }. 
+\end{note}
+\begin{note}[]
+  Se la collisione avviene con $l \neq 0$, dobbiamo tenere conto anche della
+  \textit{barriera centrifuga}:
+  \[
+    V_C \mrb{r} = \frac{l \mrb{l + 1} \hbar^2}{2 \mu r^2}
+  \]
+\end{note}
+
+\subsection{Fusione dell'idrogeno nel Sole}
+Il processo di fusione dell'idrogeno nel sole è un processo del tipo:
+\[
+  2 e^- + 4p \rightarrow \ch{^4He} + 2 \nu_e
+\]
+dove la presenza $\nu_e$ soddisfa la legge di conservazione fondamentale di
+\textit{conservazione di numero leptonico}. Questo è il motivo per cui il sole
+è una \textit{sorgente di neutrini di tipo $e$}.
+\[
+  Q = \msb{2m_e + 4 m_p - m \mrb{\ch{^{4}He}}} \simeq \SI{26}{\MeV}
+\]
+
+Il flusso di neutrini prodotto a terra (sulla terra):
+\[
+  \phi _{\nu} \sim \SI{6e10}{\cm^-2 s^-1}
+\]
+
+\paragraph{Catena $pp$}
+Dati i primi due processi:
+\begin{align*}
+  p + p \rightarrow d + e^+ + \nu_e
+  \\
+  p + d \rightarrow \ch{^{3}He} + \gamma
+\end{align*}
+possiamo ottenere \textit{Terminazione $ppI$} ($90\%$ della reazione):
+\begin{align*}
+  \ch{^{3}He} + \ch{^{3}He} \rightarrow \ch{^{4}He} + 2p
+\end{align*}
+o le \textit{terminazioni $ppII$} ($10\%$):
+% \begin{align*}
+%   \ch{^{3}He + \ch{^{4}He}} \rightarrow \ch{^{7}Be} + \gamma
+%   \\
+%   \ch{^{7}Be} + e^- \rightarrow \ch{^{7}Li} + \nu_e
+%   % \\
+%   % ??? % TODO: 
+% \end{align*}
+o $ppIII$:
+% \begin{align*}
+%   ??? % TODO: 
+% \end{align*}

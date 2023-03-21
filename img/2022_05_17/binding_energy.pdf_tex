@@ -1,0 +1,98 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04, custom), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'binding_energy.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{525.90147003bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.62876889)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{binding_energy.pdf}}%
+    \put(0.91793263,0.57084987){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ch{U^{235}}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{binding_energy.pdf}}%
+    \put(0.93219373,0.53947517){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ch{U^{238}}\end{tabular}}}}%
+    \put(0.29805863,0.54798021){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ch{Fe^56}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{binding_energy.pdf}}%
+    \put(0.12378946,0.58210332){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\ch{O^{16}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{binding_energy.pdf}}%
+    \put(0.09539862,0.5432313){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\ch{C^12}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{binding_energy.pdf}}%
+    \put(0.17668181,0.48537358){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ch{He}\end{tabular}}}}%
+    \put(0.14552023,0.37545966){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ch{Li^6}\end{tabular}}}}%
+    \put(0.14837248,0.40112986){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ch{Li^7}\end{tabular}}}}%
+    \put(0.15122472,0.21002943){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ch{He^3}\end{tabular}}}}%
+    \put(0.13853223,0.22999514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ch{H^3}\end{tabular}}}}%
+    \put(0.13125901,0.12160982){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ch{H^2}\end{tabular}}}}%
+    \put(0.12555452,0.06456492){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ch{H^1}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{binding_energy.pdf}}%
+    \put(0.40106578,0.00052484){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A: \textit{Atomic mass number}\end{tabular}}}}%
+    \put(0.06033438,0.11000246){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eps$: \textit{Average binding energy per nucleon} (\si{\MeV})\end{tabular}}}}}%
+    \put(0.08126135,0.6122715){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}9\end{tabular}}}}%
+    \put(0.08125021,0.55071443){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}8\end{tabular}}}}%
+    \put(0.08108309,0.48850144){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}7\end{tabular}}}}%
+    \put(0.0811388,0.42627604){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6\end{tabular}}}}%
+    \put(0.08123907,0.36390024){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}%
+    \put(0.08121122,0.30198459){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0.08134492,0.23977247){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.08123907,0.17773013){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.08233652,0.11540233){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.08125021,0.05316353){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{binding_energy.pdf}}%
+    \put(0.10319359,0.03319768){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.20102869,0.03319768){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}30\end{tabular}}}}%
+    \put(0.29853678,0.03319768){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}60\end{tabular}}}}%
+    \put(0.396237,0.03319768){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}90\end{tabular}}}}%
+    \put(0.49390207,0.03319768){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}120\end{tabular}}}}%
+    \put(0.59170345,0.03319768){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}150\end{tabular}}}}%
+    \put(0.68934324,0.03319768){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}180\end{tabular}}}}%
+    \put(0.78665479,0.03319768){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}210\end{tabular}}}}%
+    \put(0.88428778,0.03319768){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}240\end{tabular}}}}%
+    \put(0.9820879,0.03319768){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}270\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
