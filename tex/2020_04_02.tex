@@ -5,8 +5,8 @@
 Per semplicità ma senza perdita di generalità ci poniamo nella condizione $p_z
 	= 0$ (con una rotazione attorno all'asse $x$), ovvero riduciamo il problema a
 un problema bidimensionale nel piano $\mrb{p_x,p_y}$ nel sistema del
-laboratorio e nel corrispondente $\mrb{p_x^\ast,p_y^\ast}$ nel sistema del centro di
-massa.
+laboratorio e nel corrispondente $\mrb{p_x^\ast,p_y^\ast}$ nel sistema del
+centro di massa.
 
 Per il sistema del Laboratorio (\textbf{Lab}) possiamo scrivere:
 \begin{equation}
@@ -15,23 +15,23 @@ Per il sistema del Laboratorio (\textbf{Lab}) possiamo scrivere:
 quindi l'equazione dell'ellisse diventa (nel piano):
 \begin{equation}
 	\frac{\mrb{p_x - \beta \gamma E^\ast}^2}{\gamma^2 p^{\ast2}}
-  + \frac{p_x^2 \tan^2 \theta}{p^{\ast2}}
-  = 1
+	+ \frac{p_x^2 \tan^2 \theta}{p^{\ast2}}
+	= 1
 \end{equation}
 che, risolvendo rispetto a $p_x$ ha soluzione:
 \begin{equation}
 	\frac{p_x^2 + \beta^2 \gamma^2 E^{\ast2} - 2 p_x \beta \gamma E^\ast}{\gamma^2 p^\ast}
-  + p_x^2 \frac{\tan^2 \theta}{p^{\ast2}}
-  - 1
-  = 0
+	+ p_x^2 \frac{\tan^2 \theta}{p^{\ast2}}
+	- 1
+	= 0
 \end{equation}
 quindi:
 \begin{equation}
 	p_x^2 \mrb{1 + \gamma^2 \tan^2 \theta}
-  + p_x \mrb{-2 \beta \gamma E^\ast}
-  + \mrb{\beta^2 \gamma^2 E^{\ast2}
-  - \gamma^2 p^{\ast2}}
-  = 0
+	+ p_x \mrb{-2 \beta \gamma E^\ast}
+	+ \mrb{\beta^2 \gamma^2 E^{\ast2}
+		- \gamma^2 p^{\ast2}}
+	= 0
 \end{equation}
 Le soluzioni:
 \begin{equation}
@@ -94,44 +94,36 @@ quindi:
 	= \frac{\beta^\ast \sin \theta^\ast}{\gamma \mrb{\beta^\ast \cos \theta^\ast + \beta}}
 \end{equation}
 Imponendo l'angolo limite:
-\begin{subequations}
-	\begin{equation}
-		\frac{\beta^\ast \sin \theta^\ast\mrb{\theta_{max}}}{\gamma \msb{\beta^\ast \cos
-				\theta^\ast\mrb{\theta_{max}} + E^\ast}} = \sqrt{\frac{\beta^{\ast2}}{\gamma^2
-				\mrb{\beta^2 - \beta^{\ast2}}}}
-	\end{equation}
-	\begin{equation}
-		\Rightarrow \frac{\cancel{\beta ^{\ast\,2}} \sin ^{2} \theta^\ast
-			\mrb{\theta _\text{max}}}{\cancel{\gamma^2} \msb{\beta^\ast \cos
-				\theta^\ast \mrb{\theta_\text{max}} + \beta}^{2}} = \frac{\cancel{\beta
-				^{\ast\,2}}}{\cancel{\gamma^2} \mrb{\beta^2 - \beta ^{\ast\,2}}}
-	\end{equation}
-	\begin{equation}
-		\Rightarrow \beta^2 \sin ^{2} \theta^\ast \mrb{\theta _\text{max}} - \beta
-		^{\ast\,2} \sin ^{2} \theta^\ast \mrb{\theta _\text{max}} = \beta
-		^{\ast\,2} \cos ^{2} \theta^\ast \mrb{\theta _\text{max}} + \beta^2 + 2
-		\beta \beta^\ast \cos \theta^\ast \mrb{\theta _\text{max}}
-	\end{equation}
-	\begin{equation}
-		\Rightarrow \beta^2 \sin \theta^\ast \mrb{\theta _\text{max}} - \beta
-		^{\ast\,2} - \beta^2 - 2 \beta \beta^\ast \cos \theta^\ast \mrb{\theta
-			_\text{max}} = 0
-	\end{equation}
-	\begin{equation}
-		\Rightarrow \beta^2 \msb{1 -\cos \theta^\ast \mrb{\theta _\text{max}}} -
-		\beta ^{\ast\,2} - \beta^2 - 2 \beta \beta^\ast \cos \theta^\ast
-		\mrb{\theta _\text{max}} = 0
-	\end{equation}
-	\begin{equation}
-		\Rightarrow \cancel{\beta^2} - \beta^2 \cos \theta^\ast \mrb{\theta
-			_\text{max}} - \beta ^{\ast\,2} - \cancel{\beta^2} - 2 \beta \beta^\ast
-		\cos \theta^\ast \mrb{\theta _\text{max}} = 0
-	\end{equation}
-	\begin{equation}
-		\Rightarrow \msb{\beta \cos \theta^\ast \mrb{\theta_\text{max}} +
-			\beta^\ast}^{2} = 0
-	\end{equation}
-\end{subequations}
+\begin{align}
+	 & \frac{\beta^\ast \sin \theta^\ast\mrb{\theta_{max}}}{\gamma \msb{\beta^\ast \cos
+			\theta^\ast\mrb{\theta_{max}} + E^\ast}} = \sqrt{\frac{\beta^{\ast2}}{\gamma^2
+			\mrb{\beta^2 - \beta^{\ast2}}}}
+	\\\notag
+	 & \Rightarrow \frac{\cancel{\beta ^{\ast\,2}} \sin ^{2} \theta^\ast
+		\mrb{\theta _\text{max}}}{\cancel{\gamma^2} \msb{\beta^\ast \cos
+			\theta^\ast \mrb{\theta_\text{max}} + \beta}^{2}} = \frac{\cancel{\beta
+			^{\ast\,2}}}{\cancel{\gamma^2} \mrb{\beta^2 - \beta ^{\ast\,2}}}
+	\\\notag
+	 & \Rightarrow \beta^2 \sin ^{2} \theta^\ast \mrb{\theta _\text{max}} - \beta
+	^{\ast\,2} \sin ^{2} \theta^\ast \mrb{\theta _\text{max}} = \beta
+	^{\ast\,2} \cos ^{2} \theta^\ast \mrb{\theta _\text{max}} + \beta^2 + 2
+	\beta \beta^\ast \cos \theta^\ast \mrb{\theta _\text{max}}
+	\\\notag
+	 & \Rightarrow \beta^2 \sin \theta^\ast \mrb{\theta _\text{max}} - \beta
+	^{\ast\,2} - \beta^2 - 2 \beta \beta^\ast \cos \theta^\ast \mrb{\theta
+		_\text{max}} = 0
+	\\\notag
+	 & \Rightarrow \beta^2 \msb{1 -\cos \theta^\ast \mrb{\theta _\text{max}}} -
+	\beta ^{\ast\,2} - \beta^2 - 2 \beta \beta^\ast \cos \theta^\ast
+	\mrb{\theta _\text{max}} = 0
+	\\\notag
+	 & \Rightarrow \cancel{\beta^2} - \beta^2 \cos \theta^\ast \mrb{\theta
+		_\text{max}} - \beta ^{\ast\,2} - \cancel{\beta^2} - 2 \beta \beta^\ast
+	\cos \theta^\ast \mrb{\theta _\text{max}} = 0
+	\\\notag
+	 & \Rightarrow \msb{\beta \cos \theta^\ast \mrb{\theta_\text{max}} +
+		\beta^\ast}^{2} = 0
+\end{align}
 abbiamo così ottenuto una relazione per l'\textit{angolo $\theta^\ast$ visto dal
 	sistema del centro di massa, che corrisponde all'angolo $\theta_{max}$ limite
 	visto dal sistema del laboratorio}:
@@ -145,38 +137,37 @@ abbiamo così ottenuto una relazione per l'\textit{angolo $\theta^\ast$ visto da
 \end{note}
 
 \begin{example}[Angolo limite]
-	Vogliamo studiare il decadimento della particella $\Sigma^+$:
+	Vogliamo studiare il decadimento della particella $\Sigma^+$ con un
+	\textit{tracciatore}:
 	\begin{equation}
 		\pi^+ + p \rightarrow \Sigma^+ + k^+
 	\end{equation}
 	Le masse delle particelle sono:
 	\begin{equation}
-		\begin{dcases}
-			m _{\pi} = \SI{0.1396}{\GeV \per c^2}
-			\\
-			m _{p} = \SI{0.9383}{\GeV \per c^2}
-			\\
-			m _{\Sigma} = \SI{1.189}{\GeV \per c^2}
-			\\
-			m _{k} = \SI{0.4937}{\GeV \per c^2}
-		\end{dcases}
+		m _{\pi} = \qty{0.1396}{\GeV \per c^2};
+		\qquad
+		m _{p} = \qty{0.9383}{\GeV \per c^2};
+		\qquad
+		m _{\Sigma} = \qty{1.189}{\GeV \per c^2};
+		\qquad
+		m _{k} = \qty{0.4937}{\GeV \per c^2}
 	\end{equation}
-	l'impulso iniziale dei pioni è $p _{\pi} = \SI{20}{\GeV \per c}$. Vediamo in
-	figura~\ref{fig:rilevatore} uno schema del rivelatore.
+	Mentre l'impulso iniziale dei pioni è $p _{\pi^+} = \qty{20}{\GeV \per c}$.
+	Vediamo in figura~\ref{fig:rilevatore} uno schema del rivelatore.
 
-	% TODO: figura rilevatore
+	% TODO: figura tracciatore (cilindro) HANDWRITTEN 2023-03-21
 	Rispondere ai seguenti quesiti:
 	\begin{enumerate}
-		\item il rilevatore è in grado di vedere tutte le $\Sigma^+$ prodotte (in
-		      altri termini: esiste un angolo massimo? e se sì, qual è?)?
+		\item il rilevatore è in grado di vedere tutte le $\Sigma^+$ prodotte? (in
+		      altri termini: esiste un angolo massimo? e se sì, qual è?);
 		\item le particelle $\Sigma^+$ sono instabili e decadono con un tempo di
-		      vita media $\tau_\Sigma = \SI{0.799e-10}{s}$. Assumiamo che tutte le
-		      particelle $\Sigma^+$ siano decadute dopo un tempo $3 \tau$; quale deve
-		      esser la dimensione $L$ affinché il punto di decadimento sia contenuto
-		      nel rivelatore?
-		\item calcolare il raggio minimo del rilevatore affinché eso contenga tutti
-		      i vertici di decadimento delle $\Sigma^+$;
-		\item possiamo vedere tutte le particelle $k^+$?
+		      vita media (a riposo) $\tau_\Sigma = \qty{0.799e-10}{s}$.
+		      Assumiamo che tutte le particelle $\Sigma^+$ siano decadute dopo un
+		      tempo $3 \tau$; quale deve esser la dimensione $L$ affinché il punto
+		      di decadimento sia contenuto nel rivelatore?;
+		\item calcolare il raggio minimo del rilevatore affinché esso contenga
+		      tutti i vertici di decadimento delle $\Sigma^+$;
+		\item possiamo vedere tutte le particelle $k^+$?;
 		\item se così non dovesse essere, quale frazione del numero di particelle
 		      $k^+$ che vediamo?
 	\end{enumerate}
@@ -184,157 +175,231 @@ abbiamo così ottenuto una relazione per l'\textit{angolo $\theta^\ast$ visto da
 	\paragraph{Soluzione}
 	\begin{enumerate}
 		\item \textit{Possiamo vedere tutte le particelle prodotte dalla reazione
-			      se l'angolo massimo è $\leq \SI{90}{\degree}$}, considerato come è
+			      se l'angolo massimo è $\leq \qty{90}{\degree}$}, considerato come è
 		      realizzato il rilevatore. L'energia dei pioni incidenti:
 		      \begin{equation}
-			      \eps _{\pi} = \sqrt{\abs{\vec{p}_{\pi}}^{2} + m _{\pi}^{2}} \simeq
-			      \SI{20}{\GeV}
+			      \eps _{\pi} = \sqrt{\abs{\vec{p}_{\pi^+}}^{2} + m _{\pi^+}^{2}}
+			      \simeq \qty{20}{\GeV}
 		      \end{equation}
 		      Quindi:
 		      \begin{equation}
-			      \qvec{P} = \mcb{\eps _{\pi} + m _{p}, \vec{p}_{\pi}}
+			      \qvec{P} = \Set{\eps _{\pi^+} + m _{p}, \vec{p}_{\pi^+}}
 		      \end{equation}
-		      L'\textit{energia del centro di massa}, che \textit{corrisponde alla
-			      massa invariante del sistema}:
-		      \begin{subequations}
-			      \begin{equation}
-				      E ^{\ast\,2} = \mrb{\eps _{\pi} + m _{p}}^{2} - \abs{\vec{p}
-					      _{\pi}}^{2} = \eps _{\pi}^{2} + m _{p}^{2} + 2 m_p \eps _{\pi} -
-				      \abs{\vec{p} _{\pi}}^{2} = m _{p}^{2} + m _{\pi}^{2} + 2 m_p \eps
-				      _{\pi}
-			      \end{equation}
-			      \begin{equation}
-				      E^\ast = \sqrt{m _{p}^{2} + m _{\pi}^{2} + 2 m_p \eps _{\pi}} =
-				      \SI{6.199}{\GeV}
-			      \end{equation}
-		      \end{subequations}
-		      Il $\beta$ nel centro di massa:
+		      Calcoliamo l'\textit{energia disponibile nel centro di massa}, che
+		      \textit{corrisponde alla massa invariante del sistema} e che ci sarà
+		      utile per passare le quantità cinematiche da un sistema di
+		      riferimento all'altro in quanto invariante relativistico:
 		      \begin{equation}
-			      \beta _{\text{CM}} = \frac{\abs{\vec{p}_{\pi}}}{\eps _{\pi} + m _{p}} =
-			      0.955187
+			      E ^{\ast\,2}
+			      = \mrb{\eps _{\pi^+} + m _{p}}^{2} - \abs{\vec{p} _{\pi^+}}^{2}
+			      = \eps _{\pi^+}^{2} + m _{p}^{2} + 2 m_p \eps _{\pi^+} -
+			      \abs{\vec{p} _{\pi^+}}^{2}
+			      = m _{p}^{2} + m _{\pi^+}^{2} + 2 m_p \eps _{\pi^+}
 		      \end{equation}
-		      Il $\gamma$ del centro di massa:
+		      quindi:
 		      \begin{equation}
-			      \gamma _{\text{CM}} = \frac{\eps _{\pi} + \eps _{p}}{E^\ast} \simeq
-			      3.3777
+			      E^\ast
+			      = \sqrt{m _{p}^{2} + m _{\pi^+}^{2} + 2 m_p \eps _{\pi^+}}
+			      = \qty{6.199}{\GeV}
 		      \end{equation}
-		      L'impulso della particella virtuale che decade a riposo nel sistema del
-		      centro di massa:
+		      Il beta nel centro di massa:
 		      \begin{equation}
-			      p^\ast = \frac{\sqrt{\msb{E ^{\ast\,2} - \mrb{m _{\Sigma} + m
-								      _{k}}^{2}} \msb{E ^{\ast\,2} - \mrb{m _{\Sigma} - m _{k}}^{2}}}}{2
-				      E^\ast} = \SI{2.965}{\GeV \per c}
+			      \beta _{\text{CM}}
+			      = \frac{\abs{\vec{p}_{\pi^+}}}{\eps _{\pi^+} + m _{p}}
+			      \simeq 0.955187
 		      \end{equation}
-		      Quindi l'energia nel centro di massa della particella $\Sigma$:
+		      Il gamma del centro di massa:
 		      \begin{equation}
-			      \eps ^{\ast}_{\Sigma} = \sqrt{p ^{\ast\,2} + m^2 _{\Sigma}} \simeq
-			      \SI{3.194}{\GeV}
+			      \gamma _{\text{CM}}
+			      = \frac{\eps _{\pi^+} + m _{p}}{E^\ast}
+			      \simeq 3.3777
 		      \end{equation}
-		      allora $\beta ^{\ast}_{\Sigma}$:
+		      L'impulso della particella virtuale che decade a riposo nel sistema
+		      del centro di massa:
 		      \begin{equation}
-			      \beta ^{\ast}_{\Sigma} = \frac{p^\ast}{\eps ^{\ast}_{\Sigma}} = 0.9283
+			      p^\ast
+			      = \frac{\sqrt{
+					      \msb{E ^{\ast\,2} - \mrb{m _{\Sigma^+} + m _{k^+}}^{2}}
+					      \msb{E ^{\ast\,2} - \mrb{m _{\Sigma^+} - m _{k^+}}^{2}}
+				      }}{2 E^\ast} = \qty{2.965}{\GeV \per c}
+		      \end{equation}
+		      Quindi l'energia nel centro di massa della particella $\Sigma^+$:
+		      \begin{equation}
+			      \eps ^{\ast}_{\Sigma^+}
+			      = \sqrt{p ^{\ast\,2} + m^2 _{\Sigma^+}}
+			      \simeq \qty{3.194}{\GeV}
+		      \end{equation}
+		      allora $\beta ^{\ast}_{\Sigma^+}$:
+		      \begin{equation}
+			      \beta ^{\ast}_{\Sigma^+}
+			      = \frac{p^\ast}{\eps ^{\ast}_{\Sigma^+}}
+			      = 0.9283
 			      < \beta _{\text{CM}}
 		      \end{equation}
-		      Questo vuol dire che, per le $\Sigma^+$ \textit{esiste} un angolo limite
-		      nel sistema del laboratorio e saremo in grando, dunque, di rilevare
-		      \textbf{tutte} le particelle $\Sigma^+$ prodotte.
+		      Questo vuol dire che, per le $\Sigma^+$ \textit{esiste} un angolo
+		      limite nel sistema del laboratorio e saremo in grado, dunque, di
+		      rilevare \textbf{tutte} le particelle $\Sigma^+$ prodotte.
 		      Appurato che esiste un angolo massimo, calcoliamo qual è:
-		      \begin{subequations}
-			      \begin{equation}
-				      \tan \theta _\text{max} = \frac{\beta _{\Sigma}^{\ast}}{\gamma
-					      _\text{CM} \sqrt{\beta _\text{CM}^{2} - \beta ^{\ast\,2} _{\Sigma}}}
-				      = 1.217
-			      \end{equation}
-			      \begin{equation}
-				      \Rightarrow \theta _\text{max} = \arctan \msb{\frac{\beta
-						      _{\Sigma}^{\ast}}{\gamma _\text{CM} \sqrt{\beta _\text{CM}^{2} -
-							      \beta ^{\ast\,2} _{\Sigma}}}} = \SI{50.6}{\degree}
-			      \end{equation}
-		      \end{subequations}
-		      questo vuol dire che:
-		      \begin{subequations}
-			      \begin{equation}
-				      \cos \theta^\ast \mrb{\theta _\text{max}} = - \frac{\beta
-					      _{\Sigma}^{\ast}}{\beta _\text{CM}} = -0.9717
-			      \end{equation}
-			      \begin{equation}
-				      \Rightarrow \theta^\ast \mrb{\theta _\text{max}} = \SI{166}{\degree}
-			      \end{equation}
-		      \end{subequations}
-		      All'\textit{angolo massimo}, l'\textit{impulso longitudinale}:
 		      \begin{equation}
-			      \mrb{p _{\Sigma}}_{L} = \gamma _\text{CM} \mrb{p ^{\ast} \cos
-				      \theta^\ast \mrb{\theta _\text{max}} + \beta _\text{CM} \eps
-				      _{\Sigma}^{\ast}} = \SI{0.573}{\GeV \per c}
+			      \tan \theta _\text{max}
+			      = \frac{\beta _{\Sigma^+}^{\ast}}{
+				      \gamma _\text{CM} \sqrt{\beta _\text{CM}^{2}
+					      - \beta ^{\ast\,2} _{\Sigma^+}}
+			      }
+			      = 1.217
 		      \end{equation}
-		      mentre l'\textit{impulso trasverso}:
+		      quindi:
 		      \begin{equation}
-			      \mrb{p _{\Sigma}}_{T} = \mrb{p _{\Sigma}^{\ast}}_{T} = p ^{\ast} \sin
-			      \theta^\ast \mrb{\theta _\text{max}} = \SI{0.7}{\GeV \per c}
+			      \theta _\text{max}
+			      = \arctan \msb{\frac{\beta _{\Sigma^+}^{\ast}}
+				      {\gamma _\text{CM} \sqrt{\beta _\text{CM}^{2}
+						      - \beta ^{\ast\,2} _{\Sigma^+}}}}
+			      = \qty{50.6}{\degree}
+		      \end{equation}
+		      questo vuol dire che:
+		      \begin{equation}
+			      \cos \theta^\ast \mrb{\theta _\text{max}}
+			      = - \frac{\beta _{\Sigma^+}^{\ast}}{\beta _\text{CM}}
+			      = -0.9717
+			      \mthen
+			      \theta^\ast \mrb{\theta _\text{max}} = \qty{166}{\degree}
+		      \end{equation}
+		      All'\textit{angolo massimo}, l'\textit{impulso longitudinale} o
+		      \textit{componente longitudinale} dell'impulso della particella:
+		      \begin{equation}
+			      \mrb{p _{\Sigma^+}}_{L}
+			      = \gamma _\text{CM} \mrb{
+				      p ^{\ast} \cos \theta^\ast \mrb{\theta _\text{max}}
+				      + \beta _\text{CM} \eps _{\Sigma^+}^{\ast}
+			      }
+			      = \qty{0.573}{\GeV \per c}
+		      \end{equation}
+		      mentre l'\textit{impulso trasverso} o \textit{componente trasversa}
+		      dell'impulso della particella:
+		      \begin{equation}
+			      \mrb{p _{\Sigma^+}}_{T}
+			      = \mrb{p _{\Sigma^+}^{\ast}}_{T}
+			      = p ^{\ast} \sin \theta^\ast \mrb{\theta _\text{max}}
+			      = \qty{0.7}{\GeV \per c}
 		      \end{equation}
 
 		\item Rispondiamo alla seconda domanda.
-		      \[
-			      D _{\Sigma} = 3 \tau _{\Sigma} \gamma _{\Sigma} \beta _{\Sigma} c = 3 c
-			      \tau _{\Sigma} \frac{p _{\Sigma}}{m _{\Sigma}} =
-			      6.05 \frac{p _{\Sigma}}{\si{\GeV \per c}} \si{\cm}
-		      \]
-		      L'impulso massimo longitudinale nel sistema del laboratorio:
-		      \[
-			      \mrb{p _{\Sigma}} _{L, \text{max}} = \gamma _\text{CM} \mrb{p ^{\ast} +
-				      \beta _\text{CM} + \eps _{\Sigma}^{\ast}} = \SI{20.3}{\GeV \per c}
-		      \]
-		      La lunghezza minima per il rilevatore, affinché tutte le particelle
-		      $\Sigma$ decadano all'interno del rilevatore:
-		      \[
-			      L _\text{min} = D _{\Sigma} \mrb{p _{\Sigma}}_{L, \text{max}} =
-			      \SI{122.8}{\cm}
-		      \]
-
-		\item Rispondiamo al terzo quesito. L'impulso trasverso massimo:
-		      \[
-			      \mrb{p _{\Sigma}}_{T, \text{max}} = \mrb{p _{\Sigma}^{\ast}}_{T} =
-			      p^\ast
-		      \]
-		      quindi il raggio minimo del rilevatore:
-		      \[
-			      R _\text{min} = 6.05 \frac{\mrb{p _{\Sigma}}_{T, \text{max}}}{\si{\GeV
-					      \per c}} \si{\cm} = \SI{17.9}{\cm}
-		      \]
-
-		\item Rispondiamo alla quarta domanda. Sia $m _{k^+}$ la massa della
-		      particella
-		      $k^+$, con $p ^{\ast} _{k^+}$:
-		      \[
-			      \eps _{k} = \sqrt{p ^{\ast\, 2} + m _{k}^{2}} = \SI{3.006}{\GeV}
-		      \]
-		      allora:
-		      \[
-			      \beta _{k}^{\ast} = \frac{p ^{\ast}}{\eps _{k}^{\ast}} = 0.9864
-		      \]
-		      quindi $\beta _{k}^{\ast} > \beta _\text{CM}$. Questo vuol dire che
-		      alcune particelle verrano emesse all'indietro, quindi non vedremo tutte
-		      le particelle emesse.
-
-		\item Rispondiamo alla quinta domanda.
-		      \[
-			      \mrb{p _{k}^{\ast}}_{L} = p ^{\ast} \cos \theta^\ast \mrb{\SI{90}{\degree}}
-			      = - \beta _\text{CM} \eps _{k}^{\ast}
-		      \]
+		      \begin{note}[Tempi di vita]
+			      Il tempo di vita indicato nel quesito è il tempo di vita a riposo!
+		      \end{note}
+		      \begin{equation}
+			      D _{\Sigma^+}
+			      = 3 \tau _{\Sigma^+} \gamma _{\Sigma^+} \beta _{\Sigma^+} c
+			      = 3 c \tau _{\Sigma^+} \frac{p _{\Sigma^+}}{m _{\Sigma^+}}
+			      = 6.05 \frac{p _{\Sigma^+}}{\si{\GeV \per c}} \si{\cm}
+		      \end{equation}
+		      Il caso peggiore si ha quando otteniamo l'impulso longitudinale
+		      massimo, ovvero l'emissione della $\Sigma^+$ avviene collineare con
+		      il beta del centro di massa.
+		      L'\textit{impulso massimo longitudinale} nel sistema del laboratorio,
 		      quindi:
-		      \[
-			      \cos \theta^\ast \mrb{\SI{90}{\degree}} = - \beta _\text{CM} \frac{\eps
-				      _{k}^{\ast}}{p ^{\ast}}
-		      \]
+		      \begin{equation}
+			      \mrb{p _{\Sigma^+}} _{L, \text{max}}
+			      = \gamma _\text{CM} \mrb{p ^{\ast} + \beta _\text{CM}
+				      + \eps _{\Sigma^+}^{\ast}}
+			      = \qty{20.3}{\GeV \per c}
+		      \end{equation}
+		      La \textit{lunghezza minima per il rilevatore}, affinché tutte
+		      le particelle $\Sigma^+$ decadano all'interno del rilevatore:
+		      \begin{equation}
+			      L _\text{min}
+			      = D _{\Sigma^+} \mrb{p _{\Sigma^+}}_{L, \text{max}}
+			      = \qty{122.8}{\cm}
+		      \end{equation}
+
+		\item Rispondiamo al terzo quesito. L'\textit{impulso trasverso massimo}:
+		      \begin{equation}
+			      \mrb{p _{\Sigma^+}}_{T, \text{max}}
+			      = \mrb{p _{\Sigma^+}^{\ast}}_{T}
+			      = p^\ast
+		      \end{equation}
+		      quindi il \textit{raggio minimo per la sezione del rilevatore}
+		      affinché tutti i decadimenti siano contenuti nel rilevatore:
+		      \begin{equation}
+			      R _\text{min}
+			      = 6.05 \frac{
+				      \mrb{p _{\Sigma^+}}_{T, \text{max}}
+			      }{
+				      \si{\GeV \per c}} \si{\cm
+			      }
+			      = \qty{17.9}{\cm}
+		      \end{equation}
+
+		\item Rispondiamo alla quarta domanda.
+		      Dobbiamo vedere se esiste un angolo massimo e di conseguenza se
+		      possiamo vedere tutte le $k^+$ emesse.
+		      Sia $m _{k^+}$ la massa della particella $k^+$, con
+		      $p ^{\ast} _{k^+}$:
+		      \begin{equation}
+			      \eps _{k^+}
+			      = \sqrt{p ^{\ast\, 2} + m _{k^+}^{2}}
+			      = \qty{3.006}{\GeV}
+		      \end{equation}
+		      allora:
+		      \begin{equation}
+			      \beta _{k^+}^{\ast}
+			      = \frac{p ^{\ast}}{\eps _{k^+}^{\ast}}
+			      = 0.9864
+		      \end{equation}
+		      quindi $\beta _{k^+}^{\ast} > \beta _\text{CM}$. Questo vuol dire che
+		      non esiste un angolo massimo per le particelle $k^+$ (ragionevolmente
+		      perché sono particelle più leggere e quindi possono essere
+		      back-scatterate) e di conseguenza alcune particelle verrano emesse
+		      all'indietro (\textit{back-scattering}), quindi non vedremo
+		      tutte le particelle emesse.
+
+		\item Rispondiamo alla quinta domanda, quindi calcoliamo qual è la frazione
+		      di particelle $k^+$ vediamo nel rilevatore.
+		      Le particelle rilevate saranno quelle che nel sistema del laboratorio
+		      sono emesse con un angolo di al più $\qty{90}{\degree}$.
+		      % TODO: aggiungi figura HANDWRITTEN 2023-03-21
+		      Calcoliamo la componente longitudinale di $p ^{\ast}_{k^+}$ in questa
+		      configurazione.
+		      Il boost di Lorentz per l'impulso longitudinale della particella
+		      $k_+$:
+		      \begin{equation}
+			      \mrb{p _{k^+}}_{L}
+			      = \gamma _{\text{CM}} \msb{
+				      \mrb{p _{k^+} ^{\ast}} + \beta _{\text{CM}} \eps _{k^+}^{\ast}
+			      }
+		      \end{equation}
+		      Quindi imponendo $\mrb{p _{k^+}}_{L} = 0$, che equivale a dire che la
+		      particella nel sistema del laboratorio è emessa con impulso
+		      longitudinale nullo, che vuol dire che la particella è emessa con
+		      angolo di $\qty{90}{\degree}$:
+		      \begin{equation}
+			      \gamma _{\text{CM}} \msb{
+				      \mrb{p _{k^+} ^{\ast}} + \beta _{\text{CM}} \eps _{k^+}^{\ast}
+			      } = 0
+			      \msse
+			      \mrb{p _{k^+}^{\ast}}_{L}
+			      = p ^{\ast} \cos \theta^\ast \mrb{\qty{90}{\degree}}
+			      = - \beta _\text{CM} \eps _{k^+}^{\ast}
+		      \end{equation}
+		      quindi:
+		      \begin{equation}
+			      \cos \theta^\ast \mrb{\qty{90}{\degree}}
+			      = - \beta _\text{CM} \frac{\eps _{k^+}^{\ast}}{p ^{\ast}}
+		      \end{equation}
 		      ricordando che $p^\ast$ è diretto lungo l'asse $y$.
 		      Quindi:
-		      \[
-			      \theta ^{\ast} \mrb{\SI{90}{\degree}} = \SI{165.5}{\degree}
-		      \]
+		      \begin{equation}
+			      \theta ^{\ast} \mrb{\qty{90}{\degree}}
+			      = \arccos \msb{- \beta _\text{CM} \frac{\eps _{k^+}^{\ast}}{p ^{\ast}}}
+			      = \qty{165.5}{\degree}
+		      \end{equation}
 		      La porzione visibile di particelle prodotte:
-		      \[
-			      \tau = \frac{1}{4 \pi} \dint{0}{2 \pi}{\phi}{f}{1}{\cos \theta^\ast}{} = % TODO: controlla qui
-			      \frac{1}{2} \mrb{1 - f} = \frac{1.98687}{2} \equiv 98.4 \%
-		      \]
+		      \begin{equation}
+			      \tau
+			      = \frac{1}{4 \pi} \dint{0}{2 \pi}{\phi}{f}{1}{\cos \theta^\ast}{}
+			      = ??? % TODO: controlla qui
+			      = \frac{1}{2} \mrb{1 - f} = \frac{1.98687}{2}
+			      \equiv 98.4 \%
+		      \end{equation}
 	\end{enumerate}
 \end{example}

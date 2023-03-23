@@ -2,12 +2,12 @@
 \chapter{2022-04-05}
 \begin{example}[]
   Consideriamo un fascio di pioni negativi su una targhetta di protoni:
-  \[
+  \begin{equation}
     \pi ^{-} + p \rightarrow \Lambda + k^0
-  \]
+  \end{equation}
   \begin{enumerate}
     \item Qual è l'energia minima affinché la reazione sia permessa?
-    \item assumendo di avere dei pioni di energia $E _{\pi} = \SI{2.0}{\GeV}$,
+    \item assumendo di avere dei pioni di energia $E _{\pi} = \qty{2.0}{\GeV}$,
       stabilire se esiste un angolo massimo (nel sistema del \textbf{Lab}) per
       le particelle $\Lambda$;
   \end{enumerate}
@@ -18,80 +18,80 @@
       \begin{table}[h!]
         \centering
         \begin{tabular}{r|c}
-          \textsc{Pioni} & \SI{140}{\MeV \per c^2}
+          \textsc{Pioni} & \qty{140}{\MeV \per c^2}
           \\
-          \textsc{Protoni} & \SI{938}{\MeV \per c^2}
+          \textsc{Protoni} & \qty{938}{\MeV \per c^2}
           \\
-          \textsc{Particella $k$} & \SI{498}{\MeV \per c^2}
+          \textsc{Particella $k$} & \qty{498}{\MeV \per c^2}
           \\
-          \textsc{Particella $\Lambda$} & \SI{1116}{\MeV \per c^2}
+          \textsc{Particella $\Lambda$} & \qty{1116}{\MeV \per c^2}
         \end{tabular}
       \end{table}
       Il quadrimpulso del pione:
-      \[
+      \begin{equation}
         \qvec{P} _{\pi} = \mcb{E _{\pi}, \vec{p}_{\pi}}
-      \]
+      \end{equation}
       mentre il quadrimpulso del protone:
-      \[
+      \begin{equation}
         \qvec{P}_{p} = \mcb{m _{p}, 0}
-      \]
+      \end{equation}
       dato che il protone è la targetta di reazione, che è fissa.
       Il quadrimpulso totale prima della reazione, che fornisce l'informazione
       sull'energia disponibile nel centro di massa:
-      \[
+      \begin{equation}
         \mrb{\qvec{P}_{\pi} + \qvec{P}_{p}}^{2} = E _{\pi}^{2} + m _{p}^{2} + m
         m_p E _{\pi} - \abs{\vec{p}_{\pi}}^{2} = m _{\pi}^{2} + m _{p}^{2} + 2
         m_p E _{\pi}
-      \]
+      \end{equation}
       Quindi avremo:
-      \[
+      \begin{equation}
         m _{\pi}^{2} + m _{p}^{2} + 2 m_p E _{\pi} = \mrb{m _{\Lambda} + m
         _{k}}^{2}
-      \]
+      \end{equation}
       Dobbiamo determinare l'energia minima dei pioni incidenti, per cui
       invertiamo la relazione:
-      \[
+      \begin{equation}
         E _{\pi} = \frac{\mrb{m _{\Lambda} + m _{k}}^{2} - m _{\pi}^{2} - m
-        _{p}^{2}}{2 m_p} = \SI{0.91}{\GeV}
-      \]
+        _{p}^{2}}{2 m_p} = \qty{0.91}{\GeV}
+      \end{equation}
 
     \item Dobbiamo determinare se vale la seguente relazione: $\beta^\ast
       _{\Lambda} < \beta _\text{CM}$.
-      \[
-        \beta _\text{CM} = \frac{\abs{\vec{p}\,}}{E} = \SI{0.68}{}
-      \]
+      \begin{equation}
+        \beta _\text{CM} = \frac{\abs{\vec{p}\,}}{E} = \qty{0.68}{}
+      \end{equation}
       L'energia disponibile del centro di massa:
-      \[
+      \begin{equation}
         E ^{\ast} = \sqrt{\mrb{\qvec{P}_{\pi} + \qvec{P}_{p}}^{2}} = \sqrt{m
-        _{p}^{2} + m _{\pi}^{2} + 2 E _{\pi} m _{p}} = \SI{2.16}{\GeV}
-      \]
+        _{p}^{2} + m _{\pi}^{2} + 2 E _{\pi} m _{p}} = \qty{2.16}{\GeV}
+      \end{equation}
       A questo punto possiamo calcolare:
-      \[
+      \begin{equation}
         \abs{\vec{p}_{k}^{\ast}} = \abs{\vec{p}_{\Lambda}^{\ast}} =
         \abs{\vec{p}^{\ast}} = \frac{\sqrt{\msb{E ^{\ast\,2} - \mrb{m
         _{\Lambda} + m_k}^{2}} \msb{E ^{\ast\,2} - \mrb{m _{\Lambda} - m
         _{k}}^{2}}}}{2 E^\ast}
-      \]
+      \end{equation}
       Quindi:
-      \[
+      \begin{equation}
         \beta _{\Lambda}^{\ast} = \frac{p ^{\ast}}{\sqrt{p ^{\ast\, 2} + m
         _{\Lambda}^{2}}} = 0.52
-      \]
+      \end{equation}
       Quindi \textit{esiste} un angolo massimo e dunque $\beta _{L}^{\ast} <
       \beta _\text{CM}$ e tale angolo vale:
-      \[
+      \begin{equation}
         \theta _\text{max} = \arctan \mcb{\msb{\gamma _\text{CM}
         \sqrt{\mrb{\frac{\beta _\text{CM}}{\beta ^{\ast}_{\Lambda}}}^{2} -
-        1}}^{-1}} = \SI{0.73}{\radian} \simeq \SI{42}{\degree}
-      \]
+        1}}^{-1}} = \qty{0.73}{\radian} \simeq \qty{42}{\degree}
+      \end{equation}
   \end{enumerate}
 \end{example}
 
 \begin{example}[]
   Consideriamo due fasci di particelle che collidono in un \textit{collider}.
   Sia il primo fascio di particelle un fascio di $e^-$ e sia la rispettiva
-  energia $E _{1} = \SI{12}{\GeV}$; sia il secondo fascio di particelle un
-  fascio di $e^+$ e sia la rispettiva energia $E _{2} = \SI{5}{\GeV}$.
+  energia $E _{1} = \qty{12}{\GeV}$; sia il secondo fascio di particelle un
+  fascio di $e^+$ e sia la rispettiva energia $E _{2} = \qty{5}{\GeV}$.
   Determinare:
   \begin{enumerate}
     \item l'energia totale nel centro di massa;
@@ -113,56 +113,57 @@
         &= \sqrt{2 m_e^2 + 2 E_1 E_2 + 2 \abs{\vec{p}_{1}} \abs{\vec{p}_{2}}}
       \end{align*}
       Ora, considerando che le energie $E_{1,2}$ sono molto maggiori delle
-      masse degli elettroni, possiamo considerare la seguente approssimazione:
-      \[
+      masse degli elettroni, possiamo considerare la seguente approssimazione
+      (confonendo impulsi ed energie):
+      \begin{equation}
         E ^{\ast} \simeq \sqrt{2 E_1 E_2 + 2 E_1 E_2} = \sqrt{4 E_1 E_2} = 2
-        \sqrt{E_1 E_2} = \SI{15.5}{\GeV}
-      \]
+        \sqrt{E_1 E_2} = \qty{15.5}{\GeV}
+      \end{equation}
 
     \item Nel sistema del centro di massa possiamo considerare che i due fasci
       abbiano lo stesso impulso e quindi che si spartiscano l'energia
       disponibile nel centro di massa:
-      \[
+      \begin{equation}
         p ^{\ast} = \frac{E ^{\ast}}{2}
-      \]
+      \end{equation}
 
     \item Calcoliamo i valori richiesti.
-      \[
+      \begin{equation}
         \beta _\text{CM} = \frac{\abs{\vec{p}_{1} + \vec{p}_{2}}}{E_1 + E_2} =
         \frac{\sqrt{E_1^2 - m_e^2} - \sqrt{E_2^2 - m_e^2}}{E_1 + E_2}
-      \]
+      \end{equation}
       a questo punto possiamo fare l'approssimazione di trascurare le masse
       rispetto alle energie:
-      \[
+      \begin{equation}
         \beta _\text{CM} = \frac{E_1 - E_2}{E_1 + E_2} = 0.4
-      \]
+      \end{equation}
 
       Il $\gamma _\text{CM}$, invece:
-      \[
+      \begin{equation}
         \gamma _\text{CM} = \frac{1}{\sqrt{1 - \beta _\text{CM}^{2}}} = 1.1
-      \]
+      \end{equation}
   \end{enumerate}
 \end{example}
 
 \begin{example}[Ultra High Cosmic Rays]
   Consideriamo il processo di \textit{Photo-Pion production}:
-  \[
+  \begin{equation}
     p + \gamma _\text{CMB} \rightarrow p + \pi^0
-  \]
+  \end{equation}
   dove $\gamma _\text{CMB}$ rappresenta un fotone delle \textsc{Cosmic
   Microwave Background} (o \textit{Radiazione Cosmica di Fondo}).
   I dati del problema sono:
   \begin{table}[h!]
     \centering
     \begin{tabular}{r|c}
-      Massa dei Protoni & $M_p = \SI{0.94}{\GeV \per c^2}$
+      Massa dei Protoni & $M_p = \qty{0.94}{\GeV \per c^2}$
       \\
-      Massa dei Pioni & $M _{\pi} = \SI{140}{\MeV \per c^2}$
+      Massa dei Pioni & $M _{\pi} = \qty{140}{\MeV \per c^2}$
       \\
       Energia dei fotoni della radiazione & $E _{\gamma _\text{CMB}} =
-      \SI{e-3}{\eV}$
+      \qty{e-3}{\eV}$
       \\
-      Energia dei raggi cosmici (protoni) & $E _\text{CR} > \SI{e18}{\eV}$
+      Energia dei raggi cosmici (protoni) & $E _\text{CR} > \qty{e18}{\eV}$
     \end{tabular}
   \end{table}
 
@@ -175,77 +176,77 @@
   \paragraph{Soluzione}
   \begin{enumerate}
     \item Calcoliamo i quadrimpulsi:
-      \[
+      \begin{equation}
         \qvec{P}_{p} = \mcb{E _{p}, \vec{p}_{p}}
         \qquad
         \qvec{P}_{\gamma _\text{CMB}} = \mcb{E _{\gamma _{\text{CMB}}},
         \vec{p}_{\gamma _\text{CMB}}}
-      \]
+      \end{equation}
       Per semplificare indichiamo con $\gamma$ le particelle $\gamma
       _\text{CMB}$, quindi, ricordando che $\gamma$ sono fotoni e sono quindi
       \textit{massless}:
-      \[
+      \begin{equation}
         E _{p}^{2} + \cancel{E _{\gamma}^{2}} + 2 E _{p} E _{\gamma} - p
         _{p}^{2} - \cancel{p _{\gamma}^{2}} - 2 \vec{p}_{p} \cdot
         \vec{p}_{\gamma} = \mrb{M _{p} + M _{\pi}}^{2}
-      \]
-      Considerato che $E _{p} \sim \SI{e18}{\eV}$, possiamo procedere con
+      \end{equation}
+      Considerato che $E _{p} \sim \qty{e18}{\eV}$, possiamo procedere con
       l'approssimazione $E _{p} \simeq p _{p}$, inoltre possiamo sostituire
       $\vec{p}_p \cdot \vec{p}_{\gamma} = E _{p} E _{\gamma} \cos \theta$, dove
       $\theta$ è l'\textit{angolo di scattering}. Dunque:
-      \[
+      \begin{equation}
         2 E_p E _{\gamma} + M _{p}^{2} - E _{p} E _{\gamma} \cos \theta =
         \mrb{M _{p} + M _{\pi}}^{2}
-      \]
+      \end{equation}
       L'energia di soglia (\textit{threshold}):
-      \[
+      \begin{equation}
         E _{p} ^\text{th} = \frac{\mrb{M_p + M _{\pi}}^{2} - M _{p}^{2}}{2 E
         _{\gamma} \mrb{1 - \cos \theta}}
-      \]
+      \end{equation}
 
     \item Il minimo sull'energia si ottiene quando $\theta = \pi$, ovvero per
       urto frontale. Quindi l'energia minima di soglia sarà:
-      \[
+      \begin{equation}
         E _\text{min}^\text{th} = \frac{\mrb{M _{p} + M _{\pi}}^{2} - M _p
-        ^{2}}{4 E _{\gamma}} = \SI{6.8e19}{\eV}
-      \]
+        ^{2}}{4 E _{\gamma}} = \qty{6.8e19}{\eV}
+      \end{equation}
   \end{enumerate}
 \end{example}
 
 \begin{example}[UHECR]
   Consideriamo di nuovo un processo che coinvolge \textsc{Ultra High Energy
   Cosmic Rays}.
-  \[
+  \begin{equation}
     p + \gamma _\text{CMB} \rightarrow p + e^+ + e^-
-  \]
+  \end{equation}
 
-  \[
+  \begin{equation}
     \qvec{P}_{p} = \mcb{E _{p}, \vec{p}_{p}}
     \qquad
     \qvec{P}_{\gamma} = \mcb{E _{\gamma}, \vec{p}_{\gamma}}
-  \]
+  \end{equation}
   quindi:
-  \[
+  \begin{equation}
     E^2 _{p} + \cancel{E _{\gamma}^{2}} + 2 E _{p} E _{\gamma} - p^2 _{p} +
     \cancel{p ^{2} _{\gamma}} - 2 \vec{p}_{p} \cdot \vec{p}_{\gamma} = \mrb{M
     _{p} + 2 m_e}^{2}
-  \]
+  \end{equation}
   Sfruttando l'approssimazione $m _{e} \ll M _{p}$:
-  \[
+  \begin{equation}
     \Rightarrow 2 E_p E _{\gamma} \mrb{1 - \cos \theta} = \mrb{M _{p} + 2
     m_e}^{2} - M _{p}^{2} = \cancel{M _{p}^{2}} + 4 m _{e}^{2} + 4 M _{p} m_e -
     \cancel{M _{p}^{2}} \simeq 4 M_p m_e
-  \]
+  \end{equation}
   quindi:
-  \[
+  \begin{equation}
     E ^\text{th} \mrb{\theta} = \frac{2 m_e M_p}{E _{\gamma_\text{CMB}} \mrb{1
     - \cos \theta}}
-  \]
+  \end{equation}
   Quindi il minimo dell'energia di soglia, che si ha per $\theta = \pi$:
-  \[
+  \begin{equation}
     E ^\text{th}_\text{min} = \frac{m_e M _{p}}{E _{\gamma _\text{CMB}}} =
-    \SI{0.5e18}{\eV}
-  \]
+    \qty{0.5e18}{\eV}
+  \end{equation}
 \end{example}
 
 \begin{note}[]

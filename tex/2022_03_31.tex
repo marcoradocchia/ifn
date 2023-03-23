@@ -1,150 +1,175 @@
 %LTeX: language=it
 \chapter{2022-03-31}
 \begin{example}[]
-  Fascio di pioni $\pi$ con energia totale $E _{\pi}$ su un bersaglio di
-  $\ch{^{2}H}$. Viene prodotta una risonanza:
-  \[
-    M \rightarrow m_1 + m_2
-  \]
-  Sapendo che $M = 2.58 m_1$ e che $m_2$ è trascurabile rispetto a $m_1$ ($m_2
-  \gg m_1$):
-  \begin{enumerate}
-    \item Qual è $E _{\pi}$ minima per avere un angolo massimo (\textbf{Lab})
-      per la particella $1$ ($m_1$).
-    \item La particella $M$ sarà una particella $\Delta (2420)$ di massa
-      $\SI{2420}{\MeV \per c^2}$.
-      \[
-        \Delta (2420) \rightarrow \Sigma + k
-      \]
-      Le masse sono: $m _{\Sigma} = \SI{1.189}{\GeV \per c^2}$ e $m _{k} =
-      \SI{0.494}{\GeV \per c^2}$.
-      Se la $\Sigma$ viene emessa ad un angolo di $\SI{120}{\degree}$ nel
-      sistema del CM (data l'energia del fascio trovata nel punto $1$) $E _{T}
-      = \SI{2.65}{\GeV}$:
-      \begin{enumerate}
-        \item qual è l'angolo $\theta$ (sistema del laboratorio) che
-          corrisponde all'angolo $\theta^\ast = \SI{120}{\degree}$ nel
-          sistema del centro di massa?
-        \item a quale impulso $p$ (sistema del laboratorio) corrisponde?
-      \end{enumerate}
-    \item se un rilevatore lungo \SI{26}{\cm} vede il \SI{99}{\%} dei punti di
-      decadimento della particella $\Sigma$, allora qual è il tempo di vita
-      medio della $\Sigma$?
-  \end{enumerate}
+	Fascio di pioni $\pi$ con energia totale $E _{\pi}$ su un bersaglio di
+	$\ch{^{2}H}$. Viene prodotta una risonanza:
+	\begin{equation}
+		M \rightarrow m_1 + m_2
+	\end{equation}
+	Sapendo che $M = 2.58 m_1$ e che $m_2$ è trascurabile rispetto a $m_1$ ($m_2
+		\gg m_1$):
+	\begin{enumerate}
+		\item Qual è $E _{\pi}$ minima per avere un angolo massimo (\textbf{Lab})
+		      per la particella $1$ ($m_1$).
+		\item La particella $M$ sarà una particella $\Delta (2420)$ di massa
+		      $\qty{2420}{\MeV \per c^2}$.
+		      \begin{equation}
+			      \Delta (2420) \rightarrow \Sigma + k
+		      \end{equation}
+		      Le masse sono: $m _{\Sigma} = \qty{1.189}{\GeV \per c^2}$ e $m _{k} =
+			      \qty{0.494}{\GeV \per c^2}$.
+		      Se la $\Sigma$ viene emessa ad un angolo di $\qty{120}{\degree}$ nel
+		      sistema del CM (data l'energia del fascio trovata nel punto $1$) $E
+				      _{T} = \qty{2.65}{\GeV}$:
+		      \begin{enumerate}
+			      \item qual è l'angolo $\theta$ (sistema del laboratorio) che
+			            corrisponde all'angolo $\theta^\ast = \qty{120}{\degree}$ nel
+			            sistema del centro di massa?
+			      \item a quale impulso $p$ (sistema del laboratorio) corrisponde?
+		      \end{enumerate}
+		\item se un rilevatore lungo \qty{26}{\cm} vede il \qty{99}{\%} dei punti
+		      di decadimento della particella $\Sigma$, allora qual è il tempo di
+		      vita medio della $\Sigma$?
+	\end{enumerate}
 
-  \paragraph{Soluzione}
-  \begin{enumerate}
-    \item La condizione da soddisfare sarà:
-      \[
-        \beta _\text{CM} \geq \beta _{1}^{\ast}
-      \]
-      L'impulso delle due particelle:
-      \[
-        \abs{\vec{p}_{1}^{\,\ast}} = \abs{\vec{p}_{2}^{\,\ast}} =
-        \abs{\vec{p}^{\,\ast}} = \frac{\sqrt{\msb{M^2 - \mrb{m_1 + m_2}^{2}}
-        \msb{M^2 - \mrb{m_1 + m_2}^{2}}}}{2M}
-      \]
-      L'energia della particella $1$:
-      \[
-        \eps _{1}^{\ast} = \frac{M^2 + m_1^2 - m_2^2}{2M}
-      \]
-      quindi:
-      \[
-        p_1^\ast = \frac{p ^{\ast}}{\eps _{1}^{\ast}} = \frac{\sqrt{\mrb{M^2 -
-        m_1^2} \mrb{M^2 - m_1^2}}}{M^2 + m_1^2} = \frac{M^2 - m_1^2}{M^2 +
-        m_1^2} = \frac{2.58^2 - 1}{2.58^2 + 1} = 0.7388
-      \]
-      Il beta del centro di massa:
-      \[
-        \beta _\text{CM} = \frac{\abs{\vec{p} _{\pi}}}{E _{\pi} + m_p} =
-        \frac{\sqrt{E^2 _{\pi} - m _{\pi}^{2}}}{E _{\pi} + m_p} = \beta_1^\ast
-      \]
-      quindi $E _{\pi}$:
-      \[
-        E _{\pi} = \frac{\beta _{1}^{\ast} m_p + \sqrt{\mrb{\beta_1^\ast
-        m_p}^{2} + \mrb{1 - \beta_1^\ast} \mrb{m _{\pi}^{2} + \beta_1 ^{\ast}
-        m_p}}}{1 - \beta_1 ^{\ast\,2}} = \SI{2.65}{\GeV}
-      \]
+	\paragraph{Soluzione}
+	\begin{enumerate}
+		\item La condizione da soddisfare sarà:
+		      \begin{equation}
+			      \beta _\text{CM} \geq \beta _{1}^{\ast}
+		      \end{equation}
+		      L'impulso delle due particelle:
+		      \begin{equation}
+			      \abs{\vec{p}_{1}^{\,\ast}}
+			      = \abs{\vec{p}_{2}^{\,\ast}}
+			      = \abs{\vec{p}^{\,\ast}}
+			      = \frac{\sqrt{\msb{M^2 - \mrb{m_1 + m_2}^{2}}
+					      \msb{M^2 - \mrb{m_1 + m_2}^{2}}}}{2M}
+		      \end{equation}
+		      L'energia della particella $1$:
+		      \begin{equation}
+			      \eps _{1}^{\ast} = \frac{M^2 + m_1^2 - m_2^2}{2M}
+		      \end{equation}
+		      quindi:
+		      \begin{equation}
+			      p_1^\ast
+			      = \frac{p ^{\ast}}{\eps _{1}^{\ast}}
+			      = \frac{\sqrt{\mrb{M^2 - m_1^2} \mrb{M^2 - m_1^2}}}{M^2 + m_1^2}
+			      = \frac{M^2 - m_1^2}{M^2 + m_1^2}
+			      = \frac{2.58^2 - 1}{2.58^2 + 1}
+			      = 0.7388
+		      \end{equation}
+		      Il beta del centro di massa:
+		      \begin{equation}
+			      \beta _\text{CM}
+			      = \frac{\abs{\vec{p} _{\pi}}}{E _{\pi} + m_p}
+			      = \frac{\sqrt{E^2 _{\pi} - m _{\pi}^{2}}}{E _{\pi} + m_p}
+			      = \beta_1^\ast
+		      \end{equation}
+		      quindi $E _{\pi}$:
+		      \begin{equation}
+			      E _{\pi}
+			      = \frac{
+				      \beta _{1}^{\ast} m_p
+				      + \sqrt{\mrb{\beta_1^\ast m_p}^{2}
+					      + \mrb{1 - \beta_1^\ast} \mrb{
+						      m _{\pi}^{2} + \beta_1 ^{\ast} m_p}
+				      }}{1 - \beta_1 ^{\ast\,2}}
+			      = \qty{2.65}{\GeV}
+		      \end{equation}
 
-    \item Dato che $\theta^\ast = \SI{120}{\degree}$:
-      \[
-        \beta _\text{CM} = \beta^\ast_1 = 0.7388
-      \]
-      \[
-        \eps _{\Sigma}^{\ast} = \sqrt{p ^{\ast\, 2} + m _{\Sigma}^{2}} =
-        \SI{1.452}{\GeV}
-      \]
-      L'impulso $p^\ast$:
-      \[
-        p^\ast = \SI{0.833}{\GeV \per c}
-      \]
-      \[
-        \begin{dcases}
-          \mrb{p _{\Sigma}}_{L} = \gamma _\text{CM} \mrb{p ^{\ast} \cos
-          \theta^\ast + \beta _\text{CM} \eps _{\Sigma}^{\ast}} =
-          \SI{0.974}{\GeV \per c}
-          \\
-          \mrb{p _{\Sigma}}_{T} = p^\ast \sin \theta^\ast = \SI{0.721}{\GeV
-          \per c}
-        \end{dcases}
-      \]
-      Quindi $p _{\Sigma}$:
-      \[
-        p _{\Sigma} = \sqrt{\mrb{p _{\Sigma}}_{L}^{2} + \mrb{p
-        _{\Sigma}}_{T}^{2}} = \SI{1.21}{\GeV \per c}
-      \]
-      L'angolo $\theta _{\Sigma}$ relativo al sistema del laboratorio che
-      stavamo cercando:
-      \[
-        \theta _{\Sigma} = \arccos \msb{\frac{\mrb{p _{\Sigma}}_{T}}{p
-        _{\Sigma}}} = \SI{36.5}{\degree}
-      \]
+		\item Dato che $\theta^\ast = \qty{120}{\degree}$:
+		      \begin{equation}
+			      \beta _\text{CM} = \beta^\ast_1 = 0.7388
+		      \end{equation}
+		      \begin{equation}
+			      \eps _{\Sigma}^{\ast}
+			      = \sqrt{p ^{\ast\, 2} + m _{\Sigma}^{2}}
+			      = \qty{1.452}{\GeV}
+		      \end{equation}
+		      L'impulso $p^\ast$:
+		      \begin{equation}
+			      p^\ast = \qty{0.833}{\GeV \per c}
+		      \end{equation}
+		      \begin{equation}
+			      \begin{dcases}
+				      \mrb{p _{\Sigma}}_{L}
+				      = \gamma _\text{CM} \mrb{
+					      p ^{\ast} \cos \theta^\ast + \beta _\text{CM} \eps _{\Sigma}^{\ast}
+				      }
+				      = \qty{0.974}{\GeV \per c}
+				      \\
+				      \mrb{p _{\Sigma}}_{T}
+				      = p^\ast \sin \theta^\ast = \qty{0.721}{\GeV \per c}
+			      \end{dcases}
+		      \end{equation}
+		      Quindi $p _{\Sigma}$:
+		      \begin{equation}
+			      p _{\Sigma}
+			      = \sqrt{\mrb{p _{\Sigma}}_{L}^{2} + \mrb{p _{\Sigma}}_{T}^{2}}
+			      = \qty{1.21}{\GeV \per c}
+		      \end{equation}
+		      L'angolo $\theta _{\Sigma}$ relativo al sistema del laboratorio che
+		      stavamo cercando:
+		      \begin{equation}
+			      \theta _{\Sigma}
+			      = \arccos \msb{\frac{\mrb{p _{\Sigma}}_{T}}{p _{\Sigma}}}
+			      = \qty{36.5}{\degree}
+		      \end{equation}
 
-    \item La distanza media percorsa dalle particelle $\Sigma$ prima del
-      decadimento può essere espresso come:
-      \[
-        \braket{L} = c \tau _{\Sigma} \beta _{\Sigma} \gamma _{\Sigma} = c \tau
-        _{\Sigma} \frac{p _{\Sigma}}{m _{\Sigma}}
-      \]
-      A questo punto, consideriamo:
-      \[
-        p _{\Sigma}^\text{max} = \gamma _\text{CM} \mrb{p ^{\ast} + \beta
-        _\text{CM} \eps _{\Sigma}^{\ast}} = \SI{2.83}{\GeV}
-      \]
-      Il \SI{99}{\%} dgli eventi di decadimento corrisponde a:
-      \[
-        \frac{N}{N _\text{tot}} = 0.99
-      \]
-      e ricordando che il decadimento di particelle è associato a legge
-      esponenziale:
-      \[
-        \mint{0}{\infty}{t}{N \mrb{t}} = N _{0} \mint{0}{\infty}{t}{e^{-
-        \frac{t}{\tau _{\Sigma}}}} = N _{0} \tau _{\Sigma}
-      \]
-      per cui:
-      \[
-        0.99 = \frac{1}{N _{0} \tau _{\Sigma}} \mint{0}{T}{t}{N \mrb{t}} =
-        \frac{1}{\cancel{N_0} \tau _{\Sigma}} \cancel{N_0} \mint{0}{T}{t}{e^{-
-        \frac{t}{\tau _{\Sigma}}}} = 1 - \mint{T}{\infty}{t}{\frac{1}{\tau
-        _{\Sigma}} e^{- \frac{t}{\tau _{\Sigma}}}}
-      \]
-      Quindi:
-      \[
-        0.99 = 1 - e^{\frac{T}{\tau _{\Sigma}}}
-        \mthen
-        T = - \ln \mrb{0.01} \tau _{\Sigma} = 4.6 \tau _{\Sigma}
-      \]
-      Ora conosciamo la vita media della particella $\Sigma$, quindi
-      sostituendo nella lunghezza percorsa prima del decadimento:
-      \[
-        L = c T \frac{p _{\Sigma}^\text{max}}{m _{\Sigma}} = 4.6 \tau
-        _{\Sigma} \frac{p _{\Sigma}^\text{max}}{m _{\Sigma}}
-      \]
-      e dunque:
-      \[
-        \tau _{\Sigma} = \frac{L m_{\Sigma}}{4.6 c\, p _{\Sigma}^\text{max}}
-        = \frac{0.26 \cdot 1.189}{4.6 \cdot \SI{3e8} \cdot 2.83}\,
-        \si{\s} = \SI{0.79e-10}{\s}
-      \]
-  \end{enumerate}
+		\item La distanza media percorsa dalle particelle $\Sigma$ prima del
+		      decadimento può essere espresso come:
+		      \begin{equation}
+			      \braket{L}
+			      = c \tau _{\Sigma} \beta _{\Sigma} \gamma _{\Sigma}
+			      = c \tau _{\Sigma} \frac{p _{\Sigma}}{m _{\Sigma}}
+		      \end{equation}
+		      A questo punto, consideriamo:
+		      \begin{equation}
+			      p _{\Sigma}^\text{max}
+			      = \gamma _\text{CM} \mrb{p ^{\ast}
+				      + \beta _\text{CM} \eps _{\Sigma}^{\ast}}
+			      = \qty{2.83}{\GeV}
+		      \end{equation}
+		      Il \qty{99}{\%} dgli eventi di decadimento corrisponde a:
+		      \begin{equation}
+			      \frac{N}{N _\text{tot}} = 0.99
+		      \end{equation}
+		      e ricordando che il decadimento di particelle è associato a legge
+		      esponenziale:
+		      \begin{equation}
+			      \mint{0}{\infty}{t}{N \mrb{t}}
+			      = N _{0} \mint{0}{\infty}{t}{e^{- \frac{t}{\tau _{\Sigma}}}}
+			      = N _{0} \tau _{\Sigma}
+		      \end{equation}
+		      per cui:
+		      \begin{equation}
+			      0.99
+			      = \frac{1}{N _{0} \tau _{\Sigma}} \mint{0}{T}{t}{N \mrb{t}}
+			      = \frac{1}{\cancel{N_0} \tau _{\Sigma}}
+			      \cancel{N_0} \mint{0}{T}{t}{e^{- \frac{t}{\tau _{\Sigma}}}}
+			      = 1 - \mint{T}{\infty}{t}{\frac{1}{\tau _{\Sigma}}
+				      e^{- \frac{t}{\tau _{\Sigma}}}}
+		      \end{equation}
+		      Quindi:
+		      \begin{equation}
+			      0.99 = 1 - e^{\frac{T}{\tau _{\Sigma}}}
+			      \mthen
+			      T = - \ln \mrb{0.01} \tau _{\Sigma} = 4.6 \tau _{\Sigma}
+		      \end{equation}
+		      Ora conosciamo la vita media della particella $\Sigma$, quindi
+		      sostituendo nella lunghezza percorsa prima del decadimento:
+		      \begin{equation}
+			      L
+			      = c T \frac{p _{\Sigma}^\text{max}}{m _{\Sigma}}
+			      = 4.6 \tau _{\Sigma} \frac{p _{\Sigma}^\text{max}}{m _{\Sigma}}
+		      \end{equation}
+		      e dunque:
+		      \begin{equation}
+			      \tau _{\Sigma}
+			      = \frac{L m_{\Sigma}}{4.6 c\, p _{\Sigma}^\text{max}}
+			      = \frac{0.26 \cdot 1.189}{4.6 \cdot \qty{3e8} \cdot 2.83}\, \si{\s}
+			      = \qty{0.79e-10}{\s}
+		      \end{equation}
+	\end{enumerate}
 \end{example}
