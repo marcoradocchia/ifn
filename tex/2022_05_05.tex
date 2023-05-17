@@ -3,195 +3,280 @@
 \section{Radioattività - Decadimenti Nucleari (reprise)}
 \subsection{Decadimenti sequenziali}
 Si parla di \textit{decadimenti sequenziali} quando un ``\textit{nulceo
-padre}'' può produrre un ``\textit{nucleo figlio}'' che è a sua volta
+	padre}'' può produrre un ``\textit{nucleo figlio}'' che è a sua volta
 instabile. Indicando con $1$ il \textit{nucleo padre} e con $2$ il
 \textit{nucleo figlio} e con $\omega_1$ e $\omega_2$ rispettivamente le
 \textit{probabilità totali di decadimento per unità di tempo}:
-\begin{align*}
-  \mdv{N_1}{t} &= - \omega_1 N_1
-  \\
-  \mdv{N_2}{t} &= - \mdv{N_1}{t} - \omega_2 N_2 = \omega_1 N_1 - \omega_2 N_2
-\end{align*}
-Il nucleo filgio che decade, a sua volta produrrà un nulceo figlio che
+\begin{equation}
+	\begin{dcases}
+		\mdv{N_1}{t} & = - \omega_1 N_1
+		\\
+		\mdv{N_2}{t} & = - \mdv{N_1}{t} - \omega_2 N_2 = \omega_1 N_1 - \omega_2 N_2
+	\end{dcases}
+\end{equation}
+Il nucleo figlio che decade, a sua volta produrrà un nulceo figlio che
 indichiamo con $3$:
 \begin{align*}
-  \mdv{N_3}{t} &= - \msb{\mdv{N_2}{t}}_{2\to3} - \omega_3 N_3 = \omega_2 N_2 -
-  \omega_3 N_3
-  \\
-  &\vdots 
+	\mdv{N_3}{t} & = - \msb{\mdv{N_2}{t}}_{2\to3} - \omega_3 N_3 = \omega_2 N_2 -
+	\omega_3 N_3
+	\\
+	             & \vdots
 \end{align*}
 e così via\footnote{
-  Potremmo avere anche altri decadimenti sequenziali!
+	Potremmo avere anche altri decadimenti sequenziali!
 }.
+Quindi:
+\begin{equation}
+	N_2 \mrb{t}
+	= \frac{N_1 \mrb{t = 0} \omega_1}{\omega_2 - \omega_1}
+	\mrb{e^{-\omega_1 t} - e^{-\omega_2 t }}
+\end{equation}
+e
+\begin{equation}
+	N_3 \mrb{t}
+	= N_1 \mrb{t = 0} \omega_1 \omega_2
+	\msb{
+		\frac{e^{-\omega_1 t}}{\mrb{\omega_2 - \omega_1} \mrb{\omega_3 - \omega_1}}
+		+
+		\frac{e^{-\omega_2 t}}{\mrb{\omega_3 - \omega_2} \mrb{\omega_1 - \omega_2}}
+		+
+		\frac{e^{-\omega_1 t}}{\mrb{\omega_1 - \omega_3} \mrb{\omega_2 - \omega_3}}
+	}
+\end{equation}
+
 
 La condizione di equilibrio del numero di particelle figlio $N_2$ è la
-condizione pe cui la derivata temporale del numero di particelle diventa
+condizione per cui la derivata temporale del numero di particelle diventa
 stazionaria:
-\[
-  \mdv{N_2}{t} = -\omega_2 N_2 + \omega_1 N_1 = 0
-\]
-da questo otteniamo:
-\[
-  \textbf{Condizione di equilibrio secolare}\qquad
-  \boxed{
-    N_2 \mrb{t} = \frac{\omega_1}{\omega_2} N_1 \mrb{t}
-  }
-\]
+\begin{equation}
+	\mdv{N_2}{t} = -\omega_2 N_2 + \omega_1 N_1 = 0
+	\mthen
+	\omega_2 N_2 \mrb{t} = \omega_1 N_1 \mrb{t}
+\end{equation}
+da questo otteniamo la condizione:
+\begin{equation}
+	\textbf{Equilibrio secolare}
+	\qquad
+	\boxed{
+		N_2 \mrb{t} = \frac{\omega_1}{\omega_2} N_1 \mrb{t}
+	}
+\end{equation}
 questa condizione di equilibrio è valida nel caso in cui:
-\[
-  t \gg t_2 = \frac{1}{\omega_2}
-\]
+\begin{equation}
+	t \gg t_2 = \frac{1}{\omega_2}
+\end{equation}
 
 A sua volta vale anche per le particelle prodotte (eventualmente) dai
 decadimenti delle particelle figlio:
-\[
-  \mdv{N_3}{t} = -\omega_3 N_3 + \omega_2 N_2 = 0
-  \mthen
-  N_3 \mrb{t} = \frac{\omega_2}{\omega_3} N_2 \mrb{t}
-\]
+\begin{equation}
+	\mdv{N_3}{t} = -\omega_3 N_3 + \omega_2 N_2 = 0
+	\mthen
+	N_3 \mrb{t} = \frac{\omega_2}{\omega_3} N_2 \mrb{t}
+\end{equation}
 
 \subsection{Condizioni energetiche per i vari decadimenti}
 \subsubsection{Decadimenti $\alpha$}
-\[
-  \mrb{Z,A} \rightarrow \mrb{Z-2, A-4} + \mrb{2,4}
-\]
+\begin{equation}
+	\mrb{Z,A} \rightarrow \mrb{Z-2, A-4} + \mrb{2,4}
+\end{equation}
 
-\begin{align*}
-  \mrb{E_\text{tot}}_\text{ini} = \mrb{E_\text{tot}}_\text{fin}
-  \\
-  \mrb{\vec{p}_\text{tot}}_\text{ini} = \mrb{\vec{p}_\text{tot}}_\text{fin}
-\end{align*}
-\textit{invarianza per traslazioni spazio-temporali}
+\begin{equation}
+	\begin{dcases}
+		\mrb{E_\text{tot}}_\text{ini} = \mrb{E_\text{tot}}_\text{fin}
+		\\
+		\mrb{\vec{p}_\text{tot}}_\text{ini} = \mrb{\vec{p}_\text{tot}}_\text{fin}
+	\end{dcases}
+\end{equation}
+\textit{invarianza per traslazioni spazio-temporali}.
 Oltre a questo:
-\[
-  \mrb{\vec{J}_\text{tot}}_\text{ini} = \mrb{\vec{J}_\text{tot}}_\text{fin}
-\]
+\begin{equation}
+	\mrb{\vec{J}_\text{tot}}_\text{ini} = \mrb{\vec{J}_\text{tot}}_\text{fin}
+\end{equation}
 \textit{invarianza per rotazione}.
 
 \paragraph{Sistema di quiete della particella che decade}
 Consideriamo il \textit{sistema di quiete delle particella che decade}. In tale
 sistema di riferimento abbiamo:
-\begin{align*}
-  \mrb{E_\text{tot}}_\text{ini} &= m \mrb{Z,A} c^2
-  \\
-  \mrb{\vec{p}_\text{tot}}_\text{ini} &= 0
-\end{align*}
+\begin{equation}
+	\begin{dcases}
+		\mrb{E_\text{tot}}_\text{ini}       & = m \mrb{Z,A} c^2
+		\\
+		\mrb{\vec{p}_\text{tot}}_\text{ini} & = 0
+	\end{dcases}
+\end{equation}
 L'energia totale e l'impulso finali delle particelle dovranno essere uguali
 alle quantità iniziali:
 \begin{align*}
-  \mrb{E_\text{tot}}_\text{fin} &= \mrb{E_\text{tot}}_\text{fin} = m \mrb{Z-2,
-  A-4}c^2 + m \mrb{2,4} c^2 + T
-  \\
-  \mrb{\vec{p}_\text{tot}}_\text{fin} &= 0
+	\mrb{E_\text{tot}}_\text{fin}       & = \mrb{E_\text{tot}}_\text{fin} = m \mrb{Z-2,
+		A-4}c^2 + m \mrb{2,4} c^2 + T
+	\\
+	\mrb{\vec{p}_\text{tot}}_\text{fin} & = 0
 \end{align*}
 Quindi:
-\[
-  m \mrb{Z,A} c^2 = m \mrb{Z-2, A-4} c^2 + m \mrb{2,4}c^2 + T
-\]
+\begin{equation}
+	m \mrb{Z,A} c^2 = m \mrb{Z-2, A-4} c^2 + m \mrb{2,4}c^2 + T
+\end{equation}
 dove $T \geq 0$ ha un valore minimo possibile che è $0$.
 Affinché il \textit{decadimento $\alpha$} possa avvenire, si deve verificare la
 condizione:
-\[
-  m \mrb{Z,A} c^2 - \msb{m \mrb{Z-2, A-4} c^2 + m \mrb{2,4} c^2} \geq 0
-\]
+\begin{equation}
+	m \mrb{Z,A} c^2 - \msb{m \mrb{Z-2, A-4} c^2 + m \mrb{2,4} c^2} \geq 0
+\end{equation}
 dove $m \mrb{Z,A} c^2$ è la \textit{massa iniziale} ed il termine in parentesi
 quadre rappresenta la \textit{somma delle masse nello stato finale}.
 Possiamo scrivere, dato il decadimento:
-\[
-  \begin{dcases}
-    m \mrb{Z,A} c^2 = z m_p c^2 + \mrb{A-Z} m_n c^2 - B \mrb{Z,A}
-    \\
-    \msb{\dots} = - \mrb{Z-2} m_p c^2 - \mrb{A - Z -
-    2} m_n c^2 + B \mrb{Z - 2, A - 4} - 2 m_p c^2 - 2 m_n c^2 + B \mrb{2, 4}
-  \end{dcases}
-\]
+\begin{equation}
+	\begin{dcases}
+		m \mrb{Z,A} c^2 = z m_p c^2 + \mrb{A-Z} m_n c^2 - B \mrb{Z,A}
+		\\
+		\msb{\dots} = - \mrb{Z-2} m_p c^2 - \mrb{A - Z -
+			2} m_n c^2 + B \mrb{Z - 2, A - 4} - 2 m_p c^2 - 2 m_n c^2 + B \mrb{2, 4}
+	\end{dcases}
+\end{equation}
 quindi sostituendo nell'equazione precedente:
 \begin{align*}
-  \cancel{z m_p c^2} + \cancel{\mrb{A-Z} m_n c^2} & - B \mrb{Z,A} - \mrb{Z-2}
-  m_p c^2 - \mrb{A - Z - 2} m_n c^2 +
-  \\
-  & + B \mrb{Z - 2, A - 4} - 2 m_p c^2 - 2 m_n c^2
-  + B \mrb{2, 4} \geq 0 % TODO: finisci di cancellare i termini
+	\cancel{z m_p c^2} + \cancel{\mrb{A-Z} m_n c^2} & - B \mrb{Z,A} - \mrb{Z-2}
+	m_p c^2 - \mrb{A - Z - 2} m_n c^2 +
+	\\
+	                                                & + B \mrb{Z - 2, A - 4} - 2 m_p c^2 - 2 m_n c^2
+	+ B \mrb{2, 4} \geq 0 % TODO: finisci di cancellare i termini
 \end{align*}
 quindi:
-\[
-  - B \mrb{Z,A} + B \mrb{Z-2, A-4} + B \mrb{2,4} \geq 0
-\]
+\begin{equation}
+	- B \mrb{Z,A} + B \mrb{Z-2, A-4} + B \mrb{2,4} \geq 0
+\end{equation}
 allora:
-\[
-  \msb{B \mrb{Z-2, A-4} + B \mrb{2,4}} - B \mrb{Z,A} \geq 0
-\]
+\begin{equation}
+	\msb{B \mrb{Z-2, A-4} + B \mrb{2,4}} - B \mrb{Z,A} \geq 0
+\end{equation}
 dove:
 \begin{align*}
-  \msb{B \mrb{Z-2, A-4} + B \mrb{2,4}} &\textit{Somma delle energie di legame
-  dello stato finale}
-  B \mrb{Z,A} &\textit{Stato iniziale}
+	\msb{B \mrb{Z-2, A-4} + B \mrb{2,4}} & \textit{Somma delle energie di legame
+		dello stato finale}
+	B \mrb{Z,A}                          & \textit{Stato iniziale}
 \end{align*}
 Quindi otteniamo dei \textit{decadimenti $\alpha$} solo se è soddisfatta questa
 condizione!
 
 \begin{note}[]
-  Questo è il motivo per cui non esistono in natura dei nuclei arbitrariamente
-  grandi: ad un certo punto le dimensioni dei nuclei e il numero dei nucleoni
-  diventa tale che è probabile il decadimento $\alpha$ e il nucleo è quindi
-  instabile.
+	Questo è il motivo per cui non esistono in natura dei nuclei arbitrariamente
+	grandi: ad un certo punto le dimensioni dei nuclei e il numero dei nucleoni
+	diventa tale che è probabile il decadimento $\alpha$ e il nucleo è quindi
+	instabile.
 \end{note}
 
 \subsubsection{Decadimento $\beta$}
-\begin{align*}
-  \mrb{Z,A} \rightarrow \mrb{Z+1,A} + e^- + \cc{\nu_e} &
-  \qquad\textit{decadimento $\beta^-$}
-  \\
-  \mrb{Z,A} \rightarrow \mrb{Z-1,A} + e^+ + \nu_e &\qquad\textit{decadimento
-  $\beta^+$}
-  \\
-  e^- + \mrb{Z,A} \rightarrow \mrb{Z-1,A} + \nu_e &\qquad\textit{e.c}
-\end{align*}
-dove il processo \textit{e.c.} sta per \textit{electronic capture}
-(\textit{cattura elettronica}).
+Il decadimento $\beta$ è un processo tale che $A = \text{const}$ e $Z
+\rightarrow Z \pm 1$:
+\begin{equation}
+	\begin{dcases}
+		\mrb{Z,A} \rightarrow \mrb{Z+1,A} + e^- + \cc{\nu_e} & \textit{decadimento $\beta^-$}
+		\\
+		\mrb{Z,A} \rightarrow \mrb{Z-1,A} + e^+ + \nu_e      & \textit{decadimento $\beta^+$}
+		\\
+		e^- + \mrb{Z,A} \rightarrow \mrb{Z-1,A} + \nu_e      & \textit{electronic capture}
+	\end{dcases}
+\end{equation}
 
-Per i decadimenti $\beta$ otteniamo le seguenti \textit{condizioni
-energetiche}:
-\begin{align*}
-  m \mrb{Z,A} c^2 - \msb{m \mrb{Z+1,A}c^2 + m_e c^2 + \cancel{m_{\nu}c^2}} \geq
-  0 &\qquad\textit{decadimento $\beta^+$}
-  \\
-  m \mrb{Z,A} c^2 - \msb{m \mrb{Z-1,A}c^2 + m_e c^2 + \cancel{m_{\nu}c^2}} \geq
-  0 &\qquad\textit{decadimento $\beta^-$}
-  \\
-  \msb{m_e c^2 + m \mrb{Z,A} c^2} - \msb{m \mrb{Z-1,A} c^2 + \cancel{m_{\nu}
-  c^2}} \geq 0 &\qquad\textit{e.c.}
-\end{align*}
+\begin{note}[Conservazione del numero leptonico]
+  Le particelle portano numero leptonico $+1$ e le antiparticelle portano
+  numero leptonico $-1$. Nei decadimenti deve valere la \textit{conservazione
+  del numero leptonico}.
+\end{note}
+
+\paragraph{Q-valore}
+\begin{equation}
+  \begin{dcases}
+    Q_{\beta^-} = \msb{M \mrb{Z, A} - M \mrb{Z + 1, A} - m_e} c^2
+    \\
+    Q_{\beta^+} = \msb{M \mrb{Z, A} - M \mrb{Z - 1, A} - m_e} c^2
+    \\
+    Q_{\textit{e.c.}} = \msb{M \mrb{Z, A} + m_e - M \mrb{Z - 1, A}} c^2
+  \end{dcases}
+\end{equation}
+Nel sistema di riferimento del centro di massa, il \textit{Q-valore} fornisce
+l'informazione dell'energia cinetica dello stato finale. Ad esempio, per il
+decadimento $\beta^-$:
+\begin{equation}
+  M \mrb{Z, A} c^2
+  = M \mrb{Z + 1, A} c^2 + m_e c^2 + T_N + T_e
+\end{equation}
+Nel sistema del centro di massa, l'impulso:
+\begin{equation}
+  0 = p_n + p_e
+\end{equation}
+Quindi avremo che, data la differenza di massa fra il nucleo $N$ e l'elettrone
+$e$:
+\begin{equation}
+  T_e = \frac{p_e}{2 m_e} \gg T_n = \frac{p_N}{2 m_N}
+\end{equation}
+Quindi potremmo trascurare $T_N$:
+\begin{equation}
+  M \mrb{Z, A} c^2
+  = M \mrb{Z + 1, A} c^2 + m_e c^2 + \cancel{T_N} + T_e
+  \mthen
+  Q _{\beta^-} = T_e
+\end{equation}
+Questo portò Pauli a ipotizzare la presenza dei \textit{neutrini}, particelle
+neutre dalla massa estremamente piccola, che non conosciamo, ma che alla quale
+è stato posto un limite superiore: $m_{\nu} < \qty{1}{\eV}$.
+
+In termini di \textit{masse atomiche} $\mathcal{M}$:
+\begin{equation}
+  M \mrb{Z, A} = \mathcal{M} \mrb{Z, A} - m_e Z
+\end{equation}
+il \textit{Q-valore}:
+\begin{equation}
+  \begin{dcases}
+    Q _{\beta^-} = \msb{\mathcal{M} \mrb{Z, A} - \mathcal{M} \mrb{Z - 1}}
+    Q _{\beta^+} = \msb{}
+    Q _{\textit{e.c.}} = \msb{}
+  \end{dcases}
+\end{equation}
+
+\paragraph{Energia}
+Per i decadimenti $\beta$ otteniamo le seguenti \textit{condizioni energetiche}:
+\begin{equation}
+  \begin{dcases}
+    m \mrb{Z,A} c^2 - \msb{m \mrb{Z+1,A}c^2 + m_e c^2 + \cancel{m_{\nu}c^2}} \geq
+    0            & \qquad\textit{decadimento $\beta^+$}
+    \\
+    m \mrb{Z,A} c^2 - \msb{m \mrb{Z-1,A}c^2 + m_e c^2 + \cancel{m_{\nu}c^2}} \geq
+    0            & \qquad\textit{decadimento $\beta^-$}
+    \\
+    \msb{m_e c^2 + m \mrb{Z,A} c^2} - \msb{m \mrb{Z-1,A} c^2 + \cancel{m_{\nu}
+    c^2}} \geq 0 & \qquad\textit{e.c.}
+  \end{dcases}
+\end{equation}
 
 ??
-\begin{align*}
-  z m_p c^2 & + \mrb{A-Z} m_n c^2 - B \mrb{Z,A} - \mrb{Z+1} m_p c^2
-  \\
-  & - \mrb{A - Z - 1} m_n c^2 + B \mrb{Z + 1, A} - m_e c^2 = 
-  \\
-  & = \mrb{m_n c^2 - m_p c^2 - m_e c^2} - B \mrb{Z,A} + B \mrb{Z+1, A} \geq 0
-\end{align*}
+\begin{align}
+	z m_p c^2 + \mrb{A-Z} m_n c^2 - B \mrb{Z,A} - \mrb{Z+1} m_p c^2
+	          - \mrb{A - Z - 1} m_n c^2 + B \mrb{Z + 1, A} - m_e c^2
+	\\\notag
+	= \mrb{m_n c^2 - m_p c^2 - m_e c^2} - B \mrb{Z,A} + B \mrb{Z+1, A} \geq 0
+\end{align}
 quindi per i tre processi:
 
 \begin{itemize}
-  \item \textit{decadimento $\beta^-$}, $n \rightarrow p + e^- +
-  \cc{\nu}_{e}$:
-  \[
-    B \mrb{Z+1, A} - B \mrb{Z,A} \geq m_p c^2 + m_e c^2 - m_n c^2 \simeq
-     -1.3 + \SI{0.5}{\MeV} \simeq \SI{-0.8}{\MeV}
-  \]
+	\item \textit{decadimento $\beta^-$}, $n \rightarrow p + e^- +
+		      \cc{\nu}_{e}$:
+	      \begin{equation}
+		      B \mrb{Z+1, A} - B \mrb{Z,A} \geq m_p c^2 + m_e c^2 - m_n c^2 \simeq
+		      -1.3 + \SI{0.5}{\MeV} \simeq \SI{-0.8}{\MeV}
+	      \end{equation}
 
-  \item \textit{decadimento $\beta^-$}, $p \rightarrow n + e^+ + \nu_e$:
-  \[
-    B \mrb{Z-1, A} - B \mrb{Z,A} \geq m_p c^2 + m_e c^2 - m_p c^2 \simeq
-     1.3 + \SI{0.8}{\MeV} \simeq \SI{-0.8}{\MeV}
-  \]
+	\item \textit{decadimento $\beta^-$}, $p \rightarrow n + e^+ + \nu_e$:
+	      \begin{equation}
+		      B \mrb{Z-1, A} - B \mrb{Z,A} \geq m_p c^2 + m_e c^2 - m_p c^2 \simeq
+		      1.3 + \SI{0.8}{\MeV} \simeq \SI{-0.8}{\MeV}
+	      \end{equation}
 
-  \item \textit{electronic capture}, $e^- + p \rightarrow n + \nu_e$:
-  \[
-    B \mrb{Z-1, A} - B \mrb{Z,A} \geq m_n c^2 - m_p c^2 - m_e c^2 = 1.3 -
-    \SI{}{\MeV} % TODO: copia valore
-  \]
+	\item \textit{electronic capture}, $e^- + p \rightarrow n + \nu_e$:
+	      \begin{equation}
+		      B \mrb{Z-1, A} - B \mrb{Z,A} \geq m_n c^2 - m_p c^2 - m_e c^2 = 1.3 -
+		      \SI{}{\MeV} % TODO: copia valore
+	      \end{equation}
 \end{itemize}
 
 \section{Modello standard delle interazioni fondamentali}
@@ -201,10 +286,10 @@ loro grazie ad un certo numero di \textit{\textbf{interazioni fondamentali}}.
 Secondo il \textit{\textbf{modello standard delle interazioni fondamentali}} le
 interazioni fondamentali sono:
 \begin{itemize}
-  \item \textit{interazione gravitazionale};
-  \item \textit{interazione elettromagnetica};
-  \item \textit{interazione forte};
-  \item \textit{interazione debole}.
+	\item \textit{interazione gravitazionale};
+	\item \textit{interazione elettromagnetica};
+	\item \textit{interazione forte};
+	\item \textit{interazione debole}.
 \end{itemize}
 Nei processi microscopici possiamo considerare trascurabile l'interazione
 gravitazionale.
@@ -223,70 +308,71 @@ I \textbf{mediatori delle interazioni} sono particelle con spin $1$, mentre le
 Le particelle fondamentali sono particelle a spin $\frac{1}{2}$ si distinguono
 in:
 \begin{itemize}
-  \item \textbf{Leptoni} (\textit{interazioni elettromagnetiche} +
-    \textit{interazioni deboli}), divisi in $3$ famiglie:
-    \[
-      \begin{pmatrix}
-        \nu_e \\ e^-
-      \end{pmatrix}
-      \qquad
-      \begin{pmatrix}
-        \nu_{\mu} \\ 
-      \end{pmatrix}
-      \qquad
-      \begin{pmatrix}
-        \nu_{\tau} \\ \theta^-
-      \end{pmatrix}
-      \qquad
-      + \text{antiparticelle}
-    \]
-    I \textit{leptoni} hanno carica intera: $Q = 0$, $Q = -1$;
+	\item \textbf{Leptoni} (\textit{interazioni elettromagnetiche} +
+	      \textit{interazioni deboli}), divisi in $3$ famiglie:
+	      \begin{equation}
+		      \begin{pmatrix}
+			      \nu_e \\ e^-
+		      \end{pmatrix}
+		      \qquad
+		      \begin{pmatrix}
+			      \nu_{\mu} \\
+		      \end{pmatrix}
+		      \qquad
+		      \begin{pmatrix}
+			      \nu_{\tau} \\ \theta^-
+		      \end{pmatrix}
+		      \qquad
+		      + \text{antiparticelle}
+	      \end{equation}
+	      I \textit{leptoni} hanno carica intera: $Q = 0$, $Q = -1$;
 
-  \item \textbf{Quarks} (\textit{interazioni elettromagnetiche} +
-    \textit{interazioni deboli} + \textit{interazioni forti})
-    \[
-      \begin{pmatrix}
-        \mu \\ d
-      \end{pmatrix}
-      \qquad
-      \begin{pmatrix}
-        c \\ s
-      \end{pmatrix}
-      \qquad
-      \begin{pmatrix}
-        t \\ b
-      \end{pmatrix}
-    \]
-    I \textit{quarks} hanno carica frazionaria: $Q = \frac{2}{3}$, $Q = -
-    \frac{1}{3}$: per questo motivo \textit{in natura non si osservano qark
-    liberi}.
-    \[
-      \begin{dcases}
-        \textbf{Mesoni} - q \cc{q}
-        \\
-        \textbf{Barioni} \mrb{\textbf{Anti-Barioni}} - qqq
-        \mrb{\cc{q}\cc{q}\cc{q}}
-      \end{dcases}
-    \]
-    dove abbiamo indicato con $q$ i \textit{quarks} e con $\cc{q}$ gli
-    \textit{anti-quarks}. Ad esempio, i \textit{barioni più leggeri} sono
-    quelli che osserviamo in natura:
-    \begin{align*}
-      p = \mrb{\mu \mu d} \qquad n = \mrb{\mu dd}
-      \\
-      \pi^+ = \mrb{\mu \cc{d}} \qquad \pi^- = \mrb{d \cc{\mu}}
-    \end{align*}
+	\item \textbf{Quarks} (\textit{interazioni elettromagnetiche} +
+	      \textit{interazioni deboli} + \textit{interazioni forti})
+	      \begin{equation}
+		      \begin{pmatrix}
+			      \mu \\ d
+		      \end{pmatrix}
+		      \qquad
+		      \begin{pmatrix}
+			      c \\ s
+		      \end{pmatrix}
+		      \qquad
+		      \begin{pmatrix}
+			      t \\ b
+		      \end{pmatrix}
+	      \end{equation}
+	      I \textit{quarks} hanno carica frazionaria: $Q = \frac{2}{3}$, $Q = -
+		      \frac{1}{3}$: per questo motivo \textit{in natura non si osservano qark
+		      liberi}.
+	      \begin{equation}
+		      \begin{dcases}
+			      \textbf{Mesoni} - q \cc{q}
+			      \\
+			      \textbf{Barioni} \mrb{\textbf{Anti-Barioni}} - qqq
+			      \mrb{\cc{q}\cc{q}\cc{q}}
+		      \end{dcases}
+	      \end{equation}
+	      dove abbiamo indicato con $q$ i \textit{quarks} e con $\cc{q}$ gli
+	      \textit{anti-quarks}. Ad esempio, i \textit{barioni più leggeri} sono
+	      quelli che osserviamo in natura:
+	      \begin{align*}
+		      p = \mrb{\mu \mu d} \qquad n = \mrb{\mu dd}
+		      \\
+		      \pi^+ = \mrb{\mu \cc{d}} \qquad \pi^- = \mrb{d \cc{\mu}}
+	      \end{align*}
 \end{itemize}
 
 \subsection{Leggi di conservazione}
 \begin{align*}
-  Q &= \textbf{carica}
-  \\
-  B = \frac{1}{3} \mcb{N \mrb{q} - N \mrb{\cc{q}}} &= \textbf{numero barionico}
-  \\
-  L = \mcb{N \mrb{l} - N \mrb{\cc{l}}} &= \textbf{numero leptonico}
-  \\
-  L _{\alpha} = \mcb{N \mrb{l _{\alpha}} - N \mrb{\cc{l}_{\alpha}}} &=
-  \textbf{numero leptonico di famiglia}
-  % TODO: 
+	Q                                                                 & = \textbf{carica}
+	\\
+	B = \frac{1}{3} \mcb{N \mrb{q} - N \mrb{\cc{q}}}                  & = \textbf{numero barionico}
+	\\
+	L = \mcb{N \mrb{l} - N \mrb{\cc{l}}}                              & = \textbf{numero leptonico}
+	\\
+	L _{\alpha} = \mcb{N \mrb{l _{\alpha}} - N \mrb{\cc{l}_{\alpha}}} & =
+	\textbf{numero leptonico di famiglia}
+	% TODO: 
 \end{align*}
+

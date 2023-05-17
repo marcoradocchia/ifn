@@ -9,7 +9,6 @@ Nel sistema del centro di massa consideriamo come particella a riposo la
 particella fittizia \textit{centro di massa} ed utilizziamo le equazioni
 \ref{eq:sistema_riposo_altra} considerando appunto come particella di
 riferimento la particella \textit{centro di massa}.
-
 Rispetto alle equazioni \ref{eq:sistema_riposo_altra} avremo quindi che
 \footnote{
 	$\vec{P}$ è riferito alla particella CM
@@ -21,7 +20,6 @@ Rispetto alle equazioni \ref{eq:sistema_riposo_altra} avremo quindi che
 		\qvec{P}_2 \rightarrow \qvec{P}_i \qquad \mrb{i = 1,2}
 	\end{dcases}
 \end{equation}
-
 Quindi riscriviamo il set di equazioni \ref{eq:sistema_riposo_altra}:
 \begin{equation}
 	\begin{dcases}
@@ -34,41 +32,40 @@ Quindi riscriviamo il set di equazioni \ref{eq:sistema_riposo_altra}:
 		= \frac{\mrb{\qvec{P}\qvec{P}_i}^2- M^2m_i^2}{\mrb{\qvec{P} \qvec{P}_i}^2}
 	\end{dcases}
 \end{equation}
-
 Ricordiamoci che $\qvec{P}_i = \mcb{m_i,\, \vec{p}_i}$. Ci interessa ora sapere
 l'espressione esplicita di $\qvec{P} \qvec{P}_i$, quindi:
-\begin{subequations}
-	\begin{equation}
+\begin{equation}
+	\qvec{P} \qvec{P}_i
+	= \mrb{\qvec{P}_1 + \qvec{P}_2} \qvec{P}_i
+	= \qvec{P}_1 \qvec{P}_i + \qvec{P}_2 \qvec{P}_i
+\end{equation}
+e poiché $i = 1, 2$, dunque:
+\begin{equation}
+	\qvec{P} \qvec{P}_i
+	= \qvec{P}_1 \qvec{P}_2 + \qvec{P}_i^2
+	= \qvec{P}_1 \qvec{P}_2 + m_i^2
+	= \frac{1}{2} \msb{M^2 - m_1^2 - m_2^2} + m_i^2
+\end{equation}
+dove $M$ è la \textit{massa invariante della particella (fittizia) CM} e
+$m_{i=1,2}$ le \textit{masse invarianti delle due particelle $1,2$}.
+Il primo termine della somma:
+\begin{equation}
+	\qvec{P}_1 \qvec{P}_2
+	= \frac{1}{2} \msb{\mrb{\qvec{P}_1 + \qvec{P}_2}^2 - \qvec{P_1}^2 -
+		\qvec{P_2}^2}
+	= \frac{1}{2} \msb{M^2 - m_1^2 - m_2^2}
+\end{equation}
+dove abbiamo sfruttato le relazioni fra la norma del quadrimpulso e la massa
+delle particelle. Sostituendo nell'equazione precedente si ottiene:
+\begin{equation}
+	\boxed{
 		\qvec{P} \qvec{P}_i
-		= \mrb{\qvec{P}_1 + \qvec{P}_2} \qvec{P}_i
-		= \qvec{P}_1 \qvec{P}_i + \qvec{P}_2 \qvec{P}_i
-	\end{equation}
-	e poiché $i = 1, 2$, dunque:
-	\begin{equation}
-		\qvec{P} \qvec{P}_i
-		= \qvec{P}_1 \qvec{P}_2 + \qvec{P}_i^2
-		= \qvec{P}_1 \qvec{P}_2 + m_i^2
-		= \frac{1}{2} \msb{M^2 - m_1^2 - m_2^2} + m_i^2
-	\end{equation}
-	Il primo termine della somma:
-	\begin{equation}
-		\qvec{P}_1 \qvec{P}_2
-		= \frac{1}{2} \msb{\mrb{\qvec{P}_1 + \qvec{P}_2}^2 - \qvec{P_1}^2 -
-			\qvec{P_2}^2}
-		= \frac{1}{2} \msb{M^2 - m_1^2 - m_2^2}
-	\end{equation}
-	dove abbiamo sfruttato le relazioni fra la norma del quadrimpulso e la massa
-	delle particelle. Sostituendo nell'equazione precedente si ottiene:
-	\begin{equation}
-		\boxed{
-			\qvec{P} \qvec{P}_i
-			= \frac{1}{2} \mrb{M^2 + m_i^2 - m_j^2} \qquad i,j
-			= 1,2 \quad \text{e},
-			\quad i\neq j
-		}
-	\end{equation}
-\end{subequations}
-
+		= \frac{1}{2} \mrb{M^2 + m_i^2 - m_j^2} \qquad i,j
+		= 1,2,
+		\quad \text{e}
+		\quad i\neq j
+	}
+\end{equation}
 Per le \textbf{energie} viste dal sistema del centro di massa:
 \begin{equation}
 	\boxed{\begin{dcases}
@@ -123,7 +120,6 @@ e analogamente per $\abs{\vec{p}_{2}^{\ast}}^{2}$, quindi svolgendo i calcoli:
 				1} \mrb{ -\vec{\beta} \cdot \vec{p}} + \eps} = \vec{p} + \vec{\beta}\gamma
 		\msb{\frac{\gamma}{\gamma + 1} \mrb{\vec{\beta} \cdot \vec{p}} - \eps}
 	\end{equation}
-
 	Quindi scriviamo la trasformazione dell'impulso somma:
 	\begin{equation}
 		\vec{p}_1^{\,\ast} + \vec{p}_2^{\,\ast} = \vec{p}_1 + \vec{p}_2 +
@@ -134,7 +130,7 @@ e analogamente per $\abs{\vec{p}_{2}^{\ast}}^{2}$, quindi svolgendo i calcoli:
 	\begin{equation}
 		\vec{p}_1^{\,\ast} + \vec{p}_2^{\,\ast} = \vec{\beta} \mrb{\eps_1 +
 			\eps_2} + \abs{\vec{\beta}}^2 \frac{\gamma^2}{\gamma + 1}
-		\vec{\beta}\mrb{\eps_1 + \eps_2} - \gamma\vec{\beta}
+    \vec{\beta}\mrb{\eps_1 + \eps_2} - \gamma\vec{\beta} \mrb{\eps_1 + \eps_2}
 	\end{equation}
 	mettiamo in evidenza $\vec{\beta}\mrb{\eps_1 + \eps_2}$:
 	\begin{equation}
@@ -204,7 +200,7 @@ e analogamente per $\abs{\vec{p}_{2}^{\ast}}^{2}$, quindi svolgendo i calcoli:
 	$p_p p_n = \sqrt{\mrb{E_p^2 - m_n^2}\mrb{E_n^2 - m_n^2}}$.
 	Indicando con $T_x$ l'energia cinetica:
 	\begin{equation}
-    T_p:
+		T_p:
 		\qquad
 		E_p
 		= T_p + m_n
@@ -212,7 +208,7 @@ e analogamente per $\abs{\vec{p}_{2}^{\ast}}^{2}$, quindi svolgendo i calcoli:
 		= \qty{201}{\GeV}
 	\end{equation}
 	\begin{equation}
-    T_n:
+		T_n:
 		\qquad
 		E_n
 		= T_n + m_n
@@ -258,19 +254,19 @@ e analogamente per $\abs{\vec{p}_{2}^{\ast}}^{2}$, quindi svolgendo i calcoli:
 	\end{equation}
 	Allora scriviamo:
 	\begin{equation}
-		2 E_p \mprime E_n = E ^{\ast\, 2} - m_n^2
+		2 E_p \mprime E_n = E ^{\ast\, 2} - 2 m_n^2
 		\mthen
 		E_p \mprime
-		= \frac{1}{2 m_n} \msb{E ^{\ast`, 2} - 2 m_n^2}
-		= \frac{E ^{\ast\, 2} - 2}{2}
+		= \frac{1}{2 m_n} \msb{E ^{\ast\, 2} - 2 m_n^2}
+    = \frac{E ^{\ast\, 2}}{2 m_n} - m_n
 	\end{equation}
 	Infine:
 	\begin{equation}
 		E _{p} \mprime
 		= \begin{dcases}
-			???, \quad \textit{Parallelo}
+      \qty{164.92}{\GeV} \quad \textit{Antiparallelo}
 			\\
-			\qty{245}{\GeV}, \quad \textit{Antiparallelo}
+			\qty{245.42}{\GeV}, \quad \textit{Parallelo}
 		\end{dcases}
 	\end{equation}
 \end{exercise}
@@ -307,9 +303,9 @@ Per il sistema vale:
 \end{equation}
 dove:
 \begin{equation}
-	\eps_1^\ast = \frac{M^2 + \mrb{m_1 + m_2}^2}{2M};
+	\eps_1^\ast = \frac{M^2 + m_1^2 + m_2^2}{2M};
 	\qquad
-	\eps_2^\ast = \frac{M^2 + \mrb{m_1^2 - m_2^2}}{2M}
+	\eps_2^\ast = \frac{M^2 + m_1^2 - m_2^2}{2M}
 \end{equation}
 \begin{equation}
 	\abs{\vec{p}^{\,\ast}}^2
@@ -378,27 +374,27 @@ dove:
 \end{example}
 
 \begin{example}[]
-  Consideriamo il caso del decadimento della particella $\Lambda$\footnote{
-    $\Lambda$ è una particella neutra; In tutte le reazioni valgono:
-    \begin{itemize}
-      \item \textit{principio di conservazione della carica}
-      \item \textit{principio di conservazione del numero leptonico}
-      \item \textit{principio di conservazione del numero barionico}
-    \end{itemize}
-  }:
+	Consideriamo il caso del decadimento della particella $\Lambda$\footnote{
+		$\Lambda$ è una particella neutra; In tutte le reazioni valgono:
+		\begin{itemize}
+			\item \textit{principio di conservazione della carica}
+			\item \textit{principio di conservazione del numero leptonico}
+			\item \textit{principio di conservazione del numero barionico}
+		\end{itemize}
+	}:
 	\begin{equation}
 		\Lambda \rightarrow p + \pi ^{-}
 	\end{equation}
-  Date le masse:
-  \begin{equation}
-    m _{\Lambda} = \qty{1116}{\MeV \per c^2};
-    \qquad
-    m_p = \qty{938}{\MeV \per c^2};
-    \qquad
-    m _{\pi^-} = \qty{140}{\MeV \per c^2}
-  \end{equation}
+	Date le masse:
+	\begin{equation}
+		m _{\Lambda} = \qty{1116}{\MeV \per c^2};
+		\qquad
+		m_p = \qty{938}{\MeV \per c^2};
+		\qquad
+		m _{\pi^-} = \qty{140}{\MeV \per c^2}
+	\end{equation}
 	Abbiamo, nel sistema di riposo della particella $\Lambda$ che decade, che
-  coincide con il sistema del centro di massa:
+	coincide con il sistema del centro di massa:
 	\begin{equation}
 		\abs{\vec{p}_{p}^{\,\ast}}^{2}
 		= \abs{\vec{p}_{\pi^-}^{\,\ast}}^{2}
@@ -406,6 +402,7 @@ dove:
 			\msb{m _{\Lambda} ^{2} - \mrb{m _{p} + m _{\pi}}^{2}}
 			\msb{m _{\Lambda} ^{2} - \mrb{m _{p} - m _{\pi}}^{2}}
 		}{4 M _{\Lambda}^{2}}
-    \simeq \qty{101}{\MeV \per c}
+		\simeq \qty{101}{\MeV \per c}
 	\end{equation}
 \end{example}
+

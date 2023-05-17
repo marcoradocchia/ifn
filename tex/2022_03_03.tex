@@ -3,7 +3,7 @@
 \section{Relatività}
 \subsection{Relatività Galileiana}
 La \textit{relatività galileiana} si basa sui principi di \textit{spazio e
-tempo \textbf{assoluti}}. Possiamo definire quindi infiniti sistemi di
+	tempo \textbf{assoluti}}. Possiamo definire quindi infiniti sistemi di
 riferimento, tutti equivalenti. Non possiamo definire, tuttavia, in
 \textit{modo assoluto}, lo stato di moto di un corpo, ma solo il suo stato di
 moto in relazione al sistema di riferimento scelto.
@@ -15,17 +15,17 @@ principio di \textbf{tempo assoluto}: il tempo scorre allo stesso modo in
 \subsection{Relatività ristretta di Einstein}
 La \textit{relatività ristretta} di Einstein si basa su due \textit{postulati}.
 \begin{enumerate}
-  \item \textbf{Postulato di relatività}: le leggi della natura e i risultati
-    di tutti gli esperimenti eseguiti in un dato sistema di riferimento sono
-    indipendenti dal moto di traslazione dell'intero sistema;
-  \item \textbf{Postulato di costanza della velocità della luce nel vuoto}: la
-    velocità della luce nel vuoto è la stessa in tutti i sistemi di riferimento
-    inerziali, indipendentemente dal modo della sorgente e del suo osservatore;
+	\item \textbf{Postulato di relatività}: le leggi della natura e i risultati
+	      di tutti gli esperimenti eseguiti in un dato sistema di riferimento sono
+	      indipendenti dal moto di traslazione dell'intero sistema;
+	\item \textbf{Postulato di costanza della velocità della luce nel vuoto}: la
+	      velocità della luce nel vuoto è la stessa in tutti i sistemi di riferimento
+	      inerziali, indipendentemente dal modo della sorgente e del suo osservatore;
 \end{enumerate}
 
 \begin{note}[Simultaneità]
-  Con la relatività ristretta e questi postulati nasce il problema della
-  simultaneità degli eventi.
+	Con la relatività ristretta e questi postulati nasce il problema della
+	simultaneità degli eventi.
 \end{note}
 
 \subsubsection{Trasformazioni di Lorentz}
@@ -35,219 +35,219 @@ relatività speciale delle trasformazioni di Galileo.
 Le \textit{trasformazioni di Lorentz} sono state ricavate sulla base dei 3
 requisiti (\textit{vincoli di Einstein}):
 \begin{enumerate}
-  \item \textbf{invertibilità};
-  \item \textbf{linearità} (al fine di soddisfare la condizione di
-    relatività).
-  \item \textbf{velocità relativa diretta lungo un asse} (si può sempre
-    scegliere un orientamento del SR tale che sia soddisfatta questa
-    condizione).
+	\item \textbf{invertibilità};
+	\item \textbf{linearità} (al fine di soddisfare la condizione di
+	      relatività).
+	\item \textbf{velocità relativa diretta lungo un asse} (si può sempre
+	      scegliere un orientamento del SR tale che sia soddisfatta questa
+	      condizione).
 \end{enumerate}
 
 \begin{equation}
-  \begin{dcases}
-    x \mprime = a _{11} x + a _{12} y + a _{13} z + a _{14} t
-    \\
-    y \mprime = a _{21} x + a _{22} y + a _{23} z + a _{24} t
-    \\
-    z \mprime = a _{31} x + a _{32} y + a _{33} z + a _{34} t
-    \\
-    t \mprime = a _{41} x + a _{42} y + a _{43} z + a _{44} t
-  \end{dcases}
+	\begin{dcases}
+		x \mprime = a _{11} x + a _{12} y + a _{13} z + a _{14} t
+		\\
+		y \mprime = a _{21} x + a _{22} y + a _{23} z + a _{24} t
+		\\
+		z \mprime = a _{31} x + a _{32} y + a _{33} z + a _{34} t
+		\\
+		t \mprime = a _{41} x + a _{42} y + a _{43} z + a _{44} t
+	\end{dcases}
 \end{equation}
 
 \paragraph{Trasformazione lungo l'asse $x$}
 Per una trasformazione lungo l'asse $x$ avremo che:
 \begin{equation}
-  \begin{dcases}
-    a _{22} = a _{33} = 1
-    \\
-    a _{21} = a _{23} = a _{24} = 0
-    \\
-    a _{31} = a _{32} = a _{34} = 0
-    \\
-    a _{12} = a _{13} = a _{42} = a _{43} = 0
-  \end{dcases}
+	\begin{dcases}
+		a _{22} = a _{33} = 1
+		\\
+		a _{21} = a _{23} = a _{24} = 0
+		\\
+		a _{31} = a _{32} = a _{34} = 0
+		\\
+		a _{12} = a _{13} = a _{42} = a _{43} = 0
+	\end{dcases}
 \end{equation}
 Quindi le trasformazioni di coordinate diventano:
 \begin{equation}
-  \label{eq:trasf_lorentz}
-  \begin{dcases}
-    x \mprime = a _{11} + a _{14} t
-    \\
-    y \mprime = y
-    \\
-    z \mprime = z
-    \\
-    t \mprime = a _{41} x + a _{44} t
-  \end{dcases}
+	\label{eq:trasf_lorentz}
+	\begin{dcases}
+		x \mprime = a _{11} x + a _{14} t
+		\\
+		y \mprime = y
+		\\
+		z \mprime = z
+		\\
+		t \mprime = a _{41} x + a _{44} t
+	\end{dcases}
 \end{equation}
 
 \begin{equation}
-  x \mprime = 0
-  \mthen
-  x = vt
-  \mthen
-  a _{14} = -v a _{11}
+	x \mprime = 0
+	\mthen
+	x = vt
+	\mthen
+	a _{14} = -v a _{11}
 \end{equation}
 
 Utilizzando il secondo postulato ($c = \text{const}$):
 \begin{equation}
-  \begin{dcases}
-    x^2 + y^2 + z^2 = c^2 t^2
-    \\
-    x^{\prime\, 2} + y^{\prime\, 2} + z^{\prime\, 2} = c^2 t^{\prime\, 2}
-  \end{dcases}
+	\begin{dcases}
+		x^2 + y^2 + z^2 = c^2 t^2
+		\\
+		x^{\prime\, 2} + y^{\prime\, 2} + z^{\prime\, 2} = c^2 t^{\prime\, 2}
+	\end{dcases}
 \end{equation}
 Rappresentano la distanza percorsa da un fotone in $t$ o $t \mprime$.
 
 Consideriamo il sistema di riferimento primato e sostituiamo
 le~\ref{eq:trasf_lorentz}:
 \begin{equation}
-  \mrb{a _{11} x + a _{14} t}^{2} + y^2 + z^2 = c^2 \mrb{a _{41} x + a _{44}
-  t}^{2}
+	\mrb{a _{11} x + a _{14} t}^{2} + y^2 + z^2 = c^2 \mrb{a _{41} x + a _{44}
+		t}^{2}
 \end{equation}
 dunque sostituendo $a _{14} = - v a _{11}$:
 \begin{equation}
-  \mrb{a _{11} x - v a _{11} t}^{2} + y ^{2} + z ^{2} = c ^{2} \mrb{a _{41} x +
-  a _{44} t} ^{2}
+	\mrb{a _{11} x - v a _{11} t}^{2} + y ^{2} + z ^{2} = c ^{2} \mrb{a _{41} x +
+		a _{44} t} ^{2}
 \end{equation}
 Svolgendo i quadrati:
 \begin{equation}
-  a _{11}^{2} x^2 + v^2 a _{11}^{2} t^2 - 2 a _{11}^{2} vxt + y^2 + z^2 =
-  c^2 a _{41}^{2} x^2 + c^2 a _{44}^{2} t^2 + 2 a _{41} a _{44} c^2 xt
+	a _{11}^{2} x^2 + v^2 a _{11}^{2} t^2 - 2 a _{11}^{2} vxt + y^2 + z^2 =
+	c^2 a _{41}^{2} x^2 + c^2 a _{44}^{2} t^2 + 2 a _{41} a _{44} c^2 xt
 \end{equation}
 quindi:
 \begin{equation}
-  t^2 \mrb{-v^2 a _{11}^{2} + c^2 a _{44}^{2}}
-  = x^2 \mrb{a _{11}^{2} - c^2 a _{41}^{2}} + y^2 + z^2 + 2 xt \mrb{a _{41} a
-  _{44} c^2 + a _{11}^{2} v}
+	t^2 \mrb{-v^2 a _{11}^{2} + c^2 a _{44}^{2}}
+	= x^2 \mrb{a _{11}^{2} - c^2 a _{41}^{2}} + y^2 + z^2 + 2 xt \mrb{a _{41} a
+			_{44} c^2 + a _{11}^{2} v}
 \end{equation}
 Ora, poiché dovrà valere la relazione $x^2 + y^2 + z^2 = c^2 t^2$, imponiamo:
 \begin{equation}
-  \begin{dcases}
-    - v^2 a _{11}^{2} + c^2 a _{44}^{2} = c^2
-    \\
-    a _{11}^{2} - c^2 a _{41}^{2} = 1
-    \\
-    a _{11}^{2} v + a _{41} a _{44} c^2 = 0
-  \end{dcases}
+	\begin{dcases}
+		- v^2 a _{11}^{2} + c^2 a _{44}^{2} = c^2
+		\\
+		a _{11}^{2} - c^2 a _{41}^{2} = 1
+		\\
+		a _{11}^{2} v + a _{41} a _{44} c^2 = 0
+	\end{dcases}
 \end{equation}
 Dal sistema otteniamo un'espressione esplicita per coefficienti $a _{11}, a
-_{44}, a _{41}$:
+		_{44}, a _{41}$:
 \begin{equation}
-  \begin{dcases}
-    a _{11} = a _{44} = \pm \frac{1}{\sqrt{1 - \mrb{\frac{v}{c}}^{2}}}
-    \\
-    a _{41} = \pm \frac{\frac{v}{c^2}}{\sqrt{1 - \mrb{\frac{v}{c}}^{2}}}
-  \end{dcases}
+	\begin{dcases}
+		a _{11} = a _{44} = \pm \frac{1}{\sqrt{1 - \mrb{\frac{v}{c}}^{2}}}
+		\\
+		a _{41} = \pm \frac{\frac{v}{c^2}}{\sqrt{1 - \mrb{\frac{v}{c}}^{2}}}
+	\end{dcases}
 \end{equation}
 Definiamo i coefficienti $\beta$ e $\gamma$ di \textit{Lorentz}:
 \begin{equation}
-  \beta = \frac{v}{c} \quad \text{(velocità del SR in unità di $c$)};
-  \qquad
-  \gamma = \frac{1}{\sqrt{1 - \beta ^{2}}}
+	\beta = \frac{v}{c} \quad \text{(velocità del SR in unità di $c$)};
+	\qquad
+	\gamma = \frac{1}{\sqrt{1 - \beta ^{2}}}
 \end{equation}
 
 \paragraph{Quadrivettori}
 Un quadrivettore è (semplicisticamente) un oggetto matematico della forma:
 \begin{equation}
-  \qvec{X} \equiv
-  \mcb{ct, x, y, z}
-  = \mcb{ct, \vec{x}}
-  \equiv
-  \begin{pmatrix}
-    x \\
-	  y \\
-	  z \\
-	  ct
-  \end{pmatrix}
-  =
-  \begin{pmatrix}
-    \vec{x} \\
-	  ct
-  \end{pmatrix}
+	\qvec{X} \equiv
+	\mcb{ct, x, y, z}
+	= \mcb{ct, \vec{x}}
+	\equiv
+	\begin{pmatrix}
+		x \\
+		y \\
+		z \\
+		ct
+	\end{pmatrix}
+	=
+	\begin{pmatrix}
+		\vec{x} \\
+		ct
+	\end{pmatrix}
 \end{equation}
 
 Le trasformazioni di Lorentz possono essere rappresentate in forma matriciale
 tramite la matrice $\operatorname{L}\mrb{\beta}$ che è una matrice a
 \textbf{determinante unitario}\footnote{
-  $\det L \mrb{\beta} = \gamma ^{2} - \beta ^{2} \gamma ^{2} = 1$
+	$\det L \mrb{\beta} = \gamma ^{2} - \beta ^{2} \gamma ^{2} = 1$
 } e rappresenta dunque una \textit{rotazione} nello spazio-tempo.
 \begin{equation}
-  \qvec{X}\mprime = \operatorname{L}\mrb{\beta} \qvec{X}
+	\qvec{X}\mprime = \operatorname{L}\mrb{\beta} \qvec{X}
 \end{equation}
 In rappresentazione matriciale:
 \begin{equation}
-  \begin{pmatrix}
-    x \mprime \\
-    y \mprime \\
-    z \mprime \\
-    ct \mprime
-  \end{pmatrix} = 
-  \begin{bmatrix}
-    \gamma & 0 & 0 & -\beta \gamma \\
-    0 & 1 & 0 & 0 \\
-    0 & 0 & 1 & 0 \\
-    -\beta \gamma & 0 & 0 & \gamma
-  \end{bmatrix}
-  \begin{pmatrix}
-    x \\
-    y \\
-    z \\
-    ct
-  \end{pmatrix}
-  =
-  \begin{pmatrix}
-    \gamma x - \beta \gamma ct \\
-    y \\
-    z \\
-    -\beta \gamma x + \gamma ct
-  \end{pmatrix}
+	\begin{pmatrix}
+		x \mprime \\
+		y \mprime \\
+		z \mprime \\
+		ct \mprime
+	\end{pmatrix} =
+	\begin{bmatrix}
+		\gamma        & 0 & 0 & -\beta \gamma \\
+		0             & 1 & 0 & 0             \\
+		0             & 0 & 1 & 0             \\
+		-\beta \gamma & 0 & 0 & \gamma
+	\end{bmatrix}
+	\begin{pmatrix}
+		x \\
+		y \\
+		z \\
+		ct
+	\end{pmatrix}
+	=
+	\begin{pmatrix}
+		\gamma x - \beta \gamma ct \\
+		y                          \\
+		z                          \\
+		-\beta \gamma x + \gamma ct
+	\end{pmatrix}
 \end{equation}
 
 La trasformazione inversa:
 \begin{equation}
-  \qvec{X} = \operatorname{L}^{-1}\mrb{\beta} \qvec{X}\mprime
+	\qvec{X} = \operatorname{L}^{-1}\mrb{\beta} \qvec{X}\mprime
 \end{equation}
 dove $\operatorname{L}^{-1}\mrb{\beta} = \operatorname{L}\mrb{-\beta}$.
 Quindi in forma esplicita:
 \begin{equation}
-  \begin{pmatrix}
-    x
-    \\
-    y
-    \\
-    z
-    \\
-    ct
-  \end{pmatrix} = 
-  \begin{bmatrix}
-    \gamma & 0 & 0 & \beta \gamma
-    \\
-    0 & 1 & 0 & 0
-    \\
-    0 & 0 & 1 & 0
-    \\
-    \beta \gamma & 0 & 0 & \gamma
-  \end{bmatrix}
-  \begin{pmatrix}
-    x \mprime
-    \\
-    y \mprime
-    \\
-    z \mprime
-    \\
-    ct \mprime
-  \end{pmatrix} = 
-  \begin{pmatrix}
-    \gamma x \mprime + \beta \gamma c t \mprime
-    \\
-    y \mprime
-    \\
-    z \mprime
-    \\
-    \beta \gamma x \mprime + \gamma ct \mprime
-  \end{pmatrix}
+	\begin{pmatrix}
+		x
+		\\
+		y
+		\\
+		z
+		\\
+		ct
+	\end{pmatrix} =
+	\begin{bmatrix}
+		\gamma       & 0 & 0 & \beta \gamma
+		\\
+		0            & 1 & 0 & 0
+		\\
+		0            & 0 & 1 & 0
+		\\
+		\beta \gamma & 0 & 0 & \gamma
+	\end{bmatrix}
+	\begin{pmatrix}
+		x \mprime
+		\\
+		y \mprime
+		\\
+		z \mprime
+		\\
+		ct \mprime
+	\end{pmatrix} =
+	\begin{pmatrix}
+		\gamma x \mprime + \beta \gamma c t \mprime
+		\\
+		y \mprime
+		\\
+		z \mprime
+		\\
+		\beta \gamma x \mprime + \gamma ct \mprime
+	\end{pmatrix}
 \end{equation}
 
 \paragraph{Approssimazione non relativistica, limite classico}
@@ -256,33 +256,33 @@ relativa $v$ sia molto minore della velocità della luce nel vuoto $c$, che è l
 velocità di riferimento. In particolare quando $v \ll c$, quindi in termini di
 $\beta$, quando $\beta \ll 1$. Sviluppando in serie al primo ordine in $\beta$:
 \begin{equation}
-  \gamma = 1 + \frac{\beta^2}{2} + \dots
+	\gamma = 1 + \frac{\beta^2}{2} + \dots
 \end{equation}
 quindi sostituendo $\gamma$ otteniamo:
 \begin{equation}
-  x \mprime = \mrb{1 + \frac{\beta^2}{2} + \dots} x - \beta \mrb{1 +
-  \frac{\beta^2}{2} + \dots} ct
-  = x + \frac{x \beta^2}{2} - \beta ct - \frac{\beta^3 ct}{2} + \dots
-  \simeq x - \beta ct
+	x \mprime = \mrb{1 + \frac{\beta^2}{2} + \dots} x - \beta \mrb{1 +
+		\frac{\beta^2}{2} + \dots} ct
+	= x + \frac{x \beta^2}{2} - \beta ct - \frac{\beta^3 ct}{2} + \dots
+	\simeq x - \beta ct
 \end{equation}
 e dalla definizione di $\beta$ possiamo scrivere:
 \begin{equation}
-  x \mprime \simeq x - vt
+	x \mprime \simeq x - vt
 \end{equation}
 per $v \ll c$. Quindi abbiamo riottenuto la trasformazione di Galileo, come
 volevamo.
 
 Analogamente:
 \begin{equation}
-  c t \mprime = \mrb{1 + \frac{\beta^2}{2} + \dots} ct - \mrb{1 +
-  \frac{\beta^2}{2} + \dots} \beta x
-  = ct + \frac{\beta^2 ct}{2} - \beta x - \frac{\beta^3 x}{2} + \dots
-  \simeq ct - \beta x
+	c t \mprime = \mrb{1 + \frac{\beta^2}{2} + \dots} ct - \mrb{1 +
+		\frac{\beta^2}{2} + \dots} \beta x
+	= ct + \frac{\beta^2 ct}{2} - \beta x - \frac{\beta^3 x}{2} + \dots
+	\simeq ct - \beta x
 \end{equation}
 Ora, dato che $\frac{\beta}{c} = \frac{v}{c^2}$, considerata l'approssimazione
 $v \ll c$, possiamo trascurare il termine nella somma e otteniamo:
 \begin{equation}
-  t \mprime \simeq t
+	t \mprime \simeq t
 \end{equation}
 come da trasformata di Galileo.
 
@@ -291,42 +291,44 @@ Consideriamo ora il caso con $\vec{\beta}$ del sistema in moto relativo non
 parallelo a uno degli assi (in precedenza abbiamo supposto parallela a $x$).
 Scomponiamo $\vec{x}$ in direzione parallela e perpendicolare a $\vec{\beta}$.
 \begin{equation}
-  \begin{dcases}
-    \vec{x} \mprime _{\parallel} = \vec{\beta}
-    \frac{\dpr{\vec{\beta}}{\vec{x}}}{\beta^2}
-    \\
-    \vec{x} \mprime _{\perp} = \vec{x} \mprime - \vec{\beta}
-    \frac{\dpr{\vec{\beta}}{\vec{x}}}{\beta^2}
-  \end{dcases}
+	\begin{dcases}
+		\vec{x} \mprime _{\parallel} = \vec{\beta}
+		\frac{\dpr{\vec{\beta}}{\vec{x}}}{\beta^2}
+		\\
+		\vec{x} \mprime _{\perp} = \vec{x} \mprime - \vec{\beta}
+		\frac{\dpr{\vec{\beta}}{\vec{x}}}{\beta^2}
+	\end{dcases}
 \end{equation}
 con $\beta^2 = \abs{\vec{\beta}}^{2}$.
 Quindi:
 \begin{equation}
-  \begin{dcases}
-    \vec{x} _{\parallel} \mprime = \gamma \mrb{\vec{x} _{\parallel} + c
-    \vec{\beta} t \mprime}
-    \\
-    \vec{x}_{\perp} \mprime = \vec{x}_{\perp}
-  \end{dcases}
+	\begin{dcases}
+		\vec{x} _{\parallel} \mprime = \gamma \mrb{\vec{x} _{\parallel} + c
+			\vec{\beta} t \mprime}
+		\\
+		\vec{x}_{\perp} \mprime = \vec{x}_{\perp}
+	\end{dcases}
 \end{equation}
 con $ct = \gamma \mrb{c t \mprime + \dpr{\vec{\beta}}{\vec{x}}}$.
 Allora abbiamo:
 \begin{equation}
-  \vec{x} = \vec{x} _{\parallel} + \vec{x} _{\perp}
-  = \gamma \mrb{\vec{\beta} \frac{\dpr{\vec{\beta}}{\vec{x}}}{\beta^2} - c
-  \vec{\beta} t \mprime} + \vec{x} \mprime - \vec{\beta}
-  \frac{\dpr{\vec{\beta}}{\vec{x}\mprime}}{\beta^2}
-  = \vec{x} \mprime + \vec{\beta} \mrb{\dpr{\vec{\beta}}{\vec{x} \mprime}
-  \frac{\gamma - 1}{\beta^2} + \gamma c t \mprime}
+	\vec{x}
+	= \vec{x} _{\parallel} + \vec{x} _{\perp}
+	= \gamma \mrb{\vec{\beta} \frac{\dpr{\vec{\beta}}{\vec{x}}}{\beta^2} - c
+		\vec{\beta} t \mprime} + \vec{x} \mprime - \vec{\beta}
+	\frac{\dpr{\vec{\beta}}{\vec{x}\mprime}}{\beta^2}
+	= \vec{x} \mprime + \vec{\beta} \mrb{\dpr{\vec{\beta}}{\vec{x} \mprime}
+		\frac{\gamma - 1}{\beta^2} + \gamma c t \mprime}
 \end{equation}
 Utilizzando $\beta \mprime = \frac{\mrb{\gamma ^{2} - 1}}{\gamma^2}$ otteniamo
 la \textit{forma vettoriale \textbf{generale} delle trasformate di Lorentz}:
 \begin{equation}
-  \begin{dcases}
-    \vec{x} = \vec{x} \mprime + \vec{\beta} \gamma \mrb{\frac{\gamma}{\gamma +
-    1} \dpr{\vec{\beta}}{\vec{x} \mprime} + c t \mprime}
-    \\
-    ct = \gamma \mrb{ct \mprime + \dpr{\vec{\beta}}{\vec{x} \mprime}}
-  \end{dcases}
-  \label{eq:lorentz_vettoriale}
+	\begin{dcases}
+		\vec{x} = \vec{x} \mprime + \vec{\beta} \gamma \mrb{\frac{\gamma}{\gamma +
+				1} \dpr{\vec{\beta}}{\vec{x} \mprime} + c t \mprime}
+		\\
+		ct = \gamma \mrb{ct \mprime + \dpr{\vec{\beta}}{\vec{x} \mprime}}
+	\end{dcases}
+	\label{eq:lorentz_vettoriale}
 \end{equation}
+

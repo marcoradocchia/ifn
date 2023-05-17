@@ -4,52 +4,52 @@
 \subsection{Fattori di forma}
 Abbiamo visto che la \textit{sezione d'urto differenziale} può essere scritta
 come:
-\[
+\begin{equation}
   \mdv{\sigma}{\Omega} = \mrb{\mdv{\sigma}{\Omega}}_\text{puntiforme} \abs{F
   \mrb{q^2}}^{2}
-\]
+\end{equation}
 dove $q$ è il modulo dell'\textit{impulso trasferito} \footnote{
   Ricordiamo che in approssimazione di nucleo fisso, quindi \textit{nucleo non
   rinculante}, $\abs{\vec{q}\,} = 2p \sin \frac{\theta}{2}$ e
   $\abs{\vec{p}_{i}} = \abs{\vec{p}_{f}} = p$
 } $\vec{q} = \vec{p}_{i} - \vec{p}_{f}$ e
 $F$ il \textit{\textbf{fattore di forma}}:
-\[
+\begin{equation}
   F \mrb{\vec{q}\,} = \int \mathrm{d}^{3} r \, \rho_N \mrb{\vec{r}\,} \exp
   \mcb{i \frac{\dpr{\vec{q}}{\vec{r}}}{\hbar}}
-\]
+\end{equation}
 
 Ora, abbiamo che il \textit{raggio del nucleo}:
-\[
+\begin{equation}
   R _{N} \simeq \mrb{\SI{1.2}{\femto\m}} A ^{\frac{1}{3}}
-\]
+\end{equation}
 quindi:
-\[
+\begin{equation}
   \frac{q R_N}{\hbar} \gtrsim 1
-\]
+\end{equation}
 allora:
-\[
+\begin{equation}
   qc \gtrsim \frac{\hbar c}{R_N} = \frac{\SI{200}{\MeV \femto\m}}{R_N}
-\]
+\end{equation}
 e di conseguenza:
-\[
+\begin{equation}
   q \gtrsim \frac{\SI{200}{\MeV \per c}}{R_N \msb{\si{\femto\m}}}
-\]
+\end{equation}
 
 Quindi se vogliamo sondare oggetti della dimensione di un \textit{fermi},
 dobbiamo utilizzare sonde di impulso superiore a:
-\[
+\begin{equation}
   p \simeq q \gtrsim \frac{\SI{200}{\MeV \per c}}{R_N \msb{\si{\femto\m}}}
-\]
+\end{equation}
 
 Se consideriamo uno scattering di elettroni sui nuclei (se consideriamo invece
 uno scattering di \textit{particelle alfa} su nuclei dovremmo tener conto anche
 delle interazioni forti), possiamo cominciare a vedere la dimensione finita del
 nucelo, per valori di impulso che fanno sì che gli \textit{elettroni}
 siano \textit{\textbf{ultra-realtivistici}}:
-\[
+\begin{equation}
   pc \simeq \SI{100}{\MeV} \gg m_e c^2 \simeq \SI{0.5}{\MeV}
-\]
+\end{equation}
 L'ipotesi che il nucleo non rinculi è ancora adeguata, perché l'energia
 cinetica della collisione, che è dell'ordine dei $\si{\MeV}$, è inferiore
 rispetto all'energia a riposo della massa del centro scatteratore, che è
@@ -62,10 +62,10 @@ conto di effetti relativistici: \textit{Scattering Rutherford} $\rightarrow$
 \subsection{Scattering Mott}
 Ricordiamo la sezione d'urto differenziale dello \textit{scattering
 Rutherford}:
-\[
+\begin{equation}
   \mrb{\mdv{\sigma}{\Omega}}_\text{Rutherford} = \frac{Z^2 \alpha^2 \hbar^2
   c^2}{4 p^2 v^2} \frac{1}{\sin^{4} \frac{\theta}{2}}
-\]
+\end{equation}
 La sezione d'urto differenziale dello \textit{\textbf{scattering Mott}} è
 ricavata a partire da quella dello \textit{scattering Rutherford}, ma è adatta
 per il caso di \textit{\textbf{effetti ultra-relativistici}}:
@@ -127,49 +127,49 @@ atomico e il numero di massa atomica determinano la struttura del nucleo:
     m_n c^2 - m_p c^2 \simeq \SI{1.29}{\MeV}
   \end{align*}
   in particolare:
-  \[
+  \begin{equation}
     \frac{m_n - m_p}{m_N} \simeq 10^{-3}
-  \]
+  \end{equation}
   dove $m_N$ è la \textit{massa del nucleo}.
   In natura, il fatto che il neutrone sia più massivo del protone, permette il
   processo di decadimento, nel vuoto, del neutrone:
-  \[
+  \begin{equation}
     n \longrightarrow p + e^- + \cc{\nu}_{e^-}
-  \]
+  \end{equation}
   dove $\cc{\nu}_{e}$ è l'\textit{antineutrino elettronico}. Il tempo
   caratteristico del decadimento del neutrone è $\tau \simeq \SI{880}{s}$.
 
   Il processo inverso di decadimento del protone:
-  \[
+  \begin{equation}
     \bcancel{p \longrightarrow n + e^+ + \nu_{e^+}}
-  \]
+  \end{equation}
   non può avvenire spontaneamente per via della differenza di massa fra proton
   e neutrone.
 \end{note}
 
 \subsection{Difetto di massa ed energia di legame}
 Consideriamo un nucleo $\mrb{Z, A}$:
-\[
+\begin{equation}
   m \mrb{Z, A} c^2 \neq Z m_p c^2 + \mrb{A + Z} m_n c^2
-\]
+\end{equation}
 
 Una particella libera (puntiforme o composta) ha una \textit{relazione
 impulso-energia}:
-\[
+\begin{equation}
   E \mrb{\vec{p}\,} = \sqrt{c^2 \abs{\vec{p}\,}^{2} + m^2 c^4}
-\]
+\end{equation}
 La massa di una particella equivale all'energia a riposo della particella nel
 sistema di riferimento in cui la particella ha impulso nullo:
-\[
+\begin{equation}
   mc^2 = E \mrb{\vec{p} = 0}
-\]
+\end{equation}
 Questo è ovvio per sistemi puntiformi, ma non è ovvio per sistemi composti.
 \begin{example}[Nucleo di \ch{^{3}He}]
   La massa dell'\textit{elio} \ch{^{3}He} sarà:
-  \[
+  \begin{equation}
     m \mrb{\ch{^{3}He}} c^2 = E _\text{tot} \mrb{p _\text{tot} = 0}
     = m_p c^2 + m_p c^2 + m_n c^2 + T + V \neq m_p c^2 + m_p c^2 + m_n c^2
-  \]
+  \end{equation}
   dove $T$ \textit{energia cinetica} e $V$ rappresenta l'\textit{energia di
   interazione}.
   Tipicamente $T + V < 0 \sim \si{\MeV}$ (la somma dei termini è negativa
@@ -177,41 +177,47 @@ Questo è ovvio per sistemi puntiformi, ma non è ovvio per sistemi composti.
   \sim \si{\GeV}$.
 
   L'energia cinetica del sistema si può scrivere come:
-  \[
+  \begin{equation}
     T = \frac{p_p^2}{2 m_p} + \frac{p_p^2}{2 m_p} + \frac{p_n^2}{2 m_n}
-  \]
+  \end{equation}
   Allora:
-  \[
+  \begin{equation}
     \Delta p_x\, \Delta x \gtrsim \hbar
-  \]
+  \end{equation}
   dove:
-  \[
+  \begin{equation}
     \Delta p_x = \mcb{\braket{p_x^2} - \braket{p_x}^{2}}^{\nicefrac{1}{2}} =
     \braket{p_x^2}^{\nicefrac{1}{2}}
-  \]
+  \end{equation}
   dato che $\braket{p_x}^{2} = 0$.
   Considerando il fatto che le dimensioni fisiche del sistema ($\Delta x$) sono
   quelle delle dimensioni del nucleo, quindi dell'ordine del \textit{fermi}:
-  \[
+  \begin{equation}
     \braket{p_x^2} \gtrsim \frac{\hbar^2}{R_N}
     \mthen
     \frac{\braket{p_x^2}}{2m} \gtrsim \frac{\hbar^2 c^2}{2m c^2 R_N^2} \gtrsim
     \frac{\SI{20}{\MeV}}{(R_N \msb{\si{\femto m}})^{2}}
-  \]
+  \end{equation}
 \end{example}
 
 \paragraph{Energia di legame del nucleo}
 Tipicamente ci aspettiamo \textbf{\textit{difetti di massa} dell'ordine del}
 $\si{\MeV}$ perché sono legati ai contributi apportati da $T + V < 0 \simeq
 \si{\MeV}$. Potremo scrivere che:
-\[
+\begin{equation}
   m \mrb{Z, A} c^2 = \msb{Z m_p c^2 + \mrb{A - Z} m_n c^2} - B \mrb{Z, A}
-\]
+\end{equation}
 dove $B \mrb{Z, A}$ rappresenta l'\textbf{energia di legame del nucleo}.
 
 \section{Radioattività - Decadimenti Nucleari}
 Fenomeno che riguarda esclusivamente i nuclei atomici.
-Storicamente i \textbf{decadimenti nucleari} sono raggruppati in 3 classi
+Un generico fenomeno di decadimento si indica con:
+\begin{equation}
+  \mrb{Z, A} \rightarrow \mrb{Z + \Delta Z, A + \Delta A} + X
+\end{equation}
+con $\Delta Z, \Delta A \in \mathbb{Z}$.
+
+Storicamente i \textbf{decadimenti nucleari} sono raggruppati in tre classi
 principali, che riguardano tutti fenomeni di scala energetica del $\si{\MeV}$
 (poiché stiamo considerando particelle di $1\si{\MeV}$ confinate in dimensioni
 spaziali della scala di $1\si{\femto\m}$).
@@ -247,7 +253,7 @@ spaziali della scala di $1\si{\femto\m}$).
     \bottomrule
   \end{tabular}
 \end{table}
-dove con $\mrb{Z,A}^{\ast}$ abbiamo indicato uno stato eccitato di $\mrb{Z,A}$.
+Indichiamo con $\mrb{Z,A}^{\ast}$ uno stato eccitato di $\mrb{Z,A}$.
 
 \begin{note}[Conservazione del numero di nucleoni]
   In queste reazioni di decadimento il \textit{numero di nucleoni} deve
@@ -258,80 +264,97 @@ dove con $\mrb{Z,A}^{\ast}$ abbiamo indicato uno stato eccitato di $\mrb{Z,A}$.
 Indichiamo con $\omega$ la \textit{probabilità di decadimento per unità di
 tempo}, ipotizzando che la \textit{probabilità di decadimento sia costante nel
 tempo}. Quindi:
-\[
+\begin{equation}
   \mdv{P}{t} = \omega = \frac{1}{\tau}
-\]
+\end{equation}
 dove $\tau$ rappresenta il \textit{tempo di vita medio}.
-Indicando con $N$ il \textit{numero di nuclei} del tipo considerato:
-\[
+Indicando con $N$ il \textit{numero di nuclei} della specie considerato:
+\begin{equation}
   \md{N} = -\omega N \md{t}
-\]
+\end{equation}
 per cui:
-\[
+\begin{equation}
   \mdv{N}{t} = - \omega N
-\]
-allora abbiamo ottenuto la:
-\[
+\end{equation}
+Quindi otteniamo:
+\begin{equation}
   \textbf{Legge di decadimento esponenziale}\qquad
   \boxed{
-    N \mrb{t} = N_0 \exp \mcb{- \omega t} = N_0 \exp \mcb{-\frac{t}{\tau}}
+    N \mrb{t} = N_0 e^{- \omega t} = N_0 e^{-\frac{t}{\tau}}
   }
-\]
-
+\end{equation}
+dove $N_0 = N \mrb{t_0}$.
 Questa legge viene spesso espressa in termini del \textit{\textbf{tempo di
-dimezzamento}} $t_{\frac{1}{2}}$, definito da:
-\[
-  \frac{N \mrb{t_{\frac{1}{2}}}}{N_0} = \frac{1}{2}
-\]
+dimezzamento}} $t_{\nicefrac{1}{2}}$, definito da:
+\begin{equation}
+  \frac{N \mrb{t_{\nicefrac{1}{2}}}}{N_0} = \frac{1}{2}
+\end{equation}
 quindi:
-\[
-  \exp \mcb{- \omega t _{\frac{1}{2}}} = \frac{1}{2}
+\begin{equation}
+  e^{- \omega t _{\nicefrac{1}{2}}} = \frac{1}{2}
   \mthen
-  \exp \mcb{\frac{t _{\frac{1}{2}}}{\tau}} = 2
+  e^{\frac{t _{\nicefrac{1}{2}}}{\tau}} = 2
   \mthen
-  t _{\frac{1}{2}} = \tau \ln \mrb{2}
+  t _{\nicefrac{1}{2}} = \tau \ln \mrb{2}
   \mthen
-  t _{\frac{1}{2}} \simeq 0.693\tau 
-\]
+  t _{\nicefrac{1}{2}} \simeq 0.693\tau 
+\end{equation}
+
+\begin{note}[Curie]
+  ???
+  % Quantità di materiale che fornisce un numero di decadimenti per unità di
+  % tempo pari a quelli di un grammo di radio puro: $\qty{3.7e10}{\ci}$.
+\end{note}
+
+\begin{note}[Becquerel]
+  ???
+\end{note}
 
 \begin{note}[]
   La quantità misurata in un campione radioattivo non è $N$ (\textit{numero di
   nuclei}) ma l'attività del campione $I$ (\textit{numero di decadimenti al
   secondo nel campione}).
-  \[
+  \begin{equation}
     I = - \mdv{N}{t} = \omega N
-  \]
+  \end{equation}
   quindi la grandezza che viene effettivamente misurata:
-  \[
-    I \mrb{t} = \omega N_0 \exp \mcb{- \omega t} = I _{0} \exp \mcb{- \omega t}
-  \]
+  \begin{equation}
+    I \mrb{t}
+    = \omega N_0 e^{- \omega t}
+    = I _{0} e^{- \omega t}
+  \end{equation}
 
 \end{note}
 
-Fino ad ora abbiamo considerato il caso particolarmente semplice in cui il
+Fino a ora abbiamo considerato il caso particolarmente semplice in cui il
 nucleo può avere \textit{un unico modo di decadimento}. Realisticamente questo
 non accade, infatti un unico nucleo può avere diversi modi di decadimento.
 
 \subsection{Decadimenti multimodali}
 Consideriamo ora il caso in cui un unico atomo può avere \textit{diversi modi
 di decadimento}:
-\[
-  \mdv{N}{t} = - \omega_1 N - \omega_2 N \equiv - \omega N
-\]
+\begin{equation}
+  \mdv{N}{t}
+  = - \omega_1 N - \omega_2 N
+  = - \msum{i=1}{2} \omega_i N
+  \equiv - \omega N
+\end{equation}
 dove $\omega = \omega_1 + \omega_2$. La \textit{probabilità totale di
 decadimento} $\omega$ sarà chiaramente la somma delle probabilità di
 decadimento di ogni modo.
 
 Questo implica che si sommino gli inversi delle vite medie per ogni modo di
 decadimento:
-\[
-  \frac{1}{\tau} = \frac{1}{\tau}_{1} + \frac{1}{\tau}_{2}
-\]
+\begin{equation}
+  \frac{1}{\tau}
+  = \msum{i=1}{2} \frac{1}{\tau_i}
+  = \frac{1}{\tau}_{1} + \frac{1}{\tau}_{2}
+\end{equation}
 dove $\tau = \frac{1}{\omega}$, $\tau_1 = \frac{1}{\omega_1}$ e $\tau_2 =
 \frac{1}{\omega_2}$.
 
-In questo caso abbiamo che:
-\[
+In questo caso abbiamo che le \textbf{branching fraction}:
+\begin{equation}
   \begin{dcases}
     f_1 = \frac{\omega_1}{\omega}
     \\
@@ -339,18 +362,41 @@ In questo caso abbiamo che:
   \end{dcases}
   \mthen
   \msum{i}{} f_i = 1
-\]
+\end{equation}
 
 L'\textit{evoluzione temporale dei nuclei presenti nel campione}:
-\[
-  N \mrb{t} = N \mrb{0} \exp \mcb{- \omega t}
-\]
+\begin{equation}
+  N \mrb{t}
+  = N \mrb{t = 0} e^{\mrb{- \msum{i=1}{2} \omega_i} t}
+  = N \mrb{t = 0} e^{- \omega t}
+\end{equation}
 Allora le attività di decadimento $1$ e $2$ seguono le seguenti leggi
 esponenziali:
-\begin{align*}
-  I_1 \mrb{1} = \omega_1 N \mrb{t} = \omega _{1} N \mrb{0} \exp \mcb{-\omega t}
-  = \mrb{I_1}_{0} \exp \mcb{- \omega t}
-  \\
-  I_2 \mrb{2} = \omega_2 N \mrb{t} = \omega _{2} N \mrb{0} \exp \mcb{-\omega t}
-  = \mrb{I_2}_{0} \exp \mcb{- \omega t}
-\end{align*}
+\begin{equation}
+  \begin{dcases}
+    I_1 \mrb{t} = \omega_1 N \mrb{t} = \omega _{1} N \mrb{t = 0} e^{-\omega t}
+    = \mrb{I_1}_{0} e^{- \omega t}
+    \\
+    I_2 \mrb{t} = \omega_2 N \mrb{t} = \omega _{2} N \mrb{t = 0} e^{-\omega t}
+    = \mrb{I_2}_{0} e^{- \omega t}
+  \end{dcases}
+\end{equation}
+
+\subsection{Costruzione di Esperimenti}
+Supponiamo do voler trovare $\omega$ (quindi il tempo medio di decadimento) per
+una campione di una determinata specie atomica. Se il tempo di decadimento non
+è particolarmente lungo si può misurare:
+\begin{equation}
+  N \mrb{t = t_1},
+  \qquad
+  N \mrb{t = t_2},
+  \mthen
+  \frac{N \mrb{t = t_1}}{N \mrb{t = t_2}} = e^{-\omega \mrb{t_1 - t_2}}
+  \mthen
+  \omega = - \frac{\ln \frac{N \mrb{t = t_1}}{N \mrb{t = t_2}}}{t_1 - t_2}
+\end{equation}
+
+L'\textit{efficienza} $\eps$ di un esperimento è data dal rapporto:
+\begin{equation}
+  \eps = \frac{\textit{\# particelle rivelate}}{\textit{\# particelle emesse}}
+\end{equation}

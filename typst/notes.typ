@@ -1,0 +1,1 @@
+/home/radocchia/.local/src/typst/notes.typ/notes.typ

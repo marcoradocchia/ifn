@@ -1,0 +1,97 @@
+%LTeX: language=it
+\chapter{2023-04-27}
+\section{Serie (catene) radiattive}
+Furono individuate $3$ \textit{serie} (catene) \textit{radiattive}:
+
+Le catene radiattive sono originate da tre tipi di decadimento:
+\begin{itemize}
+	\item $\alpha$ \rightarrow \textit{particelle cariche} $\ch{^{4}He^{++}}$;
+	\item $\beta$ \rightarrow \textit{particelle negative};
+	\item $\gamma$ \rightarrow \textit{particelle neutre} (fotoni energetici).
+\end{itemize}
+I primi e maggiori sviluppi in fisica nucleare sono stati fatti utilizzando
+particelle $\alpha$.
+
+\section{Rutherford scattering formula}
+Utilizzeremo particelle con carica $ze$.
+
+\subsection{Il modello}
+\begin{itemize}
+	\item L'atomo è costituito da un nucleo con carica positiva $Ze$ che porta
+	      praticamente tutta la massa dell'atomo;
+	\item l'atomo è elettricamente neutro e contiene $Z$ elettroni che orbitano
+	      intorno al nucleo. Questi elettroni non possono dar luogo a deflessioni
+	      grandi. Sono trascurabili rispetto alla particella $\alpha$, considerata
+	      come proiettile;
+	\item il nucleo bersaglio è molto più massivo della particella incidente;
+	      questo permetterà in prima approssimazione di considerare il rinculo del
+	      target nullo, $m \ll M$;
+	\item si utilizza solo meccanica classica per descrivere l'urto, quindi
+	      assumeremo la velocità del proiettile non relativistica, $v \ll c$;
+	\item il nucleo bersaglio e la particella incidente hanno distribuzioni di
+	      carica puntiforme e interagiscono attraverso un potenziale coulombiano
+	      (interazione puramente elettromagnetica):
+	      \begin{equation}
+		      V \mrb{z} = \frac{Z z e^2}{4 \pi \eps_0 r}
+	      \end{equation}
+	\item si considera l'interazione elettromagnetica come unico tipo
+	      d'interazione;
+	\item il bersaglio e il proiettile non subiscono alcuna eccitazione durante
+	      l'urto (scattering elastico).
+\end{itemize}
+
+
+La forza d'interazione del modello è la forza coulombiana:
+\begin{equation}
+  \vec{F} = \frac{z Z e^2}{4 \pi \eps_0} \frac{\hat{r}}{r^2}
+\end{equation}
+L'impulso trasferito, se gli impulsi iniziale e finale della particella prima e
+dopo l'urto sono $\vec{p}_{i}$ e $\vec{p}_{f}$ rispettivamente:
+\begin{equation}
+  \Delta \vec{p} = \abs{\vec{p}_{f} - \vec{p}_{i}} = 2 p \sin \frac{\theta}{2}
+\end{equation}
+allora:
+\begin{equation}
+  \Delta p = \int_{-\infty}^{\infty} F_T \md[]{t}
+  = \int_{-\infty}^{\infty} \frac{z Z e^2}{4 \pi \eps_0} \frac{cos \beta}{r^2} \md[]{t}
+\end{equation}
+dove, con $\beta$ l'angolo in figura \ref{fig:rutherford_scattering}:
+\begin{equation}
+  \beta \mrb{t = - \infty} = - \mrb{\frac{\pi}{2} - \frac{\theta}{2}};
+  \qquad
+  \beta \mrb{t = \infty} = \frac{\pi}{2} - \frac{\theta}{2}
+\end{equation}
+
+\subsection{Raggio di collisione}
+\begin{equation}
+  \tan \frac{\theta}{2}
+  = \frac{z Z e^2}{4 \pi \eps_0 b} \frac{m}{p^2}
+  = \frac{R}{b}
+\end{equation}
+con $R = \frac{z Z e^2 m}{4 \pi \eps_0 p^2}$.
+In particolare, per $R = b$ abbiamo:
+\begin{equation}
+  \tan \frac{\theta}{2} = 1
+  \mthen
+  \frac{\theta}{2} = \qty{45}{\degree}
+  \mthen \theta = \qty{90}{\degree}
+\end{equation}
+
+Per il caso di impatto frontale, utilizziamo il \textit{teorema delle forze
+vive}:
+\begin{equation}
+  T + V = \text{const}
+\end{equation}
+quindi:
+\begin{equation}
+  \frac{1}{2} m v_0^2 + 0
+  = \text{const}
+  = 0 + \frac{z Z e^2}{4 \pi \eps_0 r_{\text{min}}}
+\end{equation}
+allora abbiamo che:
+\begin{equation}
+  r_{\text{min}} = 2 R
+\end{equation}
+Questo vuol dire che L'ordine di grandezza di $R$ rappresenta l'ordine di
+grandezza della minima distanza della particella $\alpha$ dal nucleo
+scatteratore.

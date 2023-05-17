@@ -2,85 +2,102 @@
 \chapter{2022-05-19}
 \section{Formula semi-empirica di massa (reprise)}
 \subsection{Nuclei stabili}
-Consideriamo che l'\textit{impulso di fermi} di protoni e neutori è
+Consideriamo che l'\textit{impulso di fermi} di protoni e neutroni è
 rispettivamente:
-\begin{align*}
-  p _{F,p}^{3} = Z \mcb{\frac{8}{3} \pi \frac{V}{\mrb{2 \pi}^{3}
+\begin{align}
+  p _{F,p}^{3} &= Z \mcb{\frac{8}{3} \pi \frac{V}{\mrb{2 \pi}^{3}
   \hbar^3}}^{-1}
   \\
-  p _{F,n}^{3} = \mrb{A - Z} \mcb{\frac{8}{3} \pi \frac{V}{\mrb{2 \pi}^{3}
+  p _{F,n}^{3} &= \mrb{A - Z} \mcb{\frac{8}{3} \pi \frac{V}{\mrb{2 \pi}^{3}
   \hbar^3}}^{-1}
-\end{align*}
+\end{align}
+\begin{note}[]
+  Per nuclei tali che $Z = N = \frac{A}{2}$ abbiamo che l'\textit{impulso di
+  fermi}:
+  \begin{equation}
+    p_F
+    \equiv  p _{F, n}
+    \equiv  p _{F, p}
+    = \mrb{\frac{A}{2} \frac{3 \pi^2 \hbar^3}{V}}^{\frac{1}{3}}
+    = \mrb{\frac{\cancel{A}}{2} \frac{3 \pi^{\cancel{2}} \hbar^3}{\frac{4}{3}
+      \cancel{\pi} R_0^3 \cancel{A}}}
+    = \mrb{\frac{9 \pi}{8}}^{\frac{1}{3}} \frac{\hbar}{R_0}
+    \simeq \qty{250}{\MeV \per c}
+  \end{equation}
+\end{note}
+
 Otteniamo dunque che l'\textit{energia totale}:
-\[
+\begin{equation}
   E _\text{tot} = \frac{8 \pi}{5} \frac{V}{2 m_N} \frac{1}{\mrb{2 \pi}^{3}
   \hbar^3} \mcb{\frac{8}{3} \pi \frac{V}{\mrb{2 \pi}^{3}
   \hbar^3}}^{-\nicefrac{5}{3}} \msb{Z ^{\nicefrac{5}{3}} + \mrb{A - Z}
   ^{\nicefrac{5}{3}}}
-\]
+\end{equation}
 dove abbiamo confuso le masse di protone e neutrone con la \textit{massa del
 generico nucleone} $m_N$. Quindi:
-\[
+\begin{equation}
   E _\text{tot} = K \frac{\mrb{2 \pi}^{3} \hbar^2}{2 m_N} \frac{1}{V
   ^{\nicefrac{2}{3}}} \mcb{Z ^{\nicefrac{5}{3}} + \mrb{A -
   Z}^{\nicefrac{5}{3}}}
-\]
+\end{equation}
 quindi, raccogliendo ulteriori costanti:
-\[
+\begin{equation}
   E_\text{tot} = \frac{C}{A ^{\nicefrac{2}{3}}} \mcb{Z ^{\nicefrac{5}{3}} +
   \mrb{A - Z}^{\nicefrac{5}{3}}}
-\]
+\end{equation}
 Calcoliamo la derivata di $E _\text{tot}$ rispetto a $Z$, ottenendo il minimo
 (\textit{estremale}) dell'energia cinetica in funzione di $A$:
-\[
+\begin{equation}
   \mpdv{E _\text{tot}}{Z} = \frac{5}{3} \frac{C}{A ^{\nicefrac{2}{3}}} \mcb{Z
   ^{\nicefrac{2}{3}} + \mrb{A - Z}^{\nicefrac{5}{3}}}
-\]
+\end{equation}
 quindi:
-\[
+\begin{equation}
   \mpdv{E _\text{tot}}{Z} = 0
   \mthen
   \boxed{
     Z = \frac{A}{2}
   }
-\]
+\end{equation}
 Sostituendo nell'espressione dell'energia totale, otteniamo l'energia
 \textit{totale minima}:
-\[
+\begin{equation}
   \mrb{E _\text{tot}}_\text{min} = E _\text{tot} \mrb{Z = \frac{A}{2}, A} =
   \frac{C}{A ^{\nicefrac{2}{3}}} \mcb{\mrb{\frac{A}{2}}^{\nicefrac{5}{3}} +
   \mrb{\frac{A}{2}} ^{\nicefrac{5}{3}}} \propto A
-\]
+\end{equation}
 che \textit{contribuisce al termine di volume}.
 
 Calcoliamo la derivata seconda:
-\[
+\begin{equation}
   \mpdv[2]{E _\text{tot}}{Z} = \frac{10}{9} \frac{C}{A ^{\nicefrac{2}{3}}}
   \mcb{Z ^{-\nicefrac{1}{3}} + \mrb{A - Z}^{-\nicefrac{1}{3}}}
-\]
+\end{equation}
 quindi:
-\[
+\begin{equation}
   \mpdv[2]{E _\text{tot}}{Z} \mrb{Z = \frac{A}{2}, A} =  \frac{10}{9}
   \frac{C}{A ^{\nicefrac{2}{3}}} \mcb{\mrb{\frac{A}{2}}^{-\nicefrac{1}{3}} +
   \mrb{\frac{A}{2}}^{-\nicefrac{1}{3}}} \propto \frac{1}{A}
-\]
+\end{equation}
 In conclusione, quindi:
-\[
+\begin{equation}
   E _\text{tot} \mrb{Z, A} \simeq KA + \frac{D}{A} \mrb{Z - \frac{A}{2}}^{2}
-\]
+\end{equation}
 dove $KA$ viene riassorbito dal termine di volume e $\frac{D}{A} \mrb{Z -
 \frac{A}{2}}^{2}$ costituisce il \textit{termine di asimmetria}.
 
 Quindi dobbiamo aggiungere un ultimo termine correttivo, chiamato
 \textit{\textbf{termine di asimmetria}}, dovuto alla \textit{natura fermionica
 di protoni e neutroni}. Otteniamo così:
-\begin{align*}
+\begin{equation}
   B = a_V A - a_S A ^{\nicefrac{2}{3}} - a_C \frac{Z^2}{A ^{\nicefrac{1}{3}}} -
   a_A \frac{\mrb{A - 2Z}^{2}}{A}
-  \\
+\end{equation}
+Quindi
+\begin{equation}
   \eps = a_V - a_S A ^{-\nicefrac{1}{3}} - a_C \frac{Z^2}{A ^{\nicefrac{4}{3}}}
   - a_A \frac{\mrb{A - 2Z}^{2}}{A^2}
-\end{align*}
+\end{equation}
 
 \begin{note}[]
   Il \textit{termine di asimmetria favorisce configurazioni} con $Z \simeq N$.
@@ -92,33 +109,47 @@ protoni o $2$ neutroni possono formare un sistema particolarmente legato
 (\textit{effettto di \quot{shell}} non legato alle caratteristiche specifiche
 delle interazioni forti).
 Per tenere conto di ciò si introduce:
-\[
+\begin{equation}
   B = a_V A - a_S A ^{\nicefrac{2}{3}} - a_C \frac{Z^2}{A ^{\nicefrac{1}{3}}} -
-  a_A \frac{\mrb{A - 2Z}^{2}}{A} + \delta \mrb{A, Z}
-\]
+  a_A \frac{\mrb{A - 2Z}^{2}}{A} + \delta_p \mrb{A, Z}
+\end{equation}
 dove:
 \begin{align*}
-  \delta \mrb{A, Z} =
+  \delta_p \mrb{A, Z} =
   \begin{dcases}
-    - \frac{a_P}{A ^{\nicefrac{1}{2}}} & N = \textit{dispari};\ Z =
-    \textit{dispari}
+    - \frac{a_P}{A ^{\nicefrac{1}{2}}},
+    & N = \textit{dispari},\ Z = \textit{dispari}
     \\
-    0 & A = \textit{dispari}
+    0, & A = \textit{dispari}
     \\
-    \frac{a_p}{A ^{\nicefrac{1}{2}}} & N = \textit{pari};\ Z = \textit{pari}
+    \frac{a_p}{A ^{\nicefrac{1}{2}}}, & N = \textit{pari},\ Z = \textit{pari}
   \end{dcases}
 \end{align*}
 
+\begin{note}[]
+  I nuclei $N = \textit{dispari}$ e $Z = \textit{displari}$ sono molto rari in
+  natura, infatti quelli noti sono solo quattro:
+  $_{1}^{2}\ch{H},\ ^{6}_{3}Li,\ _{5}^{10}B,\ _{7}^{14}N$.
+\end{note}
+
+\begin{note}[]
+  Questo termine si può studiare sperimentalmente misurando la
+  \quot{\textit{neutron separation energy}}, ovvero l'energia necessaria per
+  liberare un neutrone dal nucelo con energia cinetica nulla.
+\end{note}
+
+% TODO: aggiungi figura B / A
+
 \subsubsection{Formula semi-empirica di massa}
 Questa è dunque la \textit{formula semi-empirica di massa}:
-\[
+\begin{equation}
   \boxed{
     M \mrb{Z, A} c^2 = Z m_p c^2 + \mrb{A - Z} m_n c^2 - B \mrb{A, Z}
   }
-\]
+\end{equation}
 dove $M$ è la \textit{massa nucleare a riposo}, $m_p$ la \textit{massa del
 protone}, $m_n$ la \textit{massa del neutrone} e $B \mrb{Z, A}$:
-\[
+\begin{equation}
   \boxed{
     \begin{alignedat}{2}
       B \mrb{Z, A} = & + a_V A && \qquad \textit{Termine di Volume}
@@ -140,23 +171,45 @@ protone}, $m_n$ la \textit{massa del neutrone} e $B \mrb{Z, A}$:
       \end{dcases} && \qquad \textit{Termine di Pairing}
     \end{alignedat}
   }
-\]
+\end{equation}
 
 La formula si può scrivere anche in termini della \textit{masssa atomica a
 riposo} (piuttosto che la massa del nucleo), quindi indicando con $\mu$ la
 \textit{massa atomica}:
-\[
+\begin{equation}
   \mu \mrb{A, Z} c^2 = Z m_p c^2 + \mrb{A - Z} m_n c^2 + Z m_e c^2 - B
   \mrb{A, Z} - \cancelto{0}{B _\text{atomic}}
-\]
+\end{equation}
 perché nell'atomo dobbiamo tener conto della massa degli elettroni e sottrarre
 la \textit{binding energy atomica}, che tiene conto delle energie di legame
 degli elettroni, che però, essendo dell'ordine dell'$\si{\eV}$, può essere
 trascurata.
 Quindi possiamo riscrivere la massa atomica, considerando che $m_p c^2 + m_e
-c^2 = m_H c^2$ è la \textit{massa a riposo dell'atomo di idrogeno}:
-\[
+c^2 = m_H c^2$ è la \textit{massa a riposo dell'atomo d'idrogeno}:
+\begin{equation}
   \boxed{
     \mu \mrb{A, Z} c^2 \simeq Z m_H c^2 + \mrb{A - Z} m_n c^2 - B \mrb{A, Z}
   }
-\]
+\end{equation}
+
+\begin{note}[]
+  La \textit{formula semi-empirica di massa} (modello a goccia del nucleo)
+  funziona piuttosto bene per $A > 20$, ma non riesce a riprodurre i picchi
+  nell'energia di legame per nucleone che si osservano sperimentalmente in
+  prossimità dei cosiddetti \textit{numeri magici}.
+  Una trattazione più accurata sarà il \textit{modello a shell}.
+\end{note}
+
+\begin{note}[]
+  I valori dei parametri che riproducono al meglio gli andamenti sperimentali
+  dell'energia di legame per nucleone sono:
+  \begin{equation}
+    a_V \simeq \qty{15.6}{\MeV},
+    \qquad
+    a_S \simeq \qty{17.2}{\MeV},
+    \qquad
+    a_C \simeq \qty{0.7}{\MeV},
+    \qquad
+    a_A \simeq \qty{23.3}{\MeV}
+  \end{equation}
+\end{note}

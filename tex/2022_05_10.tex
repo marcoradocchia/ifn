@@ -4,43 +4,43 @@
 \subsection{Cinematica del decadimento $\alpha$}
 Indichiamo con $D$ la \textit{particella figlia} (\textit{daughter}).
 Dato che $\vec{p}_\text{tot} = 0$, dalla \textit{conservazione dell'impulso}:
-\[
+\begin{equation}
   \vec{p}_D + \vec{p}_{\alpha} = 0
-\]
+\end{equation}
 dove quindi:
-\[
+\begin{equation}
   \abs{\vec{p}_{D}} = \abs{\vec{p}_{\alpha}} = p
-\]
+\end{equation}
 Uniamo la conservazione dell'energia (siamo in un regime di particelle non
 relativistiche):
-\[
+\begin{equation}
   m \mrb{Z-2, A-4} c^2 + m \mrb{2,4} c^2 + \frac{p^2}{2m_D} + \frac{p^2}{m
   _{\alpha}} = m \mrb{A,Z} c^2
-\]
+\end{equation}
 dove il primo membro rappresenta l'\textit{energia dello stato finale} e il
 secondo membro rappresenta l'\textit{energia dello stato iniziale}.
 
 Quindi:
-\[
+\begin{equation}
   Q _{\alpha} = \frac{p^2}{2 m_D} + \frac{p^2}{2 m _{\alpha}} = \frac{p^2}{2}
   \mcb{\frac{1}{m_D} + \frac{1}{m _{\alpha}}} = \frac{p^2}{2} \mcb{\frac{m_D +
   m _{\alpha}}{m_D m _{\alpha}}} = \frac{p^2}{2 \mu}
-\]
+\end{equation}
 dove $\mu$ rappresenta la \textit{massa ridotta del sistema}. Quindi l'impulso
 finale delle due particelle sarà in modulo:
-\[
+\begin{equation}
   p^2 = 2 \mu Q _{\alpha}
   \mthen
   p = \sqrt{2 \mu Q _{\alpha}}
-\]
+\end{equation}
 La ripartizione di energia fra le particelle $D$ e $\alpha$, invece:
-\[
+\begin{equation}
   \begin{dcases}
     T_D = \frac{\mu}{m_D} Q _{\alpha}
     \\
     T _{\alpha} = \frac{2 \mu}{2 m _{\alpha}} Q _{\alpha}
   \end{dcases}
-\]
+\end{equation}
 
 \subsection{Cinematica del decadimento $\beta$}
 % TODO: non si legge
@@ -56,59 +56,59 @@ La ripartizione di energia fra le particelle $D$ e $\alpha$, invece:
 
   Formula empirica che fornisce il raggio di un nucleo, data la sua massa
   atomica:
-  \[
+  \begin{equation}
     R_N = \mrb{118 A ^{\nicefrac{1}{3}} - 0.48} \si{\femto\m}
-  \]
+  \end{equation}
 
   % TODO: copia
-  \[
+  \begin{equation}
     \mdv{N_e}{t} = \frac{\md{N_e}}{\md{t} \md{\Omega}} \Delta \Omega = \phi_e
     N_T \mdv{\sigma}{\Omega} \frac{S}{R^2} = \mdv{N_i}{t} \frac{N_T}{S \mprime}
     \mdv{\sigma}{\Omega} \frac{S}{R^2}
-  \]
+  \end{equation}
   
-  \[
+  \begin{equation}
     \Delta \Omega = \frac{S}{R^2}
-  \]
+  \end{equation}
 
   $\phi_e$ rappresenta il \textit{flusso di elettroni}, quindi indicando con
   $N_i$ il numero di elettroni incidenti:
-  \[
+  \begin{equation}
     \phi _{e} = \mdv{N_i}{t} \frac{1}{S \mprime}
-  \]
+  \end{equation}
   con $m_a$ l'\textit{unità di massa atomica}:
-  \[
+  \begin{equation}
     \rho = \frac{m _a N_T}{S \mprime} = ??? % TODO: 
-  \]
+  \end{equation}
   Quindi, con $I$ la corrente incidente e $e$ la carica dell'elettrone:
-  \[
+  \begin{equation}
     \mdv{N_e}{t} = \mdv{N_e}{t} \frac{\rho}{A m_a} \mdv{\sigma}{\Omega}
     \frac{S}{R^2} = \frac{I}{e} \frac{\rho}{A m_a} \frac{S}{R^2}
     \mdv{\sigma}{\Omega}
-  \]
+  \end{equation}
 
-  \[
+  \begin{equation}
     \mdv{\sigma}{\Omega} = \mrb{\mdv{\sigma}{\Omega}}_\text{Mott} \abs{F
     \mrb{q}}^{2}
-  \]
+  \end{equation}
   dove la \textit{sezione d'urto di Mott} vale:
-  \[
+  \begin{equation}
     \mrb{\mdv{\sigma}{\Omega}}_\text{Mott} = \frac{Z^2 \alpha^2 \mrb{\hbar
     c}^{2}}{4 \mrb{pc}^{2} \sin^4 \mrb{\frac{\theta}{2}}} \cos ^{2}
     \mrb{\frac{\theta}{2}}
-  \]
+  \end{equation}
   A questo punto resta da calcolare il \textit{fattore di forma} per una
   distribuzione sferica uniforme:
-  \[
+  \begin{equation}
     F \mrb{q^2} = \frac{3}{x^3} \mrb{\sin x - x \cos x} % TODO: sicuro???
-  \]
+  \end{equation}
   dove $x = \frac{q R_N}{\hbar}$, con $q = 2 p \sin \mrb{\frac{\theta}{2}}$.
-  Questo perché ossiamo considerare l'energia assorbita dal rinculo del nucleo
+  Questo perché possiamo considerare l'energia assorbita dal rinculo del nucleo
   trascurabile, quindi assumendo $\abs{\vec{p}_\text{in}} =
   \abs{\vec{p}_\text{fin}} = p$, l'\textit{impulso trasferito}, che
   vettorialmente scriviamo $\vec{q} = \vec{p}_\text{fin} - \vec{p}_\text{in}$,
   vale in modulo:
-  \[
+  \begin{equation}
     \abs{\vec{q}\,} = 2 p \sin \mrb{\frac{\theta}{2}}
-  \]
+  \end{equation}
 \end{example}

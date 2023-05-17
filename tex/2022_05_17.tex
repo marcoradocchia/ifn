@@ -6,107 +6,116 @@
 
 \subsection{Energia di legame dei nuclei}
 L'\textit{energia di legame per nucleone} è data da:
-\[
-  \eps = B 
-\]
+\begin{equation}
+	\eps = B
+\end{equation}
 % TODO: grafico (energia di legame per nucleone: energia su numero atomico)
 \begin{figure}[ht]
-  \centering
-  \incfig[\textwidth]{./imgs/2022_05_17}{binding_energy}
-  \caption{Energia di legame per nucleone}
-  \label{fig:binding_energy}
+	\centering
+	\incfig[1]{./img/2022_05_17}{binding_energy}
+	\caption{Energia di legame per nucleone}
+	\label{fig:binding_energy}
 \end{figure}
 
 
 \begin{note}[]
-  Questa formula si può pensare in analogia con una \textit{goccia di liquido}.
-  Infatti un liquido è un fluido con una \textit{densità fissata}.
+	Questa formula si può pensare in analogia con una \textit{goccia di liquido}.
+	Infatti un liquido è un fluido con una \textit{densità fissata}.
 \end{note}
 
 Ricordiamo che il \textit{raggio} nucleare può essere approssimato da:
-\[
-  R_N \simeq \SI{12}{\femto\m} A ^{\nicefrac{1}{3}}
-\]
+\begin{equation}
+	R_N \simeq \SI{12}{\femto\m} A ^{\nicefrac{1}{3}}
+\end{equation}
 Quindi il \textit{volume} occupato da un nucleo è circa:
-\[
-  V_N \simeq \frac{4}{3} \pi R_N^3 = \frac{4}{3} \pi \mrb{\SI{12}{\femto\m} A}
-\]
+\begin{equation}
+	V_N \simeq \frac{4}{3} \pi R_N^3 = \frac{4}{3} \pi \mrb{\SI{12}{\femto\m} A}
+\end{equation}
 Quindi abbiamo che:
-\[
-  \mdv{N}{V} = \frac{A}{V_N} = \frac{\cancel{A}}{\frac{4}{3} \pi
-  \mrb{\SI{12}{\femto\m} \cancel{A}}}
-\]
+\begin{equation}
+	\mdv{N}{V} = \frac{A}{V_N} = \frac{\cancel{A}}{\frac{4}{3} \pi
+		\mrb{\SI{12}{\femto\m} \cancel{A}}}
+\end{equation}
 
-Penseremo il potenziale di interazione fra nucleoni all'interno di un nucleo
-come il potenziale di interazione fra particelle che costituiscono un
+Penseremo il potenziale d'interazione fra nucleoni all'interno di un nucleo
+come il potenziale d'interazione fra particelle che costituiscono un
 liquido\footnote{
-  Il prof. disegna il grafico del \textit{potenziale di Lennard-Jones}
+	Il prof. disegna il grafico del \textit{potenziale di Lennard-Jones}
 }.
 
 % TODO: riascolta che c'è troppa carne al fuoco
-\[
-  V_\text{coulomb} = \frac{Z_1 Z_2 e^2}{4 \pi \eps_0} \frac{1}{r}
-\]
+\begin{equation}
+	V_\text{coulomb} = \frac{Z_1 Z_2 e^2}{4 \pi \eps_0} \frac{1}{r}
+\end{equation}
 
 % TODO: riascolta che c'è troppa carne al fuoco
-\[
-  \textbf{Potenziale di Yukawa}\qquad
-  \boxed{
-    V = \frac{g}{r} e^{- \frac{r}{r_T}}
-  }
-\]
+\begin{equation}
+	\textbf{Potenziale di Yukawa}\qquad
+	\boxed{
+		V = \frac{g}{r} e^{- \frac{r}{r_T}}
+	}
+\end{equation}
 $g$ è la \textit{costante di accoppiamento} dell'interazione e $r_T$
-rappresenta la \textit{lunghezza di taglio} dell'interazione.
+rappresenta la \textit{lunghezza di taglio} dell'interazione ($\mu$ il suo
+inverso).
 \begin{note}[]
-  La carica nelle \textit{interazioni forti} si chiama \textit{\textbf{colore}}.
-  L'effetto delle interazioni forti si osserva quando le particelle sono portate
-  a distanze paragonabili con le loro dimensioni lineari.
+  Il pione $\pi$ è il mediatore dell'interazione forte nucleare.
+\end{note}
+\begin{note}[]
+  La costante $\mu$ ha le dimensioni di una lunghezza e si può scrivere come:
+  $\mu = \frac{m c^2}{\hbar c}$.
+\end{note}
+\begin{note}[]
+	La carica nelle \textit{interazioni forti} si chiama \textit{\textbf{colore}}.
+	L'effetto delle interazioni forti si osserva quando le particelle sono portate
+	a distanze paragonabili con le loro dimensioni lineari.
 \end{note}
 
-\[
-  B \sim \mrb{\mdv{N}{V} \frac{4}{3} \pi r_T^3} \eps_\text{in} A
-\]
+\begin{equation}
+	B \sim \mrb{\mdv{N}{V} \frac{4}{3} \pi r_T^3} \eps_\text{in} A
+\end{equation}
 dove $\mdv{N}{V} \frac{4}{3} \pi r_T^3 = N_\text{???}$
 Quindi se dividiamo per $A$:
-\[
-  \eps \equiv \frac{B}{A} \sim \mrb{\mdv{N}{V} \frac{4}{3} \pi r_T^3}
-  \eps_\text{in} \frac{A}{A} = \text{const}
-\]
+\begin{equation}
+	\eps \equiv \frac{B}{A} \sim \mrb{\mdv{N}{V} \frac{4}{3} \pi r_T^3}
+	\eps_\text{in} \frac{A}{A} = \text{const}
+\end{equation}
 
 % Simmetria di isospin (scambio elettrone???)
 
-\[
-  B = a_V A \qquad \textit{Termine di Volume}
-\]
+Abbiamo il \textit{termine di volume}:
+\begin{equation}
+	B = a_V A
+\end{equation}
 quindi:
-\[
-  \eps = \frac{B}{A} = a_V
-\]
+\begin{equation}
+	\eps = \frac{B}{A} = a_V
+\end{equation}
 
 \subsubsection{Termine di superficie}
 Introduciamo ora una \textit{correzione}. Fino ad ora abbiamo assunto che tutti
 i nucleoni interagiscono fra loro allo stesso modo. È facile capire però che un
 nucleone alla superficie del nucleo interagisce con un numero minore di altri
 nucleoni\footnote{
-  Oltrepassata la superficie del nucleo non troviamo ulteriori nucleoni!
+	Oltrepassata la superficie del nucleo non troviamo ulteriori nucleoni!
 }.
 Il raggio e la superficie del nucleo sono rispettivamente proporzionali ad $A$:
-\[
-  R_N \propto A ^{\nicefrac{1}{3}}
-  \mthen
-  S_N \propto A ^{\nicefrac{2}{3}}
-\]
+\begin{equation}
+	R_N \propto A ^{\nicefrac{1}{3}}
+	\mthen
+	S_N \propto A ^{\nicefrac{2}{3}}
+\end{equation}
 Il numero di nucleoni contenuti all'interno di un \textit{guscio superficiale
-di raggio $r_T$}, quindi:
-\[
-  N_n ^\text{superf.} \sim \mdv{N}{V} S_N r_T \propto A ^{\nicefrac{2}{3}}
-\]
+	di raggio $r_T$}, quindi:
+\begin{equation}
+	N_n ^\text{superf.} \sim \mdv{N}{V} S_N r_T \propto A ^{\nicefrac{2}{3}}
+\end{equation}
 (ricorda che $\mdv{N}{V}$ rappresenta la densità di nuceloni nel nucleo).
 Quindi:
 \begin{align*}
-  B = a_V A - a_S A ^{\nicefrac{2}{3}}
-  \\
-  \Rightarrow \eps = \frac{B}{A} = a_V - a_S A ^{-\nicefrac{1}{3}}
+	B = a_V A - a_S A ^{\nicefrac{2}{3}}
+	\\
+	\Rightarrow \eps = \frac{B}{A} = a_V - a_S A ^{-\nicefrac{1}{3}}
 \end{align*}
 
 \paragraph{Termine Coulombiano}
@@ -115,86 +124,105 @@ $A$ molto grande. L'interazione forte rispetterà quanto appena detto, per per
 l'interazione Coulombiana, che è un'\textit{interazione a lungo raggio}, non
 possiamo dire che i protoni (che sono gli unici che risentono dell'effetto
 coulombiano) interagiscano solo con i primi vicini. Il \textit{potenziale
-d'interazione coulombiana totale} fra le coppie di protoni in un nucleo sarà:
-\[
-  \mrb{V _\text{coulomb}}_\text{tot} \simeq \frac{Z \mrb{Z - 1}}{2} \frac{e^2}{4
-  \pi \eps_0} \frac{1}{R_N}
-\]
+	d'interazione coulombiana totale} fra le coppie di protoni in un nucleo sarà:
+\begin{equation}
+	\mrb{V _\text{coulomb}}_\text{tot} \simeq \frac{Z \mrb{Z - 1}}{2} \frac{e^2}{4
+		\pi \eps_0} \frac{1}{R_N}
+\end{equation}
 dove $\nicefrac{Z \mrb{Z - 1}}{2}$ è il \textit{numero di coppie di protoni
-all'interno del nucleo}. In termini della \textit{costante di struttura fine}
+	all'interno del nucleo}. In termini della \textit{costante di struttura fine}
 $\alpha$:
-\[
-  \mrb{V _\text{coulomb}}_\text{tot} \simeq \frac{Z \mrb{Z - 1}}{2}
-  \frac{e^2}{4 \pi \eps_0} \frac{\hbar c}{\hbar c} \frac{1}{R_N} = \frac{Z
-  \mrb{Z - 1}}{2} \frac{\alpha \mrb{\hbar c}}{R_N}
-\]
+\begin{equation}
+	\mrb{V _\text{coulomb}}_\text{tot} \simeq \frac{Z \mrb{Z - 1}}{2}
+	\frac{e^2}{4 \pi \eps_0} \frac{\hbar c}{\hbar c} \frac{1}{R_N} = \frac{Z
+		\mrb{Z - 1}}{2} \frac{\alpha \mrb{\hbar c}}{R_N}
+\end{equation}
 Chiaramente questa è una stima approssimata, poiché per avere una stima più
 accurata dovremmo almeno avere informazioni sulla distribuzione dei protoni
 all'interno del nucleo.
 
 Detto questo, quindi, possiamo scrivere che l'\textit{energia di legame per
-nucleone} diventa:
-\begin{align*}
-  B = a_V A - a_S A ^{\nicefrac{2}{3}} - a_C \frac{Z^2}{A^{\nicefrac{1}{3}}}
-  \\
-  \Rightarrow \eps = \frac{B}{A} = a_V - a_S A^{-\nicefrac{1}{3}} - a_C
-  \frac{Z^2}{A^{\nicefrac{4}{3}}}
-\end{align*}
+	nucleone} diventa:
+\begin{equation}
+	B
+	= a_V A - a_S A ^{\nicefrac{2}{3}} - a_C \frac{Z^2}{A^{\nicefrac{1}{3}}}
+\end{equation}
+Quindi otteniamo:
+\begin{equation}
+	\eps
+	= \frac{B}{A}
+	= a_V - a_S A^{-\nicefrac{1}{3}} - a_C \frac{Z^2}{A^{\nicefrac{4}{3}}}
+\end{equation}
 
 Quindi possiamo dire che ad alti valori di $A$, la decrescita dell'energia di
 legame per nucleone è dovuta dalla \textit{\textbf{repulsione coulombiana}} che
 diventa prevalente. Per questo motivo \textit{non possiamo avere nuclei con
-numero arbitrario di nucleoni} (oltre certe soglie, infatti, i nuclei
+	numero arbitrario di nucleoni} (oltre certe soglie, infatti, i nuclei
 cominciano a fare fissione).
 
 \begin{note}[]
-  Attenzione! Mancano delle considerazioni, perché così facendo avremmo che
-  \textit{i nuclei più fortemente legati sarebbero quelli privi di protoni}!
+	Attenzione! Mancano delle considerazioni, perché così facendo avremmo che
+	\textit{i nuclei più fortemente legati sarebbero quelli privi di protoni}!
 \end{note}
 
 \subsubsection{Termine di Asimmetria}
-La natura sceglie $Z = N$, perché \textit{neutroni e protoni e protoni
-\textbf{sono fermioni}}, quindi non possiamo porli tutti nello stesso livello
+La natura sceglie $Z = N$, perché \textit{neutroni e protoni
+	\textbf{sono fermioni}}, quindi non possiamo porli tutti nello stesso livello
 di energia! Nella disposizione nei livelli energetici dovremo soddisfare quindi
 il \textit{principio di esclusione di Pauli}.
 
-Descriviamo il \textit{nucelo come una buca di potenziale} di volume $V$; la
-\textit{\textbf{densità di stati nello spazio degli impulsi}}:
-\[
-  \frac{\mathrm{d}^{3} n_\text{stati}}{\mathrm{d}^{3} p} = \frac{V}{\mrb{2
-  \pi}^{3} \hbar^3}
-\]
+Descriviamo il \textit{nucleo come una buca di potenziale} di volume $V$; la
+\textit{\textbf{densità di stati nello spazio delle fasi}}:
+\begin{equation}
+	\frac{\mathrm{d}^{3} n_\text{stati}}{\mathrm{d}^{3} p}
+	= \frac{V}{\mrb{2 \pi}^{3} \hbar^3}
+\end{equation}
+\begin{note}[]
+  Il volume minimo occupato da una particella quantistica nello spazio delle
+  fasi si ottiene dal \textit{principio d'indeterminazione}.
+\end{note}
 Lo stato di \textit{minima energia} si ottiene occupando tutti gli stati di
 energia più bassa, \textit{compatibilmente con il principio di esclusione di
-Pauli}.
-\[
-  Z = N_p = 2 \int_{\abs{\vec{p}}\leq p_{F,p}} \mathrm{d}^{3}
-  p\,\frac{\mathrm{d}^{3} n_\text{stati}}{\mathrm{d}^{3} p}
-  = 2 \mint{0}{p_{F,p}}{p}{4 \pi p^2 \frac{V}{\mrb{2 \pi}^{3} \hbar^3}}
-  = \frac{8 \pi}{3} p _{F,p}^{3} \frac{V}{\mrb{2 \pi}^3 \hbar^3}
-\]
-\[
-  A - Z = N_n = 2 \mint{0}{p _{F,n}}{p}{4 \pi p^2 \frac{V}{\mrb{2 \pi}^{3}
-  \hbar^3}} = \frac{8 \pi}{3} p _{F,n}^{3} \frac{V}{\mrb{2 \pi}^{3} \hbar^3}
-\]
+	Pauli}.
+\begin{equation}
+	Z
+	= N_p
+	= 2 \int_{\abs{\vec{p}}\leq p_{F,p}} \mathrm{d}^{3}
+	p\,\frac{\mathrm{d}^{3} n_\text{stati}}{\mathrm{d}^{3} p}
+	= 2 \mint{0}{p_{F,p}}{p}{4 \pi p^2 \frac{V}{\mrb{2 \pi}^{3} \hbar^3}}
+	= \frac{8 \pi}{3} p _{F,p}^{3} \frac{V}{\mrb{2 \pi}^3 \hbar^3}
+\end{equation}
+\begin{equation}
+	A - Z
+	\equiv N_n
+	= 2 \mint{0}{p _{F,n}}{p}{4 \pi p^2 \frac{V}{\mrb{2 \pi}^{3} \hbar^3}}
+  = \frac{8 \pi}{3} p _{F,n}^{3} \frac{V}{\mrb{2 \pi}^{3} \hbar^3}
+  = \frac{V p _{F, n}^3}{3 \pi^2 \hbar^3}
+\end{equation}
 dove $p_{F,p}$ e $p_{F,p}$ sono gli \textbf{impulsi di fermi} relativi
 a protoni e neutroni.
-Le energie saranno:
-\[
-  E_p = 2 \int_{\abs{\vec{p}}\leq p_{F,p}} \mathrm{d}^{3}
-  p\,\frac{\mathrm{d}^{3} n_\text{stati}}{\mathrm{d}^{3} p} \frac{p^{2}}{2 m_p}
-  = 2 \mint{0}{p_{F,p}}{p}{\frac{4 \pi p^4}{2 m_p} \frac{V}{\mrb{2 \pi}^{3}
-  \hbar^3}}
-  = \frac{8 \pi}{5} \frac{p _{F,p}^{5}}{2 m_p} \frac{V}{\mrb{2 \pi}^3 \hbar^3}
-\]
-\[
-  E_n = 2 \mint{0}{p _{F,n}}{p}{\frac{4 \pi p^4}{2 m_n} \frac{V}{\mrb{2 \pi}^3
-  \hbar^3}} = \frac{8 \pi}{5} \frac{p _{F,n}^{5}}{2 m_n} \frac{V}{\mrb{2
-  \pi}^{3} h^3}
-\]
+Le energie saranno\footnote{
+  Nel calcolo abbiamo assunto la distribuzione degli impulsi isotropa, per cui
+  si può sostituire $\md[3]{p} = 4 \pi p^2 \md[]{p}$
+}:
+\begin{equation}
+	E_p = 2 \int_{\abs{\vec{p}}\leq p_{F,p}} \mathrm{d}^{3}
+	p\,\frac{\mathrm{d}^{3} n_\text{stati}}{\mathrm{d}^{3} p} \frac{p^{2}}{2 m_p}
+	= 2 \mint{0}{p_{F,p}}{p}{\frac{4 \pi p^4}{2 m_p} \frac{V}{\mrb{2 \pi}^{3}
+			\hbar^3}}
+	= \frac{8 \pi}{5} \frac{p _{F,p}^{5}}{2 m_p} \frac{V}{\mrb{2 \pi}^3 \hbar^3}
+\end{equation}
+\begin{equation}
+	E_n = 2 \mint{0}{p _{F,n}}{p}{\frac{4 \pi p^4}{2 m_n} \frac{V}{\mrb{2 \pi}^3
+			\hbar^3}} = \frac{8 \pi}{5} \frac{p _{F,n}^{5}}{2 m_n} \frac{V}{\mrb{2
+			\pi}^{3} h^3}
+\end{equation}
 L'energia cinetica totale è data da:
-\[
-  E _\text{tot} = E_p + E_n = \frac{8 \pi}{5} \frac{V}{\mrb{2 \pi}^{3} \hbar^3}
-  \frac{1}{2 m_n} \mcb{p _{F,p}^{5} + p _{F, n}^{5}}
-\]
+\begin{equation}
+	E _\text{tot}
+  = E_p + E_n
+  = \frac{8 \pi}{5} \frac{V}{\mrb{2 \pi}^{3} \hbar^3}
+	\frac{1}{2 m_n} \msb{p _{F,p}^{5} + p _{F, n}^{5}}
+\end{equation}
 ricordando che $m_p \simeq m_n \simeq m_N \simeq \SI{1}{\GeV \per c^2}$.
+

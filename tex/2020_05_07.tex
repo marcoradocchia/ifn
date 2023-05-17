@@ -6,24 +6,24 @@ Fino ad ora abbiamo lavorato in approssimazione di \textit{nucleo puntiforme}.
 Questa approssimazione non è più adeguata se vogliamo andare a studiare gli
 effetti della dimensione finita del nucleo o studiare la dimensione del nucleo
 stesso. Quindi il quesito che ci poniamo è: \textit{come varia l'espressione
-della sezione d'urto differenziale di Rutherford se rimuoviamo
-l'approssimazione di nucleo puntiforme}?
+	della sezione d'urto differenziale di Rutherford se rimuoviamo
+	l'approssimazione di nucleo puntiforme}?
 
 \subsection{Sezione d'urto per nucleo \textit{non} puntiforme}
 Consideriamo il nucleo atomico come una distribuzione estesa di carica per
 cui\footnote{
-  La notazione utilizzata prevede che $\vec{r}$ sia il vettore e $r$ il suo
-  modulo
+	La notazione utilizzata prevede che $\vec{r}$ sia il vettore e $r$ il suo
+	modulo
 }:
 \begin{itemize}
-  \item $\rho(\vec{r}\,)$: \textit{densità di carica} $\longrightarrow \int
-    \rho(\vec{r}\,) \, \mathrm{d}^3r = Ze$
-  \item $\rho_N \mrb{\vec{r}\,} = \dfrac{\rho\mrb{\vec{r}\,}}{Ze}$:
-    \textit{densità di carica normalizzata} $\longrightarrow \int
-    \rho_N\mrb{\vec{r}\,} \, \mathrm{d}^3r = 1$
+	\item $\rho(\vec{r}\,)$: \textit{densità di carica} $\longrightarrow \int
+		      \rho(\vec{r}\,) \, \mathrm{d}^3r = Ze$
+	\item $\rho_N \mrb{\vec{r}\,} = \dfrac{\rho\mrb{\vec{r}\,}}{Ze}$:
+	      \textit{densità di carica normalizzata} $\longrightarrow \int
+		      \rho_N\mrb{\vec{r}\,} \, \mathrm{d}^3r = 1$
 \end{itemize}
 Questa modifica alle ipotesi di lavoro si ripercuote nell'espressione che
-descrive l'Hamiltoniana di interazione $\ham_\text{int}$. 
+descrive l'Hamiltoniana di interazione $\ham_\text{int}$.
 
 \paragraph{Elemento di matrice per distribuzione estesa di carica}
 In generale, l'elemento di matrice $T_{if}$ si calcola come:
@@ -36,51 +36,51 @@ che abbiamo già visto nel caso puntiforme nelle equazioni
 Nel caso \textit{non} puntiforme avremo quindi che l'Hamiltoniana di
 interazione assume la seguente forma:
 \begin{equation}
-  \ham_\text{int} \mrb{\vec{r}\,} = \frac{ze}{4\pi \varepsilon_0} \int
-  \frac{\rho\mrb{\vec{r}\mprime}}{\abs{\vec{r} - \vec{r}\,\mprime}} \,
-  \mathrm{d}^3r\mprime
-  = \frac{zZe^2}{4\pi \varepsilon_0} \int
-  \frac{\rho_N\mrb{\vec{r}\mprime}}{\abs{\vec{r} - \vec{r}\,\mprime}} \,
-  \mathrm{d}^3r\mprime
+	\ham_\text{int} \mrb{\vec{r}\,} = \frac{ze}{4\pi \varepsilon_0} \int
+	\frac{\rho\mrb{\vec{r}\mprime}}{\abs{\vec{r} - \vec{r}\,\mprime}} \,
+	\mathrm{d}^3r\mprime
+	= \frac{zZe^2}{4\pi \varepsilon_0} \int
+	\frac{\rho_N\mrb{\vec{r}\mprime}}{\abs{\vec{r} - \vec{r}\,\mprime}} \,
+	\mathrm{d}^3r\mprime
 	\label{eq:ham_int_estesa}
 \end{equation}
 dove l'integrale è valutato in \textit{tutto lo spazio} e $\abs{\vec{r} -
-\vec{r}\,\mprime}$ indica la distanza fra il punto $\vec{r}$ in cui voliamo
+		\vec{r}\,\mprime}$ indica la distanza fra il punto $\vec{r}$ in cui voliamo
 valutare l'interazione e il punto $\vec{r}\,\mprime$ dell'elemento infinitesimo
 di carica della distribuzione estesa che la genera. Quindi abbiamo
 l'espressione esplicita del \textit{potenziale elettrostatico generato da una
-distribuzione arbitraria di carica}.
+	distribuzione arbitraria di carica}.
 
 Quindi quando consideriamo la distribuzione estesa, otteniamo l'elemento di
 matrice $T_{if}$ effettuando la trasformata di Fourier di
 \ref{eq:ham_int_estesa}. Per cui:
 \begin{subequations}
 	\begin{equation}
-    T_{if} = \frac{1}{V} \, \frac{zZe^2}{4\pi \varepsilon_0} \int \mathrm{d}^3r
-    \! \int \mathrm{d}^3r\mprime \,
-    \frac{\rho_N(\vec{r}\,\mprime)}{\abs{\vec{r} - \vec{r}\,\mprime}}
-    \exp\mcb{i \, \frac{\mrb{\vec{p}_f - \vec{p}_i} \cdot \vec{r}}{\hbar}}
+		T_{if} = \frac{1}{V} \, \frac{zZe^2}{4\pi \varepsilon_0} \int \mathrm{d}^3r
+		\! \int \mathrm{d}^3r\mprime \,
+		\frac{\rho_N(\vec{r}\,\mprime)}{\abs{\vec{r} - \vec{r}\,\mprime}}
+		\exp\mcb{i \, \frac{\mrb{\vec{p}_f - \vec{p}_i} \cdot \vec{r}}{\hbar}}
 	\end{equation}
-  Ma espressa in questo modo è di difficile risoluzione, quindi moltiplichiamo
-  e dividiamo per \\ $\exp\mcb{-i \, \frac{\mrb{\vec{p}_f - \vec{p}_i} \cdot
-  \vec{r}\,\mprime}{\hbar}}$ e otteniamo:
+	Ma espressa in questo modo è di difficile risoluzione, quindi moltiplichiamo
+	e dividiamo per \\ $\exp\mcb{-i \, \frac{\mrb{\vec{p}_f - \vec{p}_i} \cdot
+				\vec{r}\,\mprime}{\hbar}}$ e otteniamo:
 	\begin{equation}
-    T_{if} = \frac{1}{V} \, \frac{zZe^2}{4\pi \varepsilon_0} \int \mathrm{d}^3r
-    \! \int \mathrm{d}^3r\mprime \,
-    \frac{\rho_N(\vec{r}\,\mprime)}{\abs{\vec{r} - \vec{r}\,\mprime}}
-    \exp\mcb{i \, \frac{\mrb{\vec{p}_f - \vec{p}_i} \cdot \mrb{\vec{r} -
-    \vec{r}\,\mprime}}{\hbar}} \exp\mcb{i \, \frac{\mrb{\vec{p}_f - \vec{p}_i}
-    \cdot \vec{r}\,\mprime}{\hbar}}
+		T_{if} = \frac{1}{V} \, \frac{zZe^2}{4\pi \varepsilon_0} \int \mathrm{d}^3r
+		\! \int \mathrm{d}^3r\mprime \,
+		\frac{\rho_N(\vec{r}\,\mprime)}{\abs{\vec{r} - \vec{r}\,\mprime}}
+		\exp\mcb{i \, \frac{\mrb{\vec{p}_f - \vec{p}_i} \cdot \mrb{\vec{r} -
+					\vec{r}\,\mprime}}{\hbar}} \exp\mcb{i \, \frac{\mrb{\vec{p}_f - \vec{p}_i}
+				\cdot \vec{r}\,\mprime}{\hbar}}
 	\end{equation}
-  Osserviamo che ora la possiamo separare gli integrali nelle variabili
-  $\vec{r}\,\mprime$ e $\vec{r}\,\mdprime = \vec{r} - \vec{r}\,\mprime$, come
-  prodotto di due termini calcolabili in maniera indipendente, come segue:
+	Osserviamo che ora la possiamo separare gli integrali nelle variabili
+	$\vec{r}\,\mprime$ e $\vec{r}\,\mdprime = \vec{r} - \vec{r}\,\mprime$, come
+	prodotto di due termini calcolabili in maniera indipendente, come segue:
 	\begin{equation}
-    T_{if} = \frac{1}{V} \, \frac{zZe^2}{4\pi \varepsilon_0} \int
-    \mathrm{d}^3r\mdprime \, \frac{1}{r\mdprime} \exp\mcb{i \,
-    \frac{\mrb{\vec{p}_f - \vec{p}_i} \cdot \vec{r}\,\mdprime}{\hbar}} \int
-    d^3r\mprime \, \rho_N\mrb{\vec{r}\,\mprime} \exp\mcb{i \,
-    \frac{\mrb{\vec{p}_f - \vec{p}_i} \cdot \vec{r}\,\mprime}{\hbar}}
+		T_{if} = \frac{1}{V} \, \frac{zZe^2}{4\pi \varepsilon_0} \int
+		\mathrm{d}^3r\mdprime \, \frac{1}{r\mdprime} \exp\mcb{i \,
+			\frac{\mrb{\vec{p}_f - \vec{p}_i} \cdot \vec{r}\,\mdprime}{\hbar}} \int
+		d^3r\mprime \, \rho_N\mrb{\vec{r}\,\mprime} \exp\mcb{i \,
+			\frac{\mrb{\vec{p}_f - \vec{p}_i} \cdot \vec{r}\,\mprime}{\hbar}}
 	\end{equation}
 \end{subequations}
 In più il \textit{primo dei due termini moltiplicativi}, inclusi i prefattori,
@@ -88,31 +88,36 @@ costituiscono esattamente la trasformata di Fourier del potenziale puntiforme,
 per cui rappresenta l'elemento di matrice del potenziale puntiforme già
 calcolata in precedenza\footnote{
 	Siamo passati ad utilizzare la quantità \textit{impulso trasferito} $\vec{q}$
-}. 
+}.
 \begin{equation}
-  \mrb{T_{if}}_\text{punt} = \frac{1}{V} \, \frac{zZe^2}{4\pi \varepsilon_0}
-  \int d^3r\mdprime \, \frac{1}{r\mdprime} \exp\mcb{i \, \frac{\vec{q} \cdot
-  \vec{r}\,\mdprime}{\hbar}}
+	\mrb{T_{if}}_\text{punt} = \frac{1}{V} \, \frac{zZe^2}{4\pi \varepsilon_0}
+	\int d^3r\mdprime \, \frac{1}{r\mdprime} \exp\mcb{i \, \frac{\vec{q} \cdot
+			\vec{r}\,\mdprime}{\hbar}}
 \end{equation}
 Il \textit{secondo termine moltiplicativo} rappresenta, invece, la
 trasformazione di Fourier della distribuzione normalizzata di carica,
 $\rho_N\mrb{\vec{r}\,\mprime}$, con parametro di trasformazione (quindi con
 vettore d'onda) $\frac{\vec{q}}{\hbar}$. Questo oggetto è una funzione
 complessa di $\vec{q}$ ed e assume il nome di \textit{fattore di forma
-associato alla distribuzione di carica} considerata:
+	associato alla distribuzione di carica} considerata:
 \begin{align}
-	\textbf{Fattore di Forma} &&
+	\textbf{Fattore di Forma}
+	\qquad
 	\boxed{
-    F\mrb{\vec{q}\,} = \int d^3r\mprime \, \rho_N\mrb{\vec{r}\,\mprime}
-    \exp\mcb{i \, \frac{\vec{q} \cdot \vec{r}\,\mprime}{\hbar}}
+		F\mrb{\vec{q}\,} = \int d^3r\mprime \, \rho_N\mrb{\vec{r}\,\mprime}
+		\exp\mcb{i \, \frac{\vec{q} \cdot \vec{r}\,\mprime}{\hbar}}
 	}
 \end{align}
 e rappresenta la modifica che si apporta all'elemento di matrice del caso
 puntiforme per passare alla distribuzione estesa di carica.\\
 \begin{note}[]
-  Qualora il sistema che si sta considerando fosse dotato di \textit{simmetria
-  sferica} la dipendenza di $F$ da $\vec{q}$ riguarderebbe solo il modulo,
-  ovvero $F = F\mrb{\vec{q}\,}$.
+	Il \textit{fattore di forma} non è altro che la \textit{trasformata di
+		Fourier della distribuzione di carica} del nucleo scatteratore.
+\end{note}
+\begin{note}[]
+	Qualora il sistema che si sta considerando fosse dotato di \textit{simmetria
+		sferica} la dipendenza di $F$ da $\vec{q}$ riguarderebbe solo il modulo,
+	ovvero $F = F\mrb{\vec{q}\,}$.
 \end{note}
 
 Alla luce di queste considerazioni possiamo scrivere l'elemento di matrice come segue:
@@ -123,23 +128,23 @@ Alla luce di queste considerazioni possiamo scrivere l'elemento di matrice come 
 \end{equation}
 
 \paragraph{Sezione d'urto differenziale di Rutherford per distribuzione estesa
-di carica}
+	di carica}
 Tenendo conto di questa nuova espressione dell'elemento di matrice di interazione, omettendo tutti i passaggi che formalmente prevedono che si sostituisca quest'ultima nell'espressione della regola d'oro di Fermi (equazione \ref{eq:regola_oro_fermi}) e che si proceda analogamente al caso puntiforme, scriviamo la \textit{sezione d'urto differenziale per scattering Rutherford in ipotesi di nucleo come distribuzione estesa di carica}:
 \begin{align}
-	\textbf{Sezione d'urto differenziale per distribuzione estesa} && 
+	\textbf{Sezione d'urto differenziale per distribuzione estesa} &  &
 	\boxed{
-    \frac{d\sigma}{d\Omega} = \mrb{\frac{d\sigma}{d\Omega}}_\text{punt}
-    \abs{F\mrb{\vec{q}\,}}^2
+		\frac{d\sigma}{d\Omega} = \mrb{\frac{d\sigma}{d\Omega}}_\text{punt}
+		\abs{F\mrb{\vec{q}\,}}^2
 	}
 \end{align}
 
 \begin{note}[]
-  Attenzione, perché questo approccio non determina univocamente
-  la funzione $F\mrb{\vec{q}\,}$, ma ne determina solo il modulo; non abbiamo
-  alcuna informazione sulla fase. Quindi, ad esempio, non possiamo utilizzare
-  questo approccio per la ricostruzione del \textit{fattore di forma} da dati
-  sperimentali antitrasformando, perché di nuovo, abbiamo che i dati
-  eventualmente ottenuti sarebbero legati solo al modulo di $F$.
+	Attenzione, perché questo approccio non determina univocamente
+	la funzione $F\mrb{\vec{q}\,}$, ma ne determina solo il modulo; non abbiamo
+	alcuna informazione sulla fase. Quindi, ad esempio, non possiamo utilizzare
+	questo approccio per la ricostruzione del \textit{fattore di forma} da dati
+	sperimentali antitrasformando, perché di nuovo, abbiamo che i dati
+	eventualmente ottenuti sarebbero legati solo al modulo di $F$.
 \end{note}
 
 \subsection{Deviazione dal comportamento puntiforme}
@@ -148,26 +153,26 @@ valutare le dimensioni dei nuclei.
 Della definizione di \textit{fattore di forma},  in ipotesi di simmetria
 sferica, distinguiamo i seguenti casi:
 \begin{itemize}
-  \item $\mrb{\frac{q}{\hbar}} R_N \ll 1$ nelle regioni di spazio in cui la
-    distribuzione normalizzata di carica è sensibilmente diversa da 0 si ha
-    che:
-    \begin{equation}
-      F\mrb{q \simeq 0} = 1
-    \end{equation}
-    per cui gli urti che avvengono con un impulso trasferito piccolo si possono
-    considerare urti fra particelle puntiformi. Quindi
-    \textit{non possiamo utilizzare urti con} $q \simeq 0$ \textit{per studiare
-    le dimensioni del nucleo}.
-  \item $\mrb{\frac{q}{\hbar}} R_N \gtrsim 1$ nelle regioni di spazio in cui la
-    distribuzione normalizzata di carica è sensibilmente diversa da 0 si ha
-    che:
-    \begin{equation}
-      F\mrb{q} \neq 1
-    \end{equation}
+	\item $\mrb{\frac{q}{\hbar}} R_N \ll 1$ nelle regioni di spazio in cui la
+	      distribuzione normalizzata di carica è sensibilmente diversa da 0 si ha
+	      che:
+	      \begin{equation}
+		      F\mrb{q \simeq 0} = 1
+	      \end{equation}
+	      per cui gli urti che avvengono con un impulso trasferito piccolo si possono
+	      considerare urti fra particelle puntiformi. Quindi
+	      \textit{non possiamo utilizzare urti con} $q \simeq 0$ \textit{per studiare
+		      le dimensioni del nucleo}.
+	\item $\mrb{\frac{q}{\hbar}} R_N \gtrsim 1$ nelle regioni di spazio in cui la
+	      distribuzione normalizzata di carica è sensibilmente diversa da 0 si ha
+	      che:
+	      \begin{equation}
+		      F\mrb{q} \neq 1
+	      \end{equation}
 \end{itemize}
 Come già visto nell'equazione \ref{eq:modulo_q} che riportiamo nuovamente di
 seguito (in riferimento alla figura \ref{fig:impulso_trasferito}), se $p =
-\abs{\vec{p}_i} = \abs{\vec{p}_f}$:
+	\abs{\vec{p}_i} = \abs{\vec{p}_f}$:
 \begin{equation}
 	\abs{\vec{q}\,} = 2p \, \sin\frac{\theta}{2}
 \end{equation}
@@ -180,8 +185,8 @@ Ora, sapendo che i nuclei hanno dimensioni caratteristiche dell'ordine del
 fermi, possiamo chiederci quale sia la condizione sull'impulso trasferito $q$
 che causa le deviazioni che ci permettano di studiare le dimensioni del nucleo:
 \begin{equation}
-  q \gtrsim \frac{\hbar c}{R_N c} \implies qc \gtrsim \frac{\hbar c}{R_N}
-  \simeq \frac{\SI{200}{\MeV}}{R_N \: \msb{\si{\femto\meter}}}
+	q \gtrsim \frac{\hbar c}{R_N c} \implies qc \gtrsim \frac{\hbar c}{R_N}
+	\simeq \frac{\qty{200}{\MeV \femto\meter}}{R_N \: \msb{\si{\femto\meter}}}
 \end{equation}
 quindi l'impulso trasferito per sondare strutture (nel nostro caso nulcei)
 dalle dimensioni dell'ordine di grandezza del \textit{fermi} deve essere
@@ -195,47 +200,47 @@ solo dalla distanza dal baricentro del nucleo come segue:
 \begin{align}
 	\rho \mrb{r} =
 	\begin{dcases}
-		\rho_0 \quad &r \leq a \\
-		0 \quad &r > a
+		\rho_0 \quad & r \leq a \\
+		0 \quad      & r > a
 	\end{dcases}
 	\label{eq:densita_carica_sfera_uniforme}
 \end{align}
 
 \begin{figure}[ht]
-  \centering
-  \begin{tikzpicture}
-    \begin{axis}[
-      title=,
-      xlabel=$r$,
-      ylabel=$\rho \mrb{r}$,
-      xmin=0,
-      ymin=0,
-      xmax=1.5,
-      ymax=1.5,
-      ytick = {1},
-      xtick = {1},
-      xticklabels = {$a$},
-      yticklabels = {$\rho_0$}
-    ]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+				title=,
+				xlabel=$r$,
+				ylabel=$\rho \mrb{r}$,
+				xmin=0,
+				ymin=0,
+				xmax=1.5,
+				ymax=1.5,
+				ytick = {1},
+				xtick = {1},
+				xticklabels = {$a$},
+				yticklabels = {$\rho_0$}
+			]
 
-      \addplot[
-        thick,
-        domain=0:1
-      ] {1};
+			\addplot[
+				thick,
+				domain=0:1
+			] {1};
 
-      \draw[
-        dashed
-      ] (axis cs:1,0) -- (axis cs:1,1);
-    \end{axis}
-  \end{tikzpicture}
-  \caption{Modello di sfera uniformemente carica}
+			\draw[
+				dashed
+			] (axis cs:1,0) -- (axis cs:1,1);
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Modello di sfera uniformemente carica}
 	\label{fig:modello_sfera_uniformemente_carica}
 \end{figure}
 
 questo modello dipende da un \textbf{unico parametro}, poiché:
 \begin{equation}
-  \int \rho_N\mrb{r} \, \mathrm{d}^3r = 1 \implies \rho_0 =
-  \frac{1}{\frac{4}{3}\pi a^3}
+	\int \rho_N\mrb{r} \, \mathrm{d}^3r = 1 \implies \rho_0 =
+	\frac{1}{\frac{4}{3}\pi a^3}
 	\label{eq:rho_0}
 \end{equation}
 Quindi per questo semplice modello è possibile studiare analiticamente il
@@ -247,15 +252,15 @@ Il calcolo del fattore di forma è possibile per via analitica e risulta
 relativamente semplice. Procediamo con il calcolo:
 \begin{equation}
 	\begin{split}
-    F\mrb{q} &= \int \rho_N\mrb{\vec{x}} \exp\mcb{i \,
-    \frac{\vec{q}\cdot\vec{x}}{\hbar}} \, \mathrm{d}^3x
-    \\ 
-    &= \int_0^\infty \! \mathrm{d}r \, r^2 \int_{-1}^1 \! \mathrm{d}\cos\theta
-    \int_0^{2\pi} \! \mathrm{d}\rho \, \rho\mrb{r} \exp\mcb{i \, \frac{qr
-    \cos\theta}{\hbar}}
-    \\
-    &= 2\pi \int_0^\infty \! \mathrm{d}r \, r^2 \rho\mrb{r} \frac{\hbar}{iqr}
-    \mcb{\exp\msb{i \, \frac{qr}{\hbar}} - \exp\msb{-i \, \frac{qr}{\hbar}}}
+		F\mrb{q} &= \int \rho_N\mrb{\vec{x}} \exp\mcb{i \,
+			\frac{\vec{q}\cdot\vec{x}}{\hbar}} \, \mathrm{d}^3x
+		\\
+		&= \int_0^\infty \! \mathrm{d}r \, r^2 \int_{-1}^1 \! \mathrm{d}\cos\theta
+		\int_0^{2\pi} \! \mathrm{d}\rho \, \rho\mrb{r} \exp\mcb{i \, \frac{qr
+				\cos\theta}{\hbar}}
+		\\
+		&= 2\pi \int_0^\infty \! \mathrm{d}r \, r^2 \rho\mrb{r} \frac{\hbar}{iqr}
+		\mcb{\exp\msb{i \, \frac{qr}{\hbar}} - \exp\msb{-i \, \frac{qr}{\hbar}}}
 	\end{split}
 \end{equation}
 Fino ad ora il procedimento è generale perché non abbiamo fissato alcuna
@@ -267,159 +272,177 @@ ricordando il valore di $\rho_0$ (equazione \ref{eq:rho_0}):
 	\begin{equation}
 		\begin{split}
 			F\mrb{q}
-      &= 2\pi\rho_0 \int_0^a \! \mathrm{d}r \, \frac{r^{\cancel2}
-      \hbar}{iq\cancel r} \mcb{\exp\msb{i \, \frac{qr}{\hbar}} - \exp\msb{-i \,
-      \frac{qr}{\hbar}}}
-      \\
-      &= \frac{4\pi\rho_0\hbar}{q} \int_0^a \! \mathrm{d}r \,
-      r\sin\mrb{\frac{qr}{\hbar}}
-      \\
-      &= \frac{4\pi\rho_0\hbar}{q} \mrb{\frac{q}{\hbar}}^2 \int_0^a \!
-      \mathrm{d}\mrb{\frac{qr}{\hbar}} \,
-      \frac{qr}{\hbar}\sin\mrb{\frac{qr}{\hbar}}
+			&= 2\pi\rho_0 \int_0^a \! \mathrm{d}r \, \frac{r^{\cancel2}
+				\hbar}{iq\cancel r} \mcb{\exp\msb{i \, \frac{qr}{\hbar}} - \exp\msb{-i \,
+					\frac{qr}{\hbar}}}
+			\\
+			&= \frac{4\pi\rho_0\hbar}{q} \int_0^a \! \mathrm{d}r \,
+			r\sin\mrb{\frac{qr}{\hbar}}
+			\\
+			&= \frac{4\pi\rho_0\hbar}{q} \mrb{\frac{q}{\hbar}}^2 \int_0^a \!
+			\mathrm{d}\mrb{\frac{qr}{\hbar}} \,
+			\frac{qr}{\hbar}\sin\mrb{\frac{qr}{\hbar}}
 		\end{split}
 	\end{equation}
-  Ed effettuando il cambio di variabile $y=\frac{qr}{\hbar}$, con il nuovo
-  estremo di integrazione $\tilde{y} = \frac{aq}{\hbar}$, e sostituendo il
-  valore esplicito di $\rho_0$:
+	Ed effettuando il cambio di variabile $y=\frac{qr}{\hbar}$, con il nuovo
+	estremo d'integrazione $\tilde{y} = \frac{aq}{\hbar}$, e sostituendo il
+	valore esplicito di $\rho_0$:
 	\begin{equation}
-    F\mrb{q} = \frac{3\hbar^3}{a^3q^3} \mrb{\frac{q}{\hbar}}^2
-    \int_0^{\tilde{y}} \! y\sin y \, \mathrm{d}y
+		F\mrb{q} = \frac{3\hbar^3}{a^3q^3} \mrb{\frac{q}{\hbar}}^2
+		\int_0^{\tilde{y}} \! y\sin y \, \mathrm{d}y
 	\end{equation}
 	Svolgendo l'integrale per parti\footnote{
-    $\int y\sin y \, \mathrm{d}y = - \int y\mdv{\cos y}{y} \, \mathrm{d}y =
-    -y\cos y + \int \cos y \, \mathrm{d}y = -y\cos y + \sin y$
+		$\int y\sin y \, \mathrm{d}y = - \int y\mdv{\cos y}{y} \, \mathrm{d}y =
+			-y\cos y + \int \cos y \, \mathrm{d}y = -y\cos y + \sin y$
 	} otteniamo quanto segue:
 	\begin{equation}
-    F\mrb{q} = \frac{3\hbar^3}{a^3q^3} \mrb{\frac{q}{\hbar}}^2 \mcb{\msb{-y
-    \cos y}_0^{\tilde{y}} + \msb{\sin y}_0^{\tilde{y}}} =
-    \frac{3\hbar^3}{a^3q^3} \mrb{\frac{q}{\hbar}}^2 \msb{-\tilde{y}\cos
-    \tilde{y} + \sin \tilde{y}}
+		F\mrb{q} = \frac{3\hbar^3}{a^3q^3} \mrb{\frac{q}{\hbar}}^2 \mcb{\msb{-y
+			\cos y}_0^{\tilde{y}} + \msb{\sin y}_0^{\tilde{y}}} =
+		\frac{3\hbar^3}{a^3q^3} \mrb{\frac{q}{\hbar}}^2 \msb{-\tilde{y}\cos
+			\tilde{y} + \sin \tilde{y}}
 	\end{equation}
 \end{subequations}
 Quindi in conclusione possiamo riscrivere il \textbf{fattore di forma per il
-modello di sfera uniformemente carica} come segue\footnote{
-  In fisica delle particelle è più naturale esprimere le quantità in funzione
-  di $q^2$ piuttosto che in funzione di $q$
+	modello di sfera uniformemente carica} come segue\footnote{
+	In fisica delle particelle è più naturale esprimere le quantità in funzione
+	di $q^2$ piuttosto che in funzione di $q$
 }:
 \begin{equation}
 	\boxed{
-    F\mrb{q^2} = \frac{3}{\tilde{y}} \msb{\sin\tilde{y} -
-    \tilde{y}\cos\tilde{y}}
+		F\mrb{q^2} = \frac{3}{\tilde{y}} \msb{\sin\tilde{y} -
+			\tilde{y}\cos\tilde{y}}
 	}
 	\label{eq:fattore_forma_sfera_uniforme}
 \end{equation}
+
+\begin{note}[]
+	Il fattore di forma così ottenuto si annulla per:
+	\begin{equation}
+		sin \tilde{y} = \tilde{y} \cos \tilde{y}
+	\end{equation}
+	Le soluzioni $\tilde{y}$ di quest'equazione trascendente si possono trovare
+	numericamente.
+\end{note}
+
 Studiamo il comportamento di questa funzione:
 \begin{itemize}
 	\item $\tilde{y} \ll 1 \rightarrow q \ll \frac{\hbar}{a}$:
-    sviluppiamo i termini di $F\mrb{q^2}$ in serie di Taylor:
-    \begin{equation}
-      \begin{dcases}
-        \sin \tilde{y} = \tilde{y} - \frac{\tilde{y}^3}{6} +
-        \frac{\tilde{y}^5}{5!} + \cdots
-        \\
-        \cos \tilde{y} = 1 - \frac{\tilde{y}^2}{2} + \frac{\tilde{y}^4}{4!} +
-        \cdots
-      \end{dcases}
-    \end{equation}
-    per cui:
-    \begin{subequations}
-      \begin{equation}
-        \begin{split}
-          F\mrb{q^2}
-          &= \frac{3}{\tilde{y}^3} \msb{\mrb{\tilde{y} - \frac{\tilde{y}^3}{6}
-          + \frac{\tilde{y}^5}{5!} + \cdots} - \tilde{y}\mrb{1 -
-          \frac{\tilde{y}^2}{2} + \frac{\tilde{y}^4}{4!} + \cdots}}
-          \\
-          &= \frac{3}{\tilde{y}^3} \msb{\tilde{y}^3\mrb{-\frac{1}{6} +
-          \frac{1}{2}}+ \tilde{y}^5\mrb{\frac{1}{5!} - \frac{1}{4!}} + \cdots}
-          \\
-          &= \frac{3}{\cancel{\tilde{y}^3}} \, \cancel{\tilde{y}^3}
-          \msb{\frac{1}{3} - \frac{\tilde{y}^2}{5!}\mrb{5-1} + \cdots}
-          \\
-          &= 1 - \frac{\tilde{y}^2}{10} + \cdots
-        \end{split}
-      \end{equation}
-      Quindi, in forma esplicita:
-      \begin{equation}
-        F\mrb{q^2} \simeq 1 - \frac{1}{10} \mrb{\frac{q}{a\hbar}}^2
-        \label{eq:deriv_fattore_forma}
-      \end{equation}
-    \end{subequations}
-    Per cui nel momento in cui $q \ll \frac{\hbar}{a}$ il fattore di forma
-      tende a 1 e possiamo assumere il nucleo come puntiforme.
+	      sviluppiamo i termini di $F\mrb{q^2}$ in serie di Taylor:
+	      \begin{equation}
+		      \begin{dcases}
+			      \sin \tilde{y} = \tilde{y} - \frac{\tilde{y}^3}{6} +
+			      \frac{\tilde{y}^5}{5!} + \cdots
+			      \\
+			      \cos \tilde{y} = 1 - \frac{\tilde{y}^2}{2} + \frac{\tilde{y}^4}{4!} +
+			      \cdots
+		      \end{dcases}
+	      \end{equation}
+	      per cui:
+	      \begin{subequations}
+		      \begin{equation}
+			      \begin{split}
+				      F\mrb{q^2}
+				      &= \frac{3}{\tilde{y}^3} \msb{\mrb{\tilde{y} - \frac{\tilde{y}^3}{6}
+						      + \frac{\tilde{y}^5}{5!} + \cdots} - \tilde{y}\mrb{1 -
+						      \frac{\tilde{y}^2}{2} + \frac{\tilde{y}^4}{4!} + \cdots}}
+				      \\
+				      &= \frac{3}{\tilde{y}^3} \msb{\tilde{y}^3\mrb{-\frac{1}{6} +
+						      \frac{1}{2}}+ \tilde{y}^5\mrb{\frac{1}{5!} - \frac{1}{4!}} + \cdots}
+				      \\
+				      &= \frac{3}{\cancel{\tilde{y}^3}} \, \cancel{\tilde{y}^3}
+				      \msb{\frac{1}{3} - \frac{\tilde{y}^2}{5!}\mrb{5-1} + \cdots}
+				      \\
+				      &= 1 - \frac{\tilde{y}^2}{10} + \cdots
+			      \end{split}
+		      \end{equation}
+		      Quindi, in forma esplicita:
+		      \begin{equation}
+			      F\mrb{q^2} \simeq 1 - \frac{1}{10} \mrb{\frac{q}{a\hbar}}^2
+			      \label{eq:deriv_fattore_forma}
+		      \end{equation}
+	      \end{subequations}
+	      Per cui nel momento in cui $q \ll \frac{\hbar}{a}$ il fattore di forma
+	      tende a 1 e possiamo assumere il nucleo come puntiforme.
 
-    Inoltre osserviamo che la derivata del fattore di forma rispetto alla
-      variabile $q^2$:
-    \begin{equation}
-      \frac{\mathrm{d}F\mrb{q^2}}{\mathrm{d}q^2} = -\frac{a^2}{10\hbar^2}
-    \end{equation}
+	      Inoltre osserviamo che la derivata del fattore di forma rispetto alla
+	      variabile $q^2$:
+	      \begin{equation}
+		      \frac{\mathrm{d}F\mrb{q^2}}{\mathrm{d}q^2} = -\frac{a^2}{10\hbar^2}
+	      \end{equation}
 
-    In \textbf{termini generali} si può dimostrare che esiste una
-    relazione di proporzionalità fra il raggio di estensione di una
-    distribuzione di carica (qualunque, purché dotata di simmetria sferica) e
-    la derivata del suo fattore di forma rispetto a $q^2$. Infatti, se
-    definiamo il \textit{raggio medio quadro della distribuzione}\footnote{
-      Per la distribuzione sferica uniforme si riottiene il risultato espresso
-      nell'equazione \ref{eq:deriv_fattore_forma}, poiché $\braket{r^2} =
-      \frac{3}{5}a^2$
-    }:
-    \begin{equation}
-      \braket{r^2} = \int r^2 \rho_N\mrb{r} \, \mathrm{d}^3r
-    \end{equation}
-    per valori di $q \ll 1$ si ha:
-    \begin{equation}
-      F\mrb{q^2} \simeq 1 - \braket{r^2} \frac{q^2}{6\hbar^2}
-    \end{equation}
-    e la sua derivata:
-    \begin{equation}
-      \frac{\mathrm{d}F\mrb{q^2}}{\mathrm{d}q^2} =
-      -\frac{\braket{r^2}}{6\hbar^2}
-    \end{equation}
+	      In \textbf{termini generali} si può dimostrare che esiste una
+	      relazione di proporzionalità fra il raggio di estensione di una
+	      distribuzione di carica (qualunque, purché dotata di simmetria sferica) e
+	      la derivata del suo fattore di forma rispetto a $q^2$. Infatti, se
+	      definiamo il \textit{raggio medio quadro della distribuzione}\footnote{
+		      Per la distribuzione sferica uniforme si riottiene il risultato espresso
+		      nell'equazione \ref{eq:deriv_fattore_forma}, poiché $\braket{r^2} =
+			      \frac{3}{5}a^2$
+	      }\footnote{
+		      Il prof. capozzi espande il sin in serie di Taylor prima di integrare e
+		      poi scrive:
+		      \[
+			      \Braket{r^2} = \frac{1}{Ze} \int r^2 \rho_N \mrb{r} 4 \pi r^2 \md[]{r}
+		      \]
+	      }:
+	      \begin{equation}
+		      \braket{r^2}
+		      = \int r^2 \rho_N\mrb{r} \md[3]r
+		      = \int r^2 \rho_N\mrb{r} 4 \pi r^2 \md[]{r}
+	      \end{equation}
+	      per valori di $q \ll 1$ si ha:
+	      \begin{equation}
+		      F\mrb{q^2} \simeq 1 - \braket{r^2} \frac{q^2}{6\hbar^2}
+	      \end{equation}
+	      e la sua derivata:
+	      \begin{equation}
+		      \frac{\mathrm{d}F\mrb{q^2}}{\mathrm{d}q^2} =
+		      -\frac{\braket{r^2}}{6\hbar^2}
+	      \end{equation}
 
-    % \begin{figure}[ht]
-    %   \centering
-    %   \begin{tikzpicture}
-    %     \begin{axis}[
-    %       title=,
-    %       xlabel=$\frac{q}{\tilde y}$,
-    %       ylabel=$\ln \mrb{\abs{F \mrb{q^2}}^{2}}$,
-    %       xmin=0.1,
-    %       ymin=0.1,
-    %     ]
-    %
-    %       \addplot[
-    %         domain=1:2
-    %       ] (ln(abs(0.33 * (sin(x) - x * cos(x)))**2));
-    %     \end{axis}
-    %   \end{tikzpicture}
-    %   \caption{}
-    %   \label{}
-    % \end{figure}
+	      % \begin{figure}[ht]
+	      %   \centering
+	      %   \begin{tikzpicture}
+	      %     \begin{axis}[
+	      %       title=,
+	      %       xlabel=$\frac{q}{\tilde y}$,
+	      %       ylabel=$\ln \mrb{\abs{F \mrb{q^2}}^{2}}$,
+	      %       xmin=0.1,
+	      %       ymin=0.1,
+	      %     ]
+	      %
+	      %       \addplot[
+	      %         domain=1:2
+	      %       ] (ln(abs(0.33 * (sin(x) - x * cos(x)))**2));
+	      %     \end{axis}
+	      %   \end{tikzpicture}
+	      %   \caption{}
+	      %   \label{}
+	      % \end{figure}
 
-    % Nel grafico, i valori $\frac{q}{\tilde y}$ per cui $\ln \mrb{\abs{F
-    % \mrb{q^2}}^{2}}$ è $-\infty$ si chiamano \textbf{minimi di diffrazione}.
+	      % Nel grafico, i valori $\frac{q}{\tilde y}$ per cui $\ln \mrb{\abs{F
+	      % \mrb{q^2}}^{2}}$ è $-\infty$ si chiamano \textbf{minimi di diffrazione}.
 
-    \begin{note}[Legge empirica per il raggio di un nucleo]
-      Il raggio di un nucleo può essere stabilito tramite la legge empirica:
-      \[
-        r \simeq \SI{12}{\femto\m} \cdot A^{\frac{1}{3}}
-      \]
-      dove $A = \# \text{ nucleoni del nucleo}$.
-    \end{note}
+	      \begin{note}[Legge empirica per il raggio di un nucleo]
+		      Il raggio di un nucleo può essere stabilito tramite la legge empirica:
+		      \[
+			      r \simeq \SI{12}{\femto\m} \cdot A^{\frac{1}{3}}
+		      \]
+		      dove $A = \# \text{ nucleoni del nucleo}$.
+	      \end{note}
 
 	\item $\tilde{y} \gtrsim 1$:
-    dobbiamo studiare il comportamento della funzione completa. Rielaboriamo
-    l'espressione del fattore di forma (equazione
-    \ref{eq:fattore_forma_sfera_uniforme}) come di seguito:
-    \begin{equation}
-      F\mrb{q^2} = \frac{3}{\tilde{y}^3}\msb{\sin\tilde{y} -
-      \tilde{y}\cos\tilde{y}} = \frac{3}{\tilde{y}} \cos\tilde{y}
-      \msb{\tan\tilde{y} - \tilde{y}}
-    \end{equation}
+	      dobbiamo studiare il comportamento della funzione completa. Rielaboriamo
+	      l'espressione del fattore di forma (equazione
+	      \ref{eq:fattore_forma_sfera_uniforme}) come di seguito:
+	      \begin{equation}
+		      F\mrb{q^2} = \frac{3}{\tilde{y}^3}\msb{\sin\tilde{y} -
+			      \tilde{y}\cos\tilde{y}} = \frac{3}{\tilde{y}} \cos\tilde{y}
+		      \msb{\tan\tilde{y} - \tilde{y}}
+	      \end{equation}
 \end{itemize}
 
-\subsection{Modello Saxon - Woods}
+\subsection{Modello Saxon-Woods}
 La densità normalizzata di carica è descritta in questo modello, che risulta
 più elaborato del precedente, da una funzione del tipo:
 \begin{equation}
@@ -427,9 +450,150 @@ più elaborato del precedente, da una funzione del tipo:
 \end{equation}
 e anche in questo caso la costante $\rho_0$ non è un parametro libero, poiché è
 determinato dalla condizione di normalizzazione, mentre i \textbf{due
-parametri} $a$ e $d$ sono rispettivamente:
+	parametri} $a$ e $d$ sono rispettivamente:
 \begin{itemize}
-	\item $a$: \textit{raggio nucleare}
-  \item $d$: \textit{thickness del nucleo}, ovvero lo spessore della superficie
-    del nucleo
+	\item $a$ \textit{raggio nucleare} ($a \propto A ^{\frac{1}{3}}$);
+	\item $d$ \textit{thickness del nucleo}, ovvero lo spessore della superficie
+	      del nucleo.
 \end{itemize}
+
+\begin{note}[Nuclei leggeri]
+	La distribuzione di Saxon-Woods è utilizzata, in quanto buona
+	approssimazione, per nuclei piuttosto pesanti, mentre funziona poco bene per
+	nuclei molto leggeri. In tal caso è più efficace una distribuzione di carica
+	di tipo gaussiano.
+\end{note}
+
+\section{Teoria delle perturbazioni indipendenti dal tempo}
+Consideriamo di nuovo la distribuzione di carica come una sfera uniformemente
+carica. Dalla teoria delle perturbazioni indipendenti dal tempo possiamo
+scrivere:
+\begin{equation}
+	\Delta E_{1s}
+	= \Braket{\psi_{1s}
+		| V_{\text{cont.}} \mrb{r} - V_{\text{punt.}} \mrb{r}
+		| \psi_{1s}}
+	\label{eq:energia_perturbazioni_indipendenti_dal_tempo}
+\end{equation}
+Dove il potenziale continuo è potenziale coulombiano della distribuzione
+sferica uniforme:
+\begin{equation}
+	V_{\text{cont.}}
+	= \begin{dcases}
+		- \frac{Z e^2}{4 \pi \eps_0 R_N} \msb{\frac{3}{2} - \frac{1}{2}
+			\mrb{\frac{r}{R_N}}}^{2}, \quad r > R_N
+		\\
+		- \frac{Z e^2}{4 \pi \eps_0 r}
+	\end{dcases}
+\end{equation}
+La funzione d'onda dello stato $1s$ per un atomo idrogenoide:
+\begin{equation}
+	\psi _{1s} = \frac{Z}{\sqrt{4 \pi}} \mrb{\frac{Z}{a_0}}^{\frac{3}{2}} e^{-
+			\frac{Z r}{a_0}}
+\end{equation}
+dove $a_0 = \frac{4 \pi \eps_0 \hbar^2}{m_e e^2}$.
+Svolgendo l'integrale in \ref{eq:energia_perturbazioni_indipendenti_dal_tempo}:
+\begin{align}
+	\Delta E_{1s}
+	 & = \frac{Z e^2}{4 \pi \eps_0 R_N} \int_0^{R_N} \md[]{r} r^2
+	\mrb{\frac{Z}{a_0}}^3 e^{\frac{-2 Z r}{a_0}} \msb{- \frac{3}{2} + \frac{1}{2}
+		\mrb{\frac{r}{R_N}}^{2} + \frac{R_N}{r}}
+	\\\notag
+	 & = \frac{Z^4 e^2 R_N^2}{\pi \eps_0} \int_0^1 \md[]{y}
+	\overbrace{e^{- \frac{2 Z R_N}{a_0} y}}^{\simeq 1} \msb{y - \frac{3}{2} y^2
+		+ \frac{y^4}{2}}
+	\\\notag
+	 & \simeq \mrb{\frac{2 Z R_N}{a_0}}^{2} \frac{Z^2 e^2}{4 \pi \eps_0 a_0}
+	\frac{1}{100}
+	\\\notag
+	 & = \mrb{\frac{2 Z R_N}{a_0}}^{2} \frac{Z^2 \alpha^2 m_e e^2}{10}
+\end{align}
+dato che il rapporto $\frac{R_N}{a_0}$ fa sì che l'esponenziale sia
+approssimabile a $1$. Notare che abbiamo sfruttato il cambio di variabile $y =
+	\frac{r}{R_N}$. Abbiamo dunque che per lo stato $1s$:
+\begin{equation}
+	\frac{\Delta E _{1s}}{E _{1s}} \sim \num{e-4}
+\end{equation}
+
+Si può far vedere che, dato che lo stato $2p$ \textit{non è in grado di
+	distinguere fra il caso puntiforme e il caso continuo}, allora:
+\begin{equation}
+	\Delta E _{2p \rightarrow 1s}
+	= \cancelto{0}{\Braket{\psi _{2p} | \dots | \psi _{2p}}}
+	- \Braket{\psi _{1s} | \dots | \psi _{1s}}
+  \simeq
+  - \Delta E _{1s}
+\end{equation}
+
+Consideriamo due isotopi $A$ e $A \mprime$ di una stessa specie atomica:
+\begin{equation}
+  \Delta E _{2p \rightarrow 1s} \mrb{A}
+  - \Delta E _{2p \rightarrow 1s} \mrb{A \mprime}
+  = \mrb{\frac{2 Z R_0}{a_0}}^{2} \frac{Z^2 \alpha^2 m_e e^2}{10} \mrb{A
+  ^{\frac{2}{3}} - A^{\prime\, \frac{2}{3}}}
+\end{equation}
+possiamo quindi sfruttare questa quantità per approssimare la dimensione del
+nucleo effettuando una misura sperimentale delle differenze di energia e
+invertendo l'equazione rispetto a $R_0$.
+
+\section{Muonic atoms}
+Illustriamo ora un metodo che considera atomi esotici, che al posto di
+elettroni presenta \textit{muoni} ($m_{\mu} \simeq \qty{106}{\MeV \per c^2}$,
+$\tau _{\mu} \simeq \qty{2e-6}{\sec}$).
+Ricordiamo:
+\begin{equation}
+  a_0 = \frac{4 \pi \eps_0 \hbar^2}{m_e e^2} \simeq \qty{5.3e-11}{\cm}
+\end{equation}
+dunque:
+\begin{equation}
+  r_n = \frac{n^2}{Z} a_0, \qquad E_n = -\frac{Z^2 \alpha^2 m c^2}{2n^2}
+\end{equation}
+Per un atomo $Z = 82$, ad esempio:
+\begin{equation}
+  r_1 = \frac{a_0 m_e}{Z m _{\mu}} \simeq \qty{3.1}{\femto\meter}
+  < R_N \sim \qty{7}{\femto\meter}
+\end{equation}
+
+Per $n = 2$:
+\begin{equation}
+  \Delta E _{2s}
+  = \Braket{\psi _{2s}
+  | V _{\text{cont.}} \mrb{r} - V _{\text{cont.}} \mrb{r}
+  | \psi _{2s}}
+\end{equation}
+dove in questo caso la funzione d'onda:
+\begin{equation}
+  \psi _{2s} \mrb{r}
+  = \frac{1}{\sqrt{4 \pi}} \mrb{\frac{Z}{r _{\mu}}}^{\frac{3}{2}} \mrb{2 -
+  \frac{Z r}{r _{\mu}}} e^{- \frac{Z r}{2 r _{\mu}}}
+\end{equation}
+con $r _{\mu} = \frac{4 \pi \eps_0 \hbar^2}{m e^2}$.
+
+\begin{note}[]
+  Per $Z = 6$ si ottiene $\Delta E _{2s} \simeq \qty{40}{\eV}$.
+\end{note}
+
+\begin{equation}
+  E _{2s}
+  = \frac{E _{1s} \mrb{\ch{^{1} H}}}{4} \frac{m _{\mu}}{m_e}
+  \simeq \qty{251}{\keV}
+\end{equation}
+
+\section{Nuclei speculari}
+In questo metodo per stabilire le dimensioni dei nuclei
+si sfruttano \textit{nuclei speculari}, ossia nuclei aventi
+\textit{stesso numero di massa} (isotopi specifici) e
+\textit{diverso numero atomico}, e.g.
+$\ch{^{39}_{20}Ca}$ e $\ch{^{39}_{20}K}$.
+L'energia coulombiana:
+\begin{equation}
+  E_c = \frac{3}{5} \frac{Z^2 e2}{4 \pi \eps_0 R_N}
+\end{equation}
+La differenza di energia coulombiana, nel caso in cui i due atomi differiscano
+in numero atomico per un'unità:
+\begin{equation}
+  \Delta E_c
+  = \frac{3}{5} \frac{e^2 \msb{Z^2 - \mrb{Z - 1}^{2}}}{4 \pi \eps_0
+  R_0 A ^{\frac{1}{3}}}
+  = \frac{3}{5} \frac{e^2 A ^{\frac{2}{3}}}{4 \pi \eps_0 R_0}
+\end{equation}

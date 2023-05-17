@@ -2,6 +2,9 @@
 \input{~/docs/latex/templates/phys.tex} % math/phys note template
 \usepackage{chemformula}
 \usepackage{makecell}
+\usepackage{tikz-3dplot}
+
+\DeclareSIUnit\angstrom{\text {Å}}
 
 % TESTI DI RIFERIMENTO:
 %   - Petrera: problems and solution in nuclear and particle physics
@@ -18,7 +21,7 @@
 % II: Fisica Nucleare - 7 Giugno
 
 \title{
-  \textbf{Appunti di\\Istituzioni di Fisica Nucleare} \\
+  Appunti di\\\textbf{Istituzioni di Fisica Nucleare} \\
   \small{A.A. 2022/2023}
 }
 \author{Marco Radocchia}
@@ -26,44 +29,47 @@
 
 \begin{document}
 \maketitle
+\frontmatter
 \tableofcontents
 
-% Lezione 1 A.A. 2022-2023: 2023-02-28 [x]
-% Lezione 2 A.A. 2022-2023: 2023-03-02 [x]
-% Lezione 3 A.A. 2022-2023: 2023-03-07 [x]
-% Lezione 4 A.A. 2022-2023: 2023-03-09 [x]
-% Lezione 5 A.A. 2022-2023: 2023-03-14 [x]
-% Lezione 7 A.A. 2022-2023: 2023-03-16 [x]
-% Lezione 8 A.A. 2022-2023: 2023-03-21 [ ]
-% Lezione 9 A.A. 2022-2023: 2023-03-23 [ ]
+% Lezione 1  A.A. 2022-2023: 2023-02-28 [x]
+% Lezione 2  A.A. 2022-2023: 2023-03-02 [x]
+% Lezione 3  A.A. 2022-2023: 2023-03-07 [x]
+% Lezione 4  A.A. 2022-2023: 2023-03-09 [x]
+% Lezione 5  A.A. 2022-2023: 2023-03-14 [x]
+% Lezione 7  A.A. 2022-2023: 2023-03-16 [x]
+% Lezione 8  A.A. 2022-2023: 2023-03-21 [ ]
+% Lezione 9  A.A. 2022-2023: 2023-03-23 [ ]
+% Lezione 10 A.A. 2022-2023: 2023-03-23 [ ]
 
+\mainmatter
 \part{Cinematica relativistica - Prof. Salamida}
 % SISTEMATI
-\input{./tex/2022_03_03.tex} % Lezione 1     A.A. 2022-2023
-\input{./tex/2020_03_17.tex} % Lezione 2     A.A. 2022-2023
-\input{./tex/2020_03_20.tex} % Lezioni 2/3   A.A. 2022-2023
-\input{./tex/2020_03_24.tex} % Lezioni 3/4   A.A. 2022-2023
-\input{./tex/2020_03_26.tex} % Lezioni 4/5/6 A.A. 2022-2023
-\input{./tex/2020_03_31.tex} % Lezioni 7/8   A.A. 2022-2023
-\input{./tex/2020_04_02.tex} % Lezioni 8/9   A.A. 2022-2023
+% \input{./tex/2022_03_03.tex} % Lezione 1     A.A. 2022-2023
+% \input{./tex/2020_03_17.tex} % Lezione 2     A.A. 2022-2023
+% \input{./tex/2020_03_20.tex} % Lezioni 2/3   A.A. 2022-2023
+% \input{./tex/2020_03_24.tex} % Lezioni 3/4   A.A. 2022-2023
+% \input{./tex/2020_03_26.tex} % Lezioni 4/5/6 A.A. 2022-2023
+% \input{./tex/2020_03_31.tex} % Lezioni 7/8   A.A. 2022-2023
+% \input{./tex/2020_04_02.tex} % Lezioni 8/9   A.A. 2022-2023
+% \input{./tex/2022_03_31.tex}
+% \input{./tex/2022_04_05.tex}
 
-% DA SISTEMARE
-\input{./tex/2022_03_31.tex}
-\input{./tex/2022_04_05.tex}
+\part{Fisica Nucleare - Prof. Villante/Capozzi}
+\input{./tex/2023_04_27.tex}
+\input{./tex/2020_02_27.tex}
+\input{./tex/2020_03_03.tex}
+\input{./tex/2020_05_07.tex}
+\input{./tex/2022_05_03.tex} % TODO: rivedi da registrazione
+\input{./tex/2022_05_05.tex} % TODO: finisci di copiare da registrazione
+\input{./tex/2022_05_10.tex}
+\input{./tex/2022_05_17.tex}
+\input{./tex/2022_05_18.tex} % TODO: 
+\input{./tex/2022_05_24.tex} % TODO: 
+\input{./tex/2022_05_26.tex}
+\input{./tex/2022_05_31.tex} % TODO: riascolta!
+\input{./tex/2022_06_07.tex} % TODO: controlla qui e lì
+\input{./tex/2022_06_09.tex} % TODO: riascolta!
 
-
-% \part{Lezioni Professor Villante}
-% \input{./tex/2020_02_27.tex}
-% \input{./tex/2020_03_03.tex}
-% \input{./tex/2020_05_07.tex}
-% \input{./tex/2022_05_03.tex} % TODO: rivedi da registrazione
-% \input{./tex/2022_05_05.tex} % TODO: finisci di copiare da registrazione
-% \input{./tex/2022_05_10.tex}
-% \input{./tex/2022_05_17.tex}
-% \input{./tex/2022_05_18.tex} % TODO: 
-% \input{./tex/2022_05_24.tex} % TODO: 
-% \input{./tex/2022_05_26.tex}
-% \input{./tex/2022_05_31.tex} % TODO: riascolta!
-% \input{./tex/2022_06_07.tex} % TODO: controlla qui e lì
-% \input{./tex/2022_06_09.tex} % TODO: riascolta!
+% \backmatter
 \end{document}
